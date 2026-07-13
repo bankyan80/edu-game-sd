@@ -10,6 +10,7 @@ const subTopics = masterData.flora.map((item) => ({
   name: item.nama,
   detail: `${item.namaLatin} - ${item.status}`,
   emoji: "🌿",
+  verifikasi: item.verifikasi,
 }));
 
 const verifiedCount = masterData.flora.filter((item) => item.verifikasi).length;
@@ -39,7 +40,14 @@ export default function FloraPage() {
                 <span className="text-4xl block mb-2">{topic.emoji}</span>
                 <h3 className="font-bold text-gray-800 mb-1">{topic.name}</h3>
                 <p className="text-sm text-gray-500 mb-3">{topic.detail}</p>
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gray-100 text-gray-500 text-xs font-semibold">🔒 Segera Hadir</span>
+                {topic.verifikasi ? (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">✓ Terverifikasi</span>
+                ) : (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-xs font-semibold">⚠ Perlu Verifikasi</span>
+                )}
+                <Link href="#" className="mt-2 inline-flex items-center gap-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg transition-all">
+                  Jelajahi →
+                </Link>
               </div>
             </motion.div>
           ))}
