@@ -15,6 +15,7 @@ const elementSets: Record<string, string[]> = {
   balloons: ["🎈", "🎈", "🎈", "🪁"],
   nature: ["🍃", "🌸", "🌺", "🦋"],
   space: ["⭐", "✨", "🌟", "💫"],
+  sparkle: ["✨", "⭐", "🌟", "💫"],
   underwater: ["🫧", "🐠", "🐡", "🪸"],
   party: ["🎉", "🎊", "🎆", "🎇"],
   education: ["📚", "✏️", "📐", "🎯"],
