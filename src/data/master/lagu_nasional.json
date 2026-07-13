@@ -2,110 +2,26 @@
   {
     "id": "indonesia-raya",
     "nama": "Indonesia Raya",
-    "pencipta": "W.R. Supratman",
+    "pencipta": "Wage Rudolf Supratman",
     "tahun": 1928,
     "keterangan": "Lagu kebangsaan Republik Indonesia",
     "makna": "Melambangkan semangat persatuan dan kesatuan bangsa Indonesia",
     "nilaiKarakter": "Patriotisme, cinta tanah air, persatuan",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "q-SgROkPSOM"
+    "youtubeId": "gTVf7xJSMgk"
   },
   {
     "id": "bagimu-negeri",
     "nama": "Bagimu Negeri",
-    "pencipta": "Ismail Marzuki",
+    "pencipta": "R. Kusbini",
     "tahun": 1945,
     "keterangan": "Lagu nasional Indonesia yang mengungkapkan pengorbanan untuk negeri",
     "makna": "Pengorbanan jiwa dan raga untuk kejayaan tanah air Indonesia",
     "nilaiKarakter": "Pengorbanan, loyalitas, keberanian",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "xGHcllhEIW4"
-  },
-  {
-    "id": "berkibarlah-benderaku",
-    "nama": "Berkibarlah Benderaku",
-    "pencipta": "Ismail Marzuki",
-    "tahun": 1945,
-    "keterangan": "Lagu tentang penghormatan terhadap bendera Merah Putih",
-    "makna": "Semangat kebanggaan nasional dan penghormatan terhadap simbol negara",
-    "nilaiKarakter": "Kebanggaan nasional, kehormatan, nasionalisme",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "Nbpomr_UTgA"
-  },
-  {
-    "id": "tanah-airku",
-    "nama": "Tanah Airku",
-    "pencipta": "Ismail Marzuki",
-    "tahun": 1945,
-    "keterangan": "Lagu nasional tentang kerinduan akan tanah air",
-    "makna": "Kerinduan mendalam terhadap tanah air Indonesia dan semangat mempertahankannya",
-    "nilaiKarakter": "Kerinduan, cinta tanah air, patriotisme",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "DR4HhX308QQ"
-  },
-  {
-    "id": "satu-nusa-satu-bangsa",
-    "nama": "Satu Nusa Satu Bangsa",
-    "pencipta": "Ibu Sud (La Supriyanti)",
-    "tahun": 1959,
-    "keterangan": "Lagu tentang persatuan Indonesia",
-    "makna": "Semangat persatuan dan kesatuan bangsa Indonesia dari Sabang sampai Merauke",
-    "nilaiKarakter": "Persatuan, kebhinekaan, kebangsaan",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "0h5YtS7IfV0"
-  },
-  {
-    "id": "rayuan-pulau-kelapa",
-    "nama": "Rayuan Pulau Kelapa",
-    "pencipta": "Is Haryanto",
-    "tahun": 1956,
-    "keterangan": "Lagu tentang keindahan alam Indonesia",
-    "makna": "Keindahan alam Indonesia yang melimpah dan mempesona serta kebanggaan akan negeri sendiri",
-    "nilaiKarakter": "Keindahan alam, kebanggaan nasional, kelestarian",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "JWAiVJ4Pc9E"
-  },
-  {
-    "id": "indonesia-pusaka",
-    "nama": "Indonesia Pusaka",
-    "pencipta": "Ismail Marzuki",
-    "tahun": 1945,
-    "keterangan": "Lagu ciptaan Ismail Marzuki tentang keindahan Indonesia",
-    "makna": "Kekaguman terhadap keindahan alam Indonesia dan semangat mempertahankan kemerdekaan",
-    "nilaiKarakter": "Kekaguman alam, keberanian, cinta tanah air",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "ic-35LRmeNw"
-  },
-  {
-    "id": "gugur-selimbar",
-    "nama": "Gugur Bunga",
-    "pencipta": "Is Haryanto",
-    "tahun": 1945,
-    "keterangan": "Lagu untuk mengenang jasa pahlawan yang gugur",
-    "makna": "Penghormatan dan pengorbanan para pahlawan yang gugur membela kemerdekaan Indonesia",
-    "nilaiKarakter": "Pengorbanan, penghormatan, kepahlawanan",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "sN8lNP-tJbg"
-  },
-  {
-    "id": "halo-halo-bandung",
-    "nama": "Halo-Halo Bandung",
-    "pencipta": "Ismail Marzuki",
-    "tahun": 1946,
-    "keterangan": "Lagu perjuangan yang menggambarkan semangat rakyat Bandung dalam mempertahankan kemerdekaan",
-    "makna": "Menggambarkan keberanian dan kegigihan rakyat Bandung yang membakar kota sendiri (Bandung Lautan Api) agar tidak dikuasai musuh",
-    "nilaiKarakter": "Keberanian, Patriotisme, Pengorbanan",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "EfACVChwxnI"
+    "youtubeId": "Oow9tiJybEs"
   },
   {
     "id": "bangun-pemudi-pemuda",
@@ -117,7 +33,31 @@
     "nilaiKarakter": "Semangat, Tanggung Jawab, Nasionalisme",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "DPEJ1HuoGww"
+    "youtubeId": "LCX5Li5w_SI"
+  },
+  {
+    "id": "bendera-merah-putih",
+    "nama": "Bendera Merah Putih",
+    "pencipta": "Ibu Soed",
+    "tahun": 1945,
+    "keterangan": "Lagu wajib yang menggambarkan kegagahan dan kesucian bendera kebangsaan Merah Putih",
+    "makna": "Melambangkan keberanian (merah) dan kesucian (putih) serta kebanggaan rakyat terhadap bendera negara",
+    "nilaiKarakter": "Patriotisme, Keberanian, Kesucian",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "X1Ku3jQye-g"
+  },
+  {
+    "id": "berkibarlah-benderaku",
+    "nama": "Berkibarlah Benderaku",
+    "pencipta": "Ibu Soed",
+    "tahun": 1945,
+    "keterangan": "Lagu tentang penghormatan terhadap bendera Merah Putih",
+    "makna": "Semangat kebanggaan nasional dan penghormatan terhadap simbol negara",
+    "nilaiKarakter": "Kebanggaan nasional, kehormatan, nasionalisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "Drg7wQTnxkI"
   },
   {
     "id": "garuda-pancasila",
@@ -129,23 +69,11 @@
     "nilaiKarakter": "Keyakinan, Persatuan, Ketaatan",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "JTZhCGbsCSI"
-  },
-  {
-    "id": "syukur",
-    "nama": "Syukur",
-    "pencipta": "H. Mutahar",
-    "tahun": 1945,
-    "keterangan": "Lagu yang melambangkan rasa syukur dan doa atas kemerdekaan Indonesia",
-    "makna": "Menumbuhkan rasa syukur kepada Tuhan atas nikmat kemerdekaan dan mendoakan kelangsungan bangsa",
-    "nilaiKarakter": "Syukur, Religius, Cinta Tanah Air",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "nOOolfEvp9s"
+    "youtubeId": "eRkJd7zIdp8"
   },
   {
     "id": "hari-merdeka",
-    "nama": "Hari Merdeka",
+    "nama": "Hari Merdeka (17 Agustus 1945)",
     "pencipta": "Husein Mutahar",
     "tahun": 1946,
     "keterangan": "Lagu perayaan kemerdekaan yang sering dinyanyikan dalam upacara dan peringatan 17 Agustus",
@@ -153,55 +81,55 @@
     "nilaiKarakter": "Semangat, Patriotisme, Persatuan",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "RobgvaWDGkY"
+    "youtubeId": "xXRzwS10TBk"
+  },
+  {
+    "id": "halo-halo-bandung",
+    "nama": "Halo-Halo Bandung",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1946,
+    "keterangan": "Lagu perjuangan yang menggambarkan semangat rakyat Bandung dalam mempertahankan kemerdekaan",
+    "makna": "Menggambarkan keberanian dan kegigihan rakyat Bandung yang membakar kota sendiri (Bandung Lautan Api) agar tidak dikuasai musuh",
+    "nilaiKarakter": "Keberanian, Patriotisme, Pengorbanan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "A16C7VPeNxs"
   },
   {
     "id": "dari-sabang-sampai-merauke",
     "nama": "Dari Sabang Sampai Merauke",
-    "pencipta": "R. Soerarjo",
+    "pencipta": "R. Soerardjo",
     "tahun": 1961,
     "keterangan": "Lagu yang menggambarkan keutuhan dan keberagaman wilayah Indonesia dari Sabang hingga Merauke",
     "makna": "Menumbuhkan rasa kebangsaan dan kesatuan meskipun Indonesia memiliki ribuan pulau dan budaya yang berbeda",
     "nilaiKarakter": "Persatuan, Keberagaman, Nasionalisme",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "OUjaLlU6gWw"
+    "youtubeId": "x4PMxHlHM_Y"
   },
   {
-    "id": "ibu-kita-kartini",
-    "nama": "Ibu Kita Kartini",
-    "pencipta": "W.R. Supratman",
-    "tahun": 1929,
-    "keterangan": "Lagu penghormatan kepada R.A. Kartini sebagai pelopor emansipasi wanita di Indonesia",
-    "makna": "Mengenang perjuangan Kartini dalam memperjuangkan hak pendidikan dan kesetaraan bagi kaum wanita Indonesia",
-    "nilaiKarakter": "Keadilan, Pengabdian, Inspirasi",
-    "verifikasi": true,
-    "sumber": "Kemendikdasmen",
-    "youtubeId": "IE8E8rDFnQI"
-  },
-  {
-    "id": "bendera-merah-putih",
-    "nama": "Bendera Merah Putih",
-    "pencipta": "Ibu Sud (Saridjah Niung)",
+    "id": "indonesia-pusaka",
+    "nama": "Indonesia Pusaka",
+    "pencipta": "Ismail Marzuki",
     "tahun": 1945,
-    "keterangan": "Lagu wajib yang menggambarkan kegagahan dan kesucian bendera kebangsaan Merah Putih",
-    "makna": "Melambangkan keberanian (merah) dan kesucian (putih) serta kebanggaan rakyat terhadap bendera negara",
-    "nilaiKarakter": "Patriotisme, Keberanian, Kesucian",
+    "keterangan": "Lagu ciptaan Ismail Marzuki tentang keindahan Indonesia",
+    "makna": "Kekaguman terhadap keindahan alam Indonesia dan semangat mempertahankan kemerdekaan",
+    "nilaiKarakter": "Kekaguman alam, keberanian, cinta tanah air",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "CDigIo_w6qA"
+    "youtubeId": "pE4qtESRPVI"
   },
   {
-    "id": "mengheningkan-cipta",
-    "nama": "Mengheningkan Cipta",
-    "pencipta": "Truno Prawit",
-    "tahun": 1958,
-    "keterangan": "Lagu penghormatan yang dinyanyikan saat mengenang jasa para pahlawan yang gugur",
-    "makna": "Mengenang dan menghormati pengorbanan para pahlawan yang telah gugur membela nusa dan bangsa",
-    "nilaiKarakter": "Penghormatan, Pengorbanan, Rasa Syukur",
+    "id": "tanah-airku",
+    "nama": "Tanah Airku",
+    "pencipta": "Ibu Soed",
+    "tahun": 1945,
+    "keterangan": "Lagu nasional tentang kerinduan akan tanah air",
+    "makna": "Kerinduan mendalam terhadap tanah air Indonesia dan semangat mempertahankannya",
+    "nilaiKarakter": "Kerinduan, cinta tanah air, patriotisme",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "x5PWQBTt0dI"
+    "youtubeId": "QOnyXOPjW1U"
   },
   {
     "id": "maju-tak-gentar",
@@ -213,7 +141,151 @@
     "nilaiKarakter": "Keberanian, Keteguhan, Semangat Juang",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "TXnzwZWGwKM"
+    "youtubeId": "z3Mhrr5f8V4"
+  },
+  {
+    "id": "mengheningkan-cipta",
+    "nama": "Mengheningkan Cipta",
+    "pencipta": "Truno Prawit",
+    "tahun": 1958,
+    "keterangan": "Lagu penghormatan yang dinyanyikan saat mengenang jasa para pahlawan yang gugur",
+    "makna": "Mengenang dan menghormati pengorbanan para pahlawan yang telah gugur membela nusa dan bangsa",
+    "nilaiKarakter": "Penghormatan, Pengorbanan, Rasa Syukur",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "13IVg5lWugI"
+  },
+  {
+    "id": "gugur-bunga",
+    "nama": "Gugur Bunga",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu untuk mengenang jasa pahlawan yang gugur",
+    "makna": "Penghormatan dan pengorbanan para pahlawan yang gugur membela kemerdekaan Indonesia",
+    "nilaiKarakter": "Pengorbanan, penghormatan, kepahlawanan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "KrJ7C1nyjm4"
+  },
+  {
+    "id": "rayuan-pulau-kelapa",
+    "nama": "Rayuan Pulau Kelapa",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1956,
+    "keterangan": "Lagu tentang keindahan alam Indonesia",
+    "makna": "Keindahan alam Indonesia yang melimpah dan mempesona serta kebanggaan akan negeri sendiri",
+    "nilaiKarakter": "Keindahan alam, kebanggaan nasional, kelestarian",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "sS8wtHbyl0k"
+  },
+  {
+    "id": "satu-nusa-satu-bangsa",
+    "nama": "Satu Nusa Satu Bangsa",
+    "pencipta": "Liberty Manik",
+    "tahun": 1959,
+    "keterangan": "Lagu tentang persatuan Indonesia",
+    "makna": "Semangat persatuan dan kesatuan bangsa Indonesia dari Sabang sampai Merauke",
+    "nilaiKarakter": "Persatuan, kebhinekaan, kebangsaan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "iljemQB9EpI"
+  },
+  {
+    "id": "syukur",
+    "nama": "Syukur",
+    "pencipta": "Husein Mutahar",
+    "tahun": 1945,
+    "keterangan": "Lagu yang melambangkan rasa syukur dan doa atas kemerdekaan Indonesia",
+    "makna": "Menumbuhkan rasa syukur kepada Tuhan atas nikmat kemerdekaan dan mendoakan kelangsungan bangsa",
+    "nilaiKarakter": "Syukur, Religius, Cinta Tanah Air",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "uHPjJQOubuU"
+  },
+  {
+    "id": "ibu-pertiwi",
+    "nama": "Ibu Pertiwi (Kulihat Ibu Pertiwi)",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu tentang keindahan Ibu Pertiwi (tanah air Indonesia)",
+    "makna": "Mengungkapkan kekaguman dan kecintaan terhadap keindahan alam Indonesia yang mempesona",
+    "nilaiKarakter": "Cinta tanah air, keindahan alam, patriotisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "ZdFf0jGnLIE"
+  },
+  {
+    "id": "ibu-kita-kartini",
+    "nama": "Ibu Kita Kartini",
+    "pencipta": "W.R. Supratman",
+    "tahun": 1929,
+    "keterangan": "Lagu penghormatan kepada R.A. Kartini sebagai pelopor emansipasi wanita di Indonesia",
+    "makna": "Mengenang perjuangan Kartini dalam memperjuangkan hak pendidikan dan kesetaraan bagi kaum wanita Indonesia",
+    "nilaiKarakter": "Keadilan, Pengabdian, Inspirasi",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "FFy_o6CEkK0"
+  },
+  {
+    "id": "hymne-guru",
+    "nama": "Hymne Guru",
+    "pencipta": "Sartono",
+    "tahun": 1945,
+    "keterangan": "Lagu penghormatan kepada para guru yang telah mendidik bangsa",
+    "makna": "Mengungkapkan rasa terima kasih dan penghormatan yang tulus kepada para guru",
+    "nilaiKarakter": "Penghormatan, Pengabdian, Inspirasi",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "gcfdn9zX9Pg"
+  },
+  {
+    "id": "desaku",
+    "nama": "Desaku",
+    "pencipta": "Liberty Manik",
+    "tahun": 1960,
+    "keterangan": "Lagu tentang kerinduan akan kampung halaman",
+    "makna": "Mengungkapkan kerinduan yang mendalam terhadap kampung halaman dan kehidupan di desa",
+    "nilaiKarakter": "Kerinduan, cinta tanah air, kebersamaan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "X11VMl3g9IM"
+  },
+  {
+    "id": "di-timur-matahari",
+    "nama": "Di Timur Matahari",
+    "pencipta": "W.R. Supratman",
+    "tahun": 1928,
+    "keterangan": "Lagu tentang keindahan Indonesia dari timur hingga barat",
+    "makna": "Menggambarkan keindahan alam Indonesia dan semangat persatuan bangsa",
+    "nilaiKarakter": "Keindahan alam, persatuan, kebanggaan nasional",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "Jo5HkGLZdtM"
+  },
+  {
+    "id": "indonesia-tetap-merdeka",
+    "nama": "Indonesia Tetap Merdeka",
+    "pencipta": "C. Simanjuntak",
+    "tahun": 1945,
+    "keterangan": "Lagu perjuangan yang menegaskan tekad rakyat Indonesia untuk tetap merdeka dan berdaulat",
+    "makna": "Mengekspresikan keteguhan hati rakyat Indonesia dalam mempertahankan kemerdekaan dari ancaman penjajahan",
+    "nilaiKarakter": "Keteguhan, Kedaulatan, Patriotisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "SN7GyYYen-Y"
+  },
+  {
+    "id": "indonesia-tumpah-darahku",
+    "nama": "Indonesia Tumpah Darahku",
+    "pencipta": "Ibu Soed",
+    "tahun": 1945,
+    "keterangan": "Lagu yang mengungkapkan kebanggaan sebagai bangsa Indonesia",
+    "makna": "Mengekspresikan kebanggaan dan kecintaan terhadap tanah air Indonesia yang merupakan tumpah darah bangsa",
+    "nilaiKarakter": "Kebanggaan, Cinta Tanah Air, Patriotisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "v98N7GpdhFM"
   },
   {
     "id": "bhinneka-tunggal-ika",
@@ -225,18 +297,66 @@
     "nilaiKarakter": "Persatuan, Toleransi, Kesatuan Jiwa",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "7qGqsMi7Tsk"
+    "youtubeId": "XNYq-ziySbg"
   },
   {
-    "id": "indonesia-tetap-merdeka",
-    "nama": "Indonesia Tetap Merdeka",
-    "pencipta": "Cornel Simanjuntak",
+    "id": "dirgahayu-indonesia",
+    "nama": "Dirgahayu Indonesia",
+    "pencipta": "Husein Mutahar",
     "tahun": 1945,
-    "keterangan": "Lagu perjuangan yang menegaskan tekad rakyat Indonesia untuk tetap merdeka dan berdaulat",
-    "makna": "Mengekspresikan keteguhan hati rakyat Indonesia dalam mempertahankan kemerdekaan dari ancaman penjajahan",
-    "nilaiKarakter": "Keteguhan, Kedaulatan, Patriotisme",
+    "keterangan": "Lagu perayaan hari kemerdekaan Indonesia",
+    "makna": "Mengucapkan selamat dan memohon kesejahteraan bagi negara Indonesia yang merdeka",
+    "nilaiKarakter": "Patriotisme, Syukur, Kebanggaan Nasional",
     "verifikasi": true,
     "sumber": "Kemendikdasmen",
-    "youtubeId": "lVyGpfwIBFg"
+    "youtubeId": "QdDHMc_djHE"
+  },
+  {
+    "id": "nyiur-hijau",
+    "nama": "Nyiur Hijau",
+    "pencipta": "Maladi",
+    "tahun": 1950,
+    "keterangan": "Lagu tentang keindahan alam Indonesia yang digambarkan dengan nyiur (pohon kelapa) hijau",
+    "makna": "Menggambarkan keindahan dan keasrian alam Indonesia yang perlu dijaga dan dilestarikan",
+    "nilaiKarakter": "Keindahan alam, Kelestarian, Cinta Tanah Air",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "V4KZFalqizg"
+  },
+  {
+    "id": "sorak-sorak-bergembira",
+    "nama": "Sorak-Sorak Bergembira",
+    "pencipta": "Cornel Simanjuntak",
+    "tahun": 1945,
+    "keterangan": "Lagu kegembiraan dalam merayakan kemerdekaan Indonesia",
+    "makna": "Mengekspresikan kegembiraan dan semangat rakyat dalam menyambut kemerdekaan bangsa",
+    "nilaiKarakter": "Kegembiraan, Semangat, Patriotisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "KZ_Fk1G4HTQ"
+  },
+  {
+    "id": "terima-kasihku",
+    "nama": "Terima Kasihku (Guruku)",
+    "pencipta": "Sri Widodo",
+    "tahun": 1960,
+    "keterangan": "Lagu tentang rasa terima kasih kepada guru yang telah berjasa mendidik",
+    "makna": "Mengungkapkan rasa terima kasih yang tulus kepada guru yang telah membimbing dan mendidik dengan penuh pengorbanan",
+    "nilaiKarakter": "Penghormatan, Pengorbanan, Rasa Terima Kasih",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "HV6Q8aNFbyY"
+  },
+  {
+    "id": "andika-bhayangkari",
+    "nama": "Andika Bhayangkari",
+    "pencipta": "Amir Pasaribu",
+    "tahun": 1945,
+    "keterangan": "Lagu mars Korps Bhayangkari ( organisasi istri anggota Polri)",
+    "makna": "Menggambarkan semangat dan keikhlasan para istri anggota Polri dalam mendampingi tugas suami",
+    "nilaiKarakter": "Kesetiaan, Pengabdian, Keikhlasan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen",
+    "youtubeId": "w5BSQy7GzQc"
   }
 ]
