@@ -9,24 +9,30 @@ import { motion } from "framer-motion";
 export default function PuzzleKata() {
   const game = getGameBySlug("puzzle-kata")!;
   const allQuestions = useMemo(() => getQuestions("puzzle-kata"), []);
+  const [input, setInput] = useState("");
+  const [shuffledMap, setShuffledMap] = useState<Record<number, string>>({});
+
+  const getShuffled = (qIndex: number) => {
+    if (shuffledMap[qIndex]) return shuffledMap[qIndex];
+    const q = allQuestions[qIndex];
+    if (!q) return "";
+    const letters = q.answer.split("");
+    for (let i = letters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [letters[i], letters[j]] = [letters[j], letters[i]];
+    }
+    const result = letters.join("");
+    setShuffledMap(prev => ({ ...prev, [qIndex]: result }));
+    return result;
+  };
 
   return (
     <GameShell game={game}>
       {(props) => {
         const { questionIndex, score, setScore, combo, setCombo, correctCount, setCorrectCount, isAnswered, setIsAnswered, setShowResult } = props;
-        const [input, setInput] = useState("");
-        const shuffled = useMemo(() => {
-          const q = allQuestions[questionIndex];
-          if (!q) return "";
-          const letters = q.answer.split("");
-          for (let i = letters.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [letters[i], letters[j]] = [letters[j], letters[i]];
-          }
-          return letters.join("");
-        }, [questionIndex]);
         const q = allQuestions[questionIndex];
         if (!q) return null;
+        const shuffled = getShuffled(questionIndex);
 
         const handleSubmit = () => {
           if (isAnswered || !input.trim()) return;
