@@ -4,15 +4,16 @@ import { FloatingClouds } from "@/components/game/FloatingEffects";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import masterData from "@/lib/budaya/masterData";
 
-const subTopics = [
-  { name: "Keris", detail: "Daerah: Jawa", emoji: "🗡️" },
-  { name: "Mandau", detail: "Daerah: Kalimantan", emoji: "🪓" },
-  { name: "Kujang", detail: "Daerah: Jawa Barat", emoji: "🔪" },
-  { name: "Rencong", detail: "Daerah: Aceh", emoji: "⚔️" },
-  { name: "Badik", detail: "Daerah: Sulawesi", emoji: "🗡️" },
-  { name: "Parang", detail: "Daerah: Sulawesi", emoji: "🔪" },
-];
+const subTopics = masterData.senjataTradisional.map((item) => ({
+  name: item.nama,
+  detail: `${item.daerah} - ${item.bahan}`,
+  emoji: "⚔️",
+}));
+
+const verifiedCount = masterData.senjataTradisional.filter((item) => item.verifikasi).length;
+const unverifiedCount = masterData.senjataTradisional.filter((item) => !item.verifikasi).length;
 
 export default function SenjataTradisionalPage() {
   return (
@@ -42,6 +43,25 @@ export default function SenjataTradisionalPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Verification Status */}
+        <div className="mt-6 glass-strong rounded-2xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm font-semibold text-gray-700">📋 Status Data</span>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <span className="text-xs px-3 py-1 rounded-full bg-green-100 text-green-700 font-semibold">
+              ✓ {verifiedCount} data terverifikasi
+            </span>
+            {unverifiedCount > 0 && (
+              <span className="text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 font-semibold">
+                ⚠ {unverifiedCount} data perlu verifikasi
+              </span>
+            )}
+          </div>
+          {unverifiedCount > 0 && (
+            <p className="text-xs text-yellow-600 mt-2">Data belum tersedia dan perlu diverifikasi dari sumber resmi</p>
+          )}
         </div>
       </motion.div>
     </AppShell>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rafflesia-arnoldii",
+    "nama": "Rafflesia Arnoldii",
+    "namaLatin": "Rafflesia arnoldii",
+    "habitat": "Hutan hujan tropis",
+    "persebaran": "Sumatera dan Kalimantan",
+    "status": "Terancam punah",
+    "verifikasi": true,
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  },
+  {
+    "id": "anggrek-bulan",
+    "nama": "Anggrek Bulan",
+    "namaLatin": "Phalaenopsis amabilis",
+    "habitat": "Hutan tropis dataran rendah",
+    "persebaran": "Jawa, Kalimantan, Sulawesi",
+    "status": "Terancam",
+    "verifikasi": true,
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  },
+  {
+    "id": "melati",
+    "nama": "Melati",
+    "namaLatin": "Jasminum sambac",
+    "habitat": "Tropis, dataran rendah hingga menengah",
+    "persebaran": "Seluruh Indonesia",
+    "status": "Bunga Nasional Indonesia",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "edelweis-jawa",
+    "nama": "Edelweis Jawa",
+    "namaLatin": "Anaphalis javanica",
+    "habitat": "Padang rumput pegunungan tinggi",
+    "persebaran": "Jawa (gunung-gunung tinggi)",
+    "status": "Terancam punah",
+    "verifikasi": true,
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  },
+  {
+    "id": "pinang",
+    "nama": "Pinang",
+    "namaLatin": "Areca catechu",
+    "habitat": "Pesisir dan dataran rendah tropis",
+    "persebaran": "Kalimantan dan seluruh Indonesia",
+    "status": "Vulnerable",
+    "verifikasi": false,
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  },
+  {
+    "id": "bunga-padma-raksasa",
+    "nama": "Bunga Padma Raksasa",
+    "namaLatin": "Victoria amazonica",
+    "habitat": "Danau dan perairan dangkal tropis",
+    "persebaran": "Bali (dan beberapa daerah lain)",
+    "status": "Terancam",
+    "verifikasi": false,
+    "sumber": "BRIN - Badan Riset dan Inovasi Nasional"
+  }
+]

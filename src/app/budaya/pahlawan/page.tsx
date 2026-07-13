@@ -4,15 +4,16 @@ import { FloatingClouds } from "@/components/game/FloatingEffects";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import masterData from "@/lib/budaya/masterData";
 
-const subTopics = [
-  { name: "Ir. Soekarno", detail: "Periode: 1901–1970", emoji: "🇮🇩" },
-  { name: "Dr. Mohammad Hatta", detail: "Periode: 1902–1980", emoji: "📖" },
-  { name: "Pangeran Diponegoro", detail: "Periode: 1785–1855", emoji: "⚔️" },
-  { name: "Cut Nyak Dien", detail: "Periode: 1848–1908", emoji: "🛡️" },
-  { name: "I Gusti Ngurah Rai", detail: "Periode: 1917–1946", emoji: "👑" },
-  { name: "Sultan Agung", detail: "Periode: 1591–1645", emoji: "🏯" },
-];
+const subTopics = masterData.pahlawan.map((item) => ({
+  name: item.namaLengkap,
+  detail: `${item.daerahAsal} - ${item.perjuangan}`,
+  emoji: "🏛️",
+}));
+
+const verifiedCount = masterData.pahlawan.filter((item) => item.verifikasi).length;
+const unverifiedCount = masterData.pahlawan.filter((item) => !item.verifikasi).length;
 
 export default function PahlawanPage() {
   return (
@@ -42,6 +43,25 @@ export default function PahlawanPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Verification Status */}
+        <div className="mt-6 glass-strong rounded-2xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm font-semibold text-gray-700">📋 Status Data</span>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <span className="text-xs px-3 py-1 rounded-full bg-green-100 text-green-700 font-semibold">
+              ✓ {verifiedCount} data terverifikasi
+            </span>
+            {unverifiedCount > 0 && (
+              <span className="text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 font-semibold">
+                ⚠ {unverifiedCount} data perlu verifikasi
+              </span>
+            )}
+          </div>
+          {unverifiedCount > 0 && (
+            <p className="text-xs text-yellow-600 mt-2">Data belum tersedia dan perlu diverifikasi dari sumber resmi</p>
+          )}
         </div>
       </motion.div>
     </AppShell>

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "joglo",
+    "nama": "Joglo",
+    "provinsi": "Jawa Tengah",
+    "arsitektur": "Atap bertingkat dengan struktur tumpang sari yang tinggi menjulang",
+    "fungsi": "Rumah adat Jawa untuk bangsawan dan pemimpin",
+    "keunikan": "Struktur atap bertingkat yang melambangkan tingkatan sosial dan filosofi Jawa",
+    "bahan": "Kayu jati, ukiran tangan, dan tatahan tradisional",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "gadang",
+    "nama": "Gadang (Rumah Gadang)",
+    "provinsi": "Sumatera Barat",
+    "arsitektur": "Atap berbentuk tanduk kerbau dengan dinding-dinding lancip",
+    "fungsi": "Rumah adat Minangkabau sebagai tempat tinggal marga dan pusat adat",
+    "keunikan": "Atap berbentuk tanduk kerbau yang melambangkan sistem matrilineal Minangkabau",
+    "bahan": "Kayu, anyaman bambu, dan ijuk untuk atap",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "tongkonan",
+    "nama": "Tongkonan",
+    "provinsi": "Sulawesi Selatan",
+    "arsitektur": "Atap memanjang seperti perahu dengan ukiran warna-warni khas Toraja",
+    "fungsi": "Rumah adat Toraja yang menjadi pusat kehidupan sosial dan adat",
+    "keunikan": "Atap berbentuk perahu terbalik dengan ukiran khas yang melambangkan status sosial",
+    "bahan": "Kayu, ijuk, dan anyaman bambu dengan ukiran tangan",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "joglo-bali",
+    "nama": "Bale Sasih (Joglo Bali)",
+    "provinsi": "Bali",
+    "arsitektur": "Bangunan terbuka dengan atap bertingkat dari anyaman bambu atau alang-alang",
+    "fungsi": "Rumah adat Bali untuk upacara keagamaan dan tempat tinggal",
+    "keunikan": "Struktur terbuka dengan banyak pilar dan atap bertingkat yang merupakan ciri khas arsitektur Bali",
+    "bahan": "Kayu, batu, dan atap dari alang-alang atau bambu",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "betawi",
+    "nama": "Rumah Kebaya",
+    "provinsi": "DKI Jakarta",
+    "arsitektur": "Rumah panggung dengan atap pelana dan teras depan luas",
+    "fungsi": "Rumah adat Betawi untuk kehidupan sehari-hari masyarakat Jakarta",
+    "keunikan": "Gabungan arsitektur Melayu, Tionghoa, dan Eropa yang mencerminkan budaya betawi yang multikultural",
+    "bahan": "Kayu, batu bata, dan genteng tanah liat",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "limas",
+    "nama": "Limas",
+    "provinsi": "Sumatera Selatan",
+    "arsitektur": "Rumah panggung bertingkat dengan atap bertumpang dan tiang-tiang besar",
+    "fungsi": "Rumah adat Palembang untuk bangsawan dan pemimpin",
+    "keunikan": "Tingkatan lantai yang menunjukkan status sosial pemilik rumah",
+    "bahan": "Kayu jati, belian, dan ukiran tangan yang rumit",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "komodo",
+    "nama": "Komodo",
+    "namaLatin": "Varanus komodoensis",
+    "habitat": "Sabana dan hutan kering",
+    "persebaran": "NTT (Pulau Komodo, Rinca, Flores, Gili Motang)",
+    "statusKonservasi": "Terancam punah (Endangered)",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  },
+  {
+    "id": "orangutan",
+    "nama": "Orangutan",
+    "namaLatin": "Pongo pygmaeus",
+    "habitat": "Hutan hujan tropis",
+    "persebaran": "Kalimantan",
+    "statusKonservasi": "Terancam punah (Critically Endangered)",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  },
+  {
+    "id": "badak-jawa",
+    "nama": "Badak Jawa",
+    "namaLatin": "Rhinoceros sondaicus",
+    "habitat": "Hutan hujan tropis",
+    "persebaran": "Jawa Barat (Ujung Kulon)",
+    "statusKonservasi": "Terancam punah (Critically Endangered)",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  },
+  {
+    "id": "cendrawasih",
+    "nama": "Cendrawasih",
+    "namaLatin": "Paradisaea apoda",
+    "habitat": "Hutan hujan tropis",
+    "persebaran": "Papua",
+    "statusKonservasi": "Least Concern",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  },
+  {
+    "id": "harimau-sumatera",
+    "nama": "Harimau Sumatera",
+    "namaLatin": "Panthera tigris sumatrae",
+    "habitat": "Hutan hujan tropis dan rawa",
+    "persebaran": "Sumatera",
+    "statusKonservasi": "Terancam punah (Critically Endangered)",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  },
+  {
+    "id": "gajah-sumatera",
+    "nama": "Gajah Sumatera",
+    "namaLatin": "Elephas maximus sumatranus",
+    "habitat": "Hutan hujan tropis dan savana",
+    "persebaran": "Sumatera",
+    "statusKonservasi": "Terancam punah (Critically Endangered)",
+    "verifikasi": true,
+    "sumber": "BRIN - KLHK"
+  }
+]

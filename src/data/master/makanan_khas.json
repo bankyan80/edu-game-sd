@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rendang",
+    "nama": "Rendang",
+    "daerah": "Sumatera Barat",
+    "bahan": "Daging sapi, santan, rempah-rempah",
+    "caraMemasak": "Dimasak lama dengan santan hingga kering",
+    "ciriKhas": "Rasa pedas dan gurih, tekstur kering",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "gudeg",
+    "nama": "Gudeg",
+    "daerah": "Yogyakarta",
+    "bahan": "Nangka muda, santan, gula merah",
+    "caraMemasak": "Dimasak lama hingga empuk dan manis",
+    "ciriKhas": "Rasa manis dan gurih, berwarna coklat",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "pempek",
+    "nama": "Pempek",
+    "daerah": "Sumatera Selatan",
+    "bahan": "Ikan tenggiri, tepung tapioka",
+    "caraMemasak": "Digoreng dan disajikan dengan kuah cuko",
+    "ciriKhas": "Tekstur kenyal, rasa asam-manis pedas dari kuah cuko",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "sate",
+    "nama": "Sate",
+    "daerah": "Madura/Jawa",
+    "bahan": "Daging ayam, kambing, atau sapi",
+    "caraMemasak": "Dibakar dan disajikan dengan bumbu kacang",
+    "ciriKhas": "Potongan kecil daging tusuk dengan bumbu kacang",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "nasi-goreng",
+    "nama": "Nasi Goreng",
+    "daerah": "Indonesia",
+    "bahan": "Nasi, bumbu-bumbu, telur, daging",
+    "caraMemasak": "Digoreng dengan bumbu dan bahan pelengkap",
+    "ciriKhas": "Rasa gurih dan manis, disajikan dengan telur mata sapi",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "soto",
+    "nama": "Soto",
+    "daerah": "Indonesia",
+    "bahan": "Daging ayam atau sapi, rempah-rempah",
+    "caraMemasak": "Direbus dengan bumbu khas hingga matang",
+    "ciriKhas": "Kuah bening atau kuning dengan berbagai pelengkap",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  }
+]

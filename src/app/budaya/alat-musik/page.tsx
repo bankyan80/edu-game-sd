@@ -4,15 +4,16 @@ import { FloatingClouds } from "@/components/game/FloatingEffects";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import masterData from "@/lib/budaya/masterData";
 
-const subTopics = [
-  { name: "Gamelan", detail: "Daerah: Jawa / Bali", emoji: "🪘" },
-  { name: "Angklung", detail: "Daerah: Jawa Barat", emoji: "🎋" },
-  { name: "Sasando", detail: "Daerah: Nusa Tenggara Timur", emoji: "🪕" },
-  { name: "Kolintang", detail: "Daerah: Sulawesi Utara", emoji: "🎹" },
-  { name: "Tifa", detail: "Daerah: Papua / Maluku", emoji: "🥁" },
-  { name: "Kendang", detail: "Daerah: Jawa", emoji: "🪘" },
-];
+const subTopics = masterData.alatMusik.map((item) => ({
+  name: item.nama,
+  detail: `${item.daerah} - ${item.jenis}`,
+  emoji: "🪕",
+}));
+
+const verifiedCount = masterData.alatMusik.filter((item) => item.verifikasi).length;
+const unverifiedCount = masterData.alatMusik.filter((item) => !item.verifikasi).length;
 
 export default function AlatMusikPage() {
   return (
@@ -42,6 +43,25 @@ export default function AlatMusikPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Verification Status */}
+        <div className="mt-6 glass-strong rounded-2xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm font-semibold text-gray-700">📋 Status Data</span>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <span className="text-xs px-3 py-1 rounded-full bg-green-100 text-green-700 font-semibold">
+              ✓ {verifiedCount} data terverifikasi
+            </span>
+            {unverifiedCount > 0 && (
+              <span className="text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 font-semibold">
+                ⚠ {unverifiedCount} data perlu verifikasi
+              </span>
+            )}
+          </div>
+          {unverifiedCount > 0 && (
+            <p className="text-xs text-yellow-600 mt-2">Data belum tersedia dan perlu diverifikasi dari sumber resmi</p>
+          )}
         </div>
       </motion.div>
     </AppShell>

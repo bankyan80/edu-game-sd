@@ -1,0 +1,68 @@
+[
+  {
+    "id": "soekarno",
+    "namaLengkap": "Ir. Soekarno",
+    "tempatLahir": "Surabaya",
+    "tanggalLahir": "6 Juni 1901",
+    "daerahAsal": "Blitar, Jawa Timur",
+    "perjuangan": "Proklamator kemerdekaan Indonesia dan Presiden pertama RI",
+    "penghargaan": "Bapak Bangsa, Pahlawan Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  },
+  {
+    "id": "mohammad-hatta",
+    "namaLengkap": "Dr. Mohammad Hatta",
+    "tempatLahir": "Bukittinggi",
+    "tanggalLahir": "12 Agustus 1902",
+    "daerahAsal": "Sumatera Barat",
+    "perjuangan": "Proklamator kemerdekaan Indonesia dan Wakil Presiden pertama RI",
+    "penghargaan": "Bapak Koperasi Indonesia, Pahlawan Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  },
+  {
+    "id": "pangeran-diponegoro",
+    "namaLengkap": "Pangeran Diponegoro",
+    "tempatLahir": "Yogyakarta",
+    "tanggalLahir": "11 Oktober 1785",
+    "daerahAsal": "Yogyakarta",
+    "perjuangan": "Memimpin Perang Diponegoro melawan penjajah Belanda",
+    "penghargaan": "Pahlawan Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  },
+  {
+    "id": "cut-nyak-dien",
+    "namaLengkap": "Cut Nyak Dien",
+    "tempatLahir": "Aceh",
+    "tanggalLahir": "1848",
+    "daerahAsal": "Aceh",
+    "perjuangan": "Memimpin perlawanan rakyat Aceh melawan penjajah Belanda",
+    "penghargaan": "Pahlawan Nasional, Pahlawan Wanita Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  },
+  {
+    "id": "i-gusti-ngurah-rai",
+    "namaLengkap": "I Gusti Ngurah Rai",
+    "tempatLahir": "Badung, Bali",
+    "tanggalLahir": "30 Januari 1917",
+    "daerahAsal": "Bali",
+    "perjuangan": "Memimpin perlawanan rakyat Bali melawan penjajah Belanda",
+    "penghargaan": "Pahlawan Nasional, Pahlawan Kemerdekaan Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  },
+  {
+    "id": "sultan-agung",
+    "namaLengkap": "Sultan Agung Hanyokrokusumo",
+    "tempatLahir": "Kasultanan Mataram",
+    "tanggalLahir": "1591",
+    "daerahAsal": "Jawa Tengah",
+    "perjuangan": "Memimpin Kesultanan Mataram melawan penjajah Belanda (VOC)",
+    "penghargaan": "Pahlawan Nasional",
+    "verifikasi": true,
+    "sumber": "Perpustakaan Nasional RI"
+  }
+]

@@ -4,15 +4,16 @@ import { FloatingClouds } from "@/components/game/FloatingEffects";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
+import masterData from "@/lib/budaya/masterData";
 
-const subTopics = [
-  { name: "Rasa Sayange", detail: "Daerah: Maluku", emoji: "🌊" },
-  { name: "Bengawan Solo", detail: "Daerah: Jawa", emoji: "🎶" },
-  { name: "Anak Medan", detail: "Daerah: Sumatera", emoji: "🏙️" },
-  { name: "Yamko Rambe Yamko", detail: "Daerah: Papua", emoji: "🥁" },
-  { name: "Suwe Ora Jamu", detail: "Daerah: Jawa", emoji: "🍵" },
-  { name: "Potong Bebek Angsa", detail: "Daerah: Jawa", emoji: "🪿" },
-];
+const subTopics = masterData.laguDaerah.map((item) => ({
+  name: item.nama,
+  detail: `${item.provinsi} - ${item.bahasaDaerah}`,
+  emoji: "🎼",
+}));
+
+const verifiedCount = masterData.laguDaerah.filter((item) => item.verifikasi).length;
+const unverifiedCount = masterData.laguDaerah.filter((item) => !item.verifikasi).length;
 
 export default function LaguDaerahPage() {
   return (
@@ -42,6 +43,25 @@ export default function LaguDaerahPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* Verification Status */}
+        <div className="mt-6 glass-strong rounded-2xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="text-sm font-semibold text-gray-700">📋 Status Data</span>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <span className="text-xs px-3 py-1 rounded-full bg-green-100 text-green-700 font-semibold">
+              ✓ {verifiedCount} data terverifikasi
+            </span>
+            {unverifiedCount > 0 && (
+              <span className="text-xs px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 font-semibold">
+                ⚠ {unverifiedCount} data perlu verifikasi
+              </span>
+            )}
+          </div>
+          {unverifiedCount > 0 && (
+            <p className="text-xs text-yellow-600 mt-2">Data belum tersedia dan perlu diverifikasi dari sumber resmi</p>
+          )}
         </div>
       </motion.div>
     </AppShell>

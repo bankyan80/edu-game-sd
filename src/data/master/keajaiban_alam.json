@@ -1,0 +1,74 @@
+[
+  {
+    "id": "candi-borobudur",
+    "nama": "Candi Borobudur",
+    "lokasi": "Magelang, Jawa Tengah",
+    "provinsi": "Jawa Tengah",
+    "jenis": "Candi Buddha",
+    "keunikan": "Candi Buddha terbesar di dunia, warisan UNESCO",
+    "flora": "Pohon beringin, pohon sawo kecik",
+    "fauna": "Kadal, burung, kelelawar",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - UNESCO"
+  },
+  {
+    "id": "danau-toba",
+    "nama": "Danau Toba",
+    "lokasi": "Sumatera Utara",
+    "provinsi": "Sumatera Utara",
+    "jenis": "Danau vulkanik",
+    "keunikan": "Danau vulkanik terbesar di dunia, asal-usul dari letusan supervulkanik",
+    "flora": "Pohon pinus, pohon jati, rumput alang-alang",
+    "fauna": "Ikan mas, ikan mujair, burung air",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "raja-ampat",
+    "nama": "Raja Ampat",
+    "lokasi": "Papua Barat",
+    "provinsi": "Papua Barat",
+    "jenis": "Kepulauan karang",
+    "keunikan": "Salah satu wilayah dengan keanekaragaman hayati laut terkaya di dunia",
+    "flora": "Mangrove, terumbu karang, lamun",
+    "fauna": "Ikan hias, penyu, hiu, lumba-lumba",
+    "verifikasi": true,
+    "sumber": "KLHK - Kementerian Lingkungan Hidup dan Kehutanan"
+  },
+  {
+    "id": "gunung-bromo",
+    "nama": "Gunung Bromo",
+    "lokasi": "Jawa Timur",
+    "provinsi": "Jawa Timur",
+    "jenis": "Gunung berapi aktif",
+    "keunikan": "Gunung berapi aktif dengan pemandangan kaldera yang spektakuler",
+    "flora": "Rumput alang-alang, edelweis, pohon casuarina",
+    "fauna": "Kuda, rusa, elang",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "tanjung-puting",
+    "nama": "Taman Nasional Tanjung Puting",
+    "lokasi": "Kalimantan Tengah",
+    "provinsi": "Kalimantan Tengah",
+    "jenis": "Taman Nasional",
+    "keunikan": "Habitat utama orangutan dan hutan gambut terluas di dunia",
+    "flora": "Hutan gambut, bakau, tanaman obat tradisional",
+    "fauna": "Orangutan, bekantan, buaya, beruang madu",
+    "verifikasi": true,
+    "sumber": "KLHK - Kementerian Lingkungan Hidup dan Kehutanan"
+  },
+  {
+    "id": "wakatobi",
+    "nama": "Wakatobi",
+    "lokasi": "Sulawesi Tenggara",
+    "provinsi": "Sulawesi Tenggara",
+    "jenis": "Taman Nasional laut",
+    "keunikan": "Salah satu kawasan terumbu karang terbaik di dunia, Taman Nasional",
+    "flora": "Terumbu karang, lamun, alga",
+    "fauna": "Ikan hias, penyu, lumba-lumba, paus",
+    "verifikasi": true,
+    "sumber": "KLHK - Kementerian Lingkungan Hidup dan Kehutanan"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "keris",
+    "nama": "Keris",
+    "daerah": "Jawa",
+    "fungsi": "Senjata dan benda spiritual",
+    "bahan": "Besi dan nickel",
+    "filosofi": "Melambangkan keberanian dan kewibawaan",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  },
+  {
+    "id": "mandau",
+    "nama": "Mandau",
+    "daerah": "Kalimantan",
+    "fungsi": "Senjata tajam dan alat pertanian",
+    "bahan": "Besi dan kayu",
+    "filosofi": "Melambangkan keberanian dan kekuatan suku Dayak",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  },
+  {
+    "id": "kujang",
+    "nama": "Kujang",
+    "daerah": "Jawa Barat",
+    "fungsi": "Senjata dan alat pertanian",
+    "bahan": "Besi",
+    "filosofi": "Melambangkan kejayaan dan kekuatan Sunda",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  },
+  {
+    "id": "rencong",
+    "nama": "Rencong",
+    "daerah": "Aceh",
+    "fungsi": "Senjata dan alat serbaguna",
+    "bahan": "Besi dan kayu",
+    "filosofi": "Melambangkan keberanian dan semangat juang rakyat Aceh",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  },
+  {
+    "id": "badik",
+    "nama": "Badik",
+    "daerah": "Sulawesi",
+    "fungsi": "Senjata jarak dekat",
+    "bahan": "Besi dan kayu",
+    "filosofi": "Melambangkan kehormatan dan keberanian",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  },
+  {
+    "id": "parang",
+    "nama": "Parang",
+    "daerah": "Sulawesi",
+    "fungsi": "Senjata dan alat serbaguna",
+    "bahan": "Besi dan kayu",
+    "filosofi": "Melambangkan ketangguhan dan keuletan",
+    "verifikasi": true,
+    "sumber": "Museum Nasional Indonesia"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "indonesia-raya",
+    "nama": "Indonesia Raya",
+    "pencipta": "W.R. Supratman",
+    "tahun": 1928,
+    "keterangan": "Lagu kebangsaan Republik Indonesia",
+    "makna": "Melambangkan semangat persatuan dan kesatuan bangsa Indonesia",
+    "nilaiKarakter": "Patriotisme, cinta tanah air, persatuan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "bagimu-negeri",
+    "nama": "Bagimu Negeri",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu nasional Indonesia yang mengungkapkan pengorbanan untuk negeri",
+    "makna": "Pengorbanan jiwa dan raga untuk kejayaan tanah air Indonesia",
+    "nilaiKarakter": "Pengorbanan, loyalitas, keberanian",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "berkibarlah-benderaku",
+    "nama": "Berkibarlah Benderaku",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu tentang penghormatan terhadap bendera Merah Putih",
+    "makna": "Semangat kebanggaan nasional dan penghormatan terhadap simbol negara",
+    "nilaiKarakter": "Kebanggaan nasional, kehormatan, nasionalisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "tanah-airku",
+    "nama": "Tanah Airku",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu nasional tentang kerinduan akan tanah air",
+    "makna": "Kerinduan mendalam terhadap tanah air Indonesia dan semangat mempertahankannya",
+    "nilaiKarakter": "Kerinduan, cinta tanah air, patriotisme",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "satu-nusa-satu-bangsa",
+    "nama": "Satu Nusa Satu Bangsa",
+    "pencipta": "Ibu Sud (La Supriyanti)",
+    "tahun": 1959,
+    "keterangan": "Lagu tentang persatuan Indonesia",
+    "makna": "Semangat persatuan dan kesatuan bangsa Indonesia dari Sabang sampai Merauke",
+    "nilaiKarakter": "Persatuan, kebhinekaan, kebangsaan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "rayuan-pulau-kelapa",
+    "nama": "Rayuan Pulau Kelapa",
+    "pencipta": "Is Haryanto",
+    "tahun": 1956,
+    "keterangan": "Lagu tentang keindahan alam Indonesia",
+    "makna": "Keindahan alam Indonesia yang melimpah dan mempesona serta kebanggaan akan negeri sendiri",
+    "nilaiKarakter": "Keindahan alam, kebanggaan nasional, kelestarian",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "indonesia-pusaka",
+    "nama": "Indonesia Pusaka",
+    "pencipta": "Ismail Marzuki",
+    "tahun": 1945,
+    "keterangan": "Lagu ciptaan Ismail Marzuki tentang keindahan Indonesia",
+    "makna": "Kekaguman terhadap keindahan alam Indonesia dan semangat mempertahankan kemerdekaan",
+    "nilaiKarakter": "Kekaguman alam, keberanian, cinta tanah air",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  },
+  {
+    "id": "gugur-selimbar",
+    "nama": "Gugur Bunga",
+    "pencipta": "Is Haryanto",
+    "tahun": 1945,
+    "keterangan": "Lagu untuk mengenang jasa pahlawan yang gugur",
+    "makna": "Penghormatan dan pengorbanan para pahlawan yang gugur membela kemerdekaan Indonesia",
+    "nilaiKarakter": "Pengorbanan, penghormatan, kepahlawanan",
+    "verifikasi": true,
+    "sumber": "Kemendikdasmen"
+  }
+]

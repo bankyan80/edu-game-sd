@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tari-kecak",
+    "nama": "Tari Kecak",
+    "daerah": "Bali",
+    "makna": "Menceritakan kisah Ramayana",
+    "kostum": "Kain kotak-kotak (poleng) hitam putih",
+    "musikPengiring": "Suara manusia (vokal) tanpa alat musik",
+    "asalUsul": "Diciptakan pada tahun 1930-an oleh seniman Bali dengan pengaruh budaya Barat",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - Warisan Budaya"
+  },
+  {
+    "id": "tari-saman",
+    "nama": "Tari Saman",
+    "daerah": "Aceh",
+    "makna": "Tarian syukur dan pujian kepada Allah serta cerminan kebersamaan masyarakat Aceh",
+    "kostum": "Baju kurung berwarna-warni dengan kain sarung dan ikat kepala",
+    "musikPengiring": "Irama tepukan tangan dan nyanyian tanpa alat musik",
+    "asalUsul": "Berasal dari suku Gayo Aceh, dipentaskan dalam upacara keagamaan",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - Warisan Budaya"
+  },
+  {
+    "id": "tari-pendet",
+    "nama": "Tari Pendet",
+    "daerah": "Bali",
+    "makna": "Tarian penyambutan tamu dan persembahan kepada para dewa",
+    "kostum": "Kebaya Bali dengan kamen dan selendang, dilengkapi mahkota bunga",
+    "musikPengiring": "Gamelan Bali",
+    "asalUsul": "Tarian suci dari Bali yang awalnya dipersembahkan di pura",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - Warisan Budaya"
+  },
+  {
+    "id": "tari-jaipong",
+    "nama": "Tari Jaipong",
+    "daerah": "Jawa Barat",
+    "makna": "Ekspresi kegembiraan dan semangat masyarakat Sunda",
+    "kostum": "Pangsi hitam dengan destar dan kain sarung untuk pria, kebaya untuk perempuan",
+    "musikPengiring": "Kendhang, rebab, goong, dan alat musik Sunda lainnya",
+    "asalUsul": "Dikembangkan oleh pendekar pencak silat di Bandung pada tahun 1960-an",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - Warisan Budaya"
+  },
+  {
+    "id": "tari-kuda-lumping",
+    "nama": "Tari Kuda Lumping",
+    "daerah": "Jawa",
+    "makna": "Tarian kesenian rakyat yang menggambarkan kegagahan dan keindahan berkuda",
+    "kostum": "Pakaian adat Jawa dengan kuda tiruan dari anyaman bambu",
+    "musikPengiring": "Gamelan dan kendhang Jawa",
+    "asalUsul": "Kesenian tradisional Jawa yang telah ada sejak berabad-abad lalu",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "tari-cendrawasih",
+    "nama": "Tari Cendrawasih",
+    "daerah": "Papua",
+    "makna": "Menirukan gerak-gerik burung cenderawasih yang merupakan burung khas Papua",
+    "kostum": "Kostum dari bulu burung dan serat pohon dengan hiasan manik-manik",
+    "musikPengiring": "Tifa dan tetabuhan Papua",
+    "asalUsul": "Tarian tradisional Papua yang terinspirasi dari burung cenderawasih",
+    "verifikasi": true,
+    "sumber": "Kemdikbud - Warisan Budaya"
+  }
+]

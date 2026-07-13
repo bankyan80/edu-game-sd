@@ -1,0 +1,68 @@
+[
+  {
+    "id": "bungong-jeumpa",
+    "nama": "Bungong Jeumpa",
+    "provinsi": "Aceh",
+    "bahasaDaerah": "Aceh",
+    "keterangan": "Lagu daerah dari Aceh tentang bunga Jeumpa (melati)",
+    "makna": "Menceritakan keindahan bunga Jeumpa (melati) dan kerinduan akan kampung halaman",
+    "fungsiLagu": "Lagu untuk mengungkapkan rasa cinta akan tanah air",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "bengawan-solo",
+    "nama": "Bengawan Solo",
+    "provinsi": "Jawa Tengah",
+    "bahasaDaerah": "Jawa",
+    "keterangan": "Lagu daerah terkenal dari Jawa Tengah tentang Sungai Solo",
+    "makna": "Melambangkan keindahan Sungai Bengawan Solo dan kehidupan masyarakat di tepinya",
+    "fungsiLagu": "Lagu ekspresi kecintaan terhadap keindahan alam Jawa",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "anak-medan",
+    "nama": "Anak Medan",
+    "provinsi": "Sumatera Utara",
+    "bahasaDaerah": "Melayu Medan",
+    "keterangan": "Lagu daerah dari Medan, Sumatera Utara",
+    "makna": "Cerminan kehidupan dan kebanggaan masyarakat Medan",
+    "fungsiLagu": "Lagu untuk mengungkapkan kebanggaan sebagai orang Medan",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "yamko-rambe-yamko",
+    "nama": "Yamko Rambe Yamko",
+    "provinsi": "Papua",
+    "bahasaDaerah": "Dani",
+    "keterangan": "Lagu daerah dari Papua yang berjudul Yamko Rambe Yamko",
+    "makna": "Lagu perjuangan rakyat Papua yang menyemangati untuk terus melawan",
+    "fungsiLagu": "Lagu perjuangan dan semangat",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "suwe-ora-jamu",
+    "nama": "Suwe Ora Jamu",
+    "provinsi": "Jawa Tengah",
+    "bahasaDaerah": "Jawa",
+    "keterangan": "Lagu daerah Jawa yang populer dan menyenangkan",
+    "makna": "Lagu tentang permintaan jamu yang merupakan bagian dari budaya kesehatan Jawa",
+    "fungsiLagu": "Lagu hiburan yang mencerminkan budaya jamu Jawa",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "potong-bebek-angsa",
+    "nama": "Potong Bebek Angsa",
+    "provinsi": "Jawa Tengah",
+    "bahasaDaerah": "Jawa",
+    "keterangan": "Lagu anak-anak daerah dari Jawa yang sangat populer",
+    "makna": "Lagu anak-anak yang mengajarkan tentang kegiatan sehari-hari dan kebersamaan",
+    "fungsiLagu": "Lagu anak-anak untuk pendidikan dan hiburan",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  }
+]

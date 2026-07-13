@@ -1,0 +1,68 @@
+[
+  {
+    "id": "gamelan",
+    "nama": "Gamelan",
+    "daerah": "Jawa dan Bali",
+    "caraMemainkan": "Dipukul dengan tabuhan tangan menggunakan pemukul khusus",
+    "jenis": "Alat musik perkusi (ensemble)",
+    "fungsi": "Pengiring tari dan upacara adat, serta pertunjukan seni",
+    "komponen": "Bonang, saron, gender, kendhang, gong, dan rebab",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "angklung",
+    "nama": "Angklung",
+    "daerah": "Jawa Barat",
+    "caraMemainkan": "Digoyangkan dengan kedua tangan sehingga tabuh-tabuhnya beradu menghasilkan nada",
+    "jenis": "Alat musik bilah (idiophone)",
+    "fungsi": "Pengiring musik dan tarian tradisional Sunda",
+    "komponen": "Tabuh-tabuh bambu yang diikat dalam rangka",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "sasando",
+    "nama": "Sasando",
+    "daerah": "Nusa Tenggara Timur (Rote)",
+    "caraMemainkan": "Dipetik dengan jari-jari tangan",
+    "jenis": "Alat musik petik (chordophone)",
+    "fungsi": "Alat musik pengiring lagu dan tarian tradisional Rote",
+    "komponen": "Daun lontar sebagai resonator dengan senar yang dipetik",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "kolintang",
+    "nama": "Kolintang",
+    "daerah": "Sulawesi Utara",
+    "caraMemainkan": "Dipukul atau dipukul dengan pemukul kecil",
+    "jenis": "Alat musik perkusi melodis (lamellophone)",
+    "fungsi": "Pengiring tari dan musik tradisional Minahasa",
+    "komponen": "Batang-batang kayu yang disusun berdasarkan nada",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "tifa",
+    "nama": "Tifa",
+    "daerah": "Papua dan Maluku",
+    "caraMemainkan": "Dipukul dengan tangan di bagian tengah atau ujung tabuh",
+    "jenis": "Alat musik perkusi (membranophone)",
+    "fungsi": "Pengiring tarian dan upacara adat masyarakat Papua dan Maluku",
+    "komponen": "Tabung kayu yang dilapisi kulit hewan di salah satu ujung",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  },
+  {
+    "id": "kendhang",
+    "nama": "Kendhang (Kendang)",
+    "daerah": "Jawa",
+    "caraMemainkan": "Dipukul dengan tangan di kedua sisi tabuh yang berbeda",
+    "jenis": "Alat musik perkusi (membranophone)",
+    "fungsi": "Pengendali irama dalam ensemble gamelan Jawa",
+    "komponen": "Dua tabung kayu yang dilapisi kulit hewan dengan nada tinggi dan rendah",
+    "verifikasi": true,
+    "sumber": "Kemdikbud"
+  }
+]
