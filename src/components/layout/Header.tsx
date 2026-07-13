@@ -3,9 +3,10 @@ import { useState, useRef, useEffect } from "react";
 import { useStore } from "@/lib/store";
 import { audioManager } from "@/lib/audio";
 import { games } from "@/lib/gameData";
+import { useAuth } from "@/lib/auth-context";
 import {
   Search, Bell, Settings, User, Menu, Volume2, VolumeX,
-  ChevronDown, Gamepad2, X, Sparkles
+  ChevronDown, Gamepad2, X, Sparkles, LogOut
 } from "lucide-react";
 import Link from "next/link";
 
@@ -17,6 +18,7 @@ export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => vo
   const [showFilters, setShowFilters] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
   const user = useStore((s) => s.user);
+  const { signOut, user: firebaseUser } = useAuth();
   const [muted, setMuted] = useState(false);
 
   const filtered = search
@@ -142,10 +144,14 @@ export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => vo
           onClick={() => { setShowProfile(!showProfile); setShowNotif(false); }}
           className="flex items-center gap-2 px-2 py-1.5 glass rounded-2xl hover:bg-white/40 transition-all"
         >
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold text-sm shadow-md">
-            {user.name.charAt(0)}
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold text-sm shadow-md overflow-hidden">
+            {firebaseUser?.photoURL ? (
+              <img src={firebaseUser.photoURL} alt="" className="w-full h-full object-cover" />
+            ) : (
+              (firebaseUser?.displayName || user.name).charAt(0)
+            )}
           </div>
-          <span className="hidden sm:block text-sm font-medium">{user.name}</span>
+          <span className="hidden sm:block text-sm font-medium">{firebaseUser?.displayName || user.name}</span>
           <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform ${showProfile ? "rotate-180" : ""}`} />
         </button>
         {showProfile && (
@@ -156,6 +162,13 @@ export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => vo
             <Link href="/settings" className="flex items-center gap-2 px-4 py-2.5 text-sm hover:bg-purple-50/50 transition-all">
               <Settings className="w-4 h-4 text-gray-500" /> Pengaturan
             </Link>
+            <hr className="my-1 border-white/30" />
+            <button
+              onClick={() => { signOut(); audioManager.playClick(); }}
+              className="flex items-center gap-2 px-4 py-2.5 text-sm text-red-500 hover:bg-red-50/50 transition-all w-full"
+            >
+              <LogOut className="w-4 h-4" /> Keluar
+            </button>
           </div>
         )}
       </div>

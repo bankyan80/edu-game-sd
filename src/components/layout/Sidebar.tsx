@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { audioManager } from "@/lib/audio";
+import { useAuth } from "@/lib/auth-context";
 import {
   LayoutDashboard, Gamepad2, Heart, Clock, Trophy, Medal,
   User, Settings, HelpCircle, LogOut, ChevronLeft, ChevronRight, Sparkles
@@ -24,6 +25,7 @@ export default function Sidebar() {
   const pathname = usePathname();
   const collapsed = useStore((s) => s.settings.sidebarCollapsed);
   const toggle = useStore((s) => s.updateSettings);
+  const { signOut } = useAuth();
 
   return (
     <aside className={`fixed left-0 top-16 h-[calc(100vh-4rem)] glass-strong border-r border-white/30 z-40 transition-all duration-300 flex flex-col ${collapsed ? "w-16" : "w-60"}`}>
@@ -57,8 +59,8 @@ export default function Sidebar() {
           {collapsed ? <ChevronRight className="w-5 h-5" /> : <ChevronLeft className="w-5 h-5" />}
         </button>
         <Link
-          href="/dashboard"
-          onClick={() => audioManager.playClick()}
+          href="/login"
+          onClick={() => { audioManager.playClick(); signOut(); }}
           className={`flex items-center gap-3 rounded-2xl text-sm font-medium text-red-500 hover:bg-red-50/50 transition-all ${collapsed ? "px-2.5 py-2.5 justify-center" : "px-3 py-2.5"}`}
           title={collapsed ? "Keluar" : undefined}
         >
