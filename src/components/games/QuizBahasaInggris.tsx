@@ -5,6 +5,7 @@ import { audioManager } from "@/lib/audio";
 import { getGameBySlug } from "@/lib/gameData";
 import { useMemo } from "react";
 import { motion } from "framer-motion";
+import { getOptionColor, btn3d } from "@/lib/gameStyles";
 
 export default function QuizBahasaInggris() {
   const game = getGameBySlug("quiz-bahasa-inggris")!;
@@ -31,13 +32,20 @@ export default function QuizBahasaInggris() {
               <p className="text-base font-bold text-white">{q.question}</p>
             </div>
             <div className="flex flex-col gap-2 flex-1 min-h-0">
-              {q.options?.map((opt, i) => (
-                <motion.button key={i} whileHover={{ x: 4 }} whileTap={{ scale: 0.98 }} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                  className={`w-full flex-1 p-3 rounded-xl font-bold text-base text-left transition-all flex items-center gap-3 ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-gray-700 hover:bg-blue-50 border-2 border-gray-200 hover:border-blue-300"}`}>
-                  <span className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold shrink-0">{String.fromCharCode(65 + i)}</span>
-                  <span>{opt}</span>
-                </motion.button>
-              ))}
+              {q.options?.map((opt, i) => {
+                const c = getOptionColor(questionIndex, i);
+                return (
+                  <motion.button key={i} whileHover={{x:4, scale:1.02}} whileTap={{scale:0.97, y:2}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
+                    className={`w-full flex-1 p-3 rounded-2xl font-black text-lg text-left text-white border-b-[5px] flex items-center gap-3 ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                      isAnswered && opt === q.answer ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-105 ring-4 ring-white"
+                      : isAnswered && opt !== q.answer ? "!bg-gray-200 !text-gray-400 !border-gray-300 opacity-50"
+                      : ""
+                    }`}>
+                    <span className="w-6 h-6 rounded-full bg-white/30 flex items-center justify-center text-sm font-black shrink-0">{String.fromCharCode(65+i)}</span>
+                    <span className="truncate">{opt}</span>
+                  </motion.button>
+                );
+              })}
             </div>
           </div>
         );

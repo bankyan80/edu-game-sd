@@ -152,8 +152,8 @@ export default function SimonMemory() {
             whileHover={{scale:1.05}}
             whileTap={{scale:0.95}}
             onClick={() => handleColorClick(i)}
-            className={`aspect-square rounded-3xl transition-all duration-150 ${COLOR_MAP[color]} ${
-              activeColor === i ? "ring-4 ring-white shadow-2xl scale-110 brightness-150" : "opacity-80 hover:opacity-100"
+            className={`aspect-square rounded-3xl border-b-[6px] border-black/20 transition-all duration-150 ${COLOR_MAP[color]} ${
+              activeColor === i ? "ring-4 ring-white shadow-2xl scale-110 brightness-150 translate-y-1 border-b-[2px]" : "opacity-90 hover:opacity-100 shadow-lg"
             }`}
           />
         ))}

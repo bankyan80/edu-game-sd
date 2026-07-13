@@ -5,6 +5,7 @@ import { audioManager } from "@/lib/audio";
 import { getGameBySlug } from "@/lib/gameData";
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
+import { getOptionColor, btn3d } from "@/lib/gameStyles";
 
 export default function TangkapAngka() {
   const game = getGameBySlug("tangkap-angka")!;
@@ -48,21 +49,30 @@ export default function TangkapAngka() {
               <p className="text-xl font-black text-white">{target}</p>
             </div>
             <div className="grid grid-cols-5 gap-2.5 flex-1 auto-rows-fr">
-              {numbers.map((num, i) => (
-                <motion.button
-                  key={`${questionIndex}-${i}`}
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: i * 0.05 }}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={() => handleTap(num)}
-                  disabled={isAnswered}
-                  className="aspect-square rounded-2xl bg-white shadow-lg border-2 border-green-200 font-black text-base text-green-600 hover:bg-green-50 hover:shadow-xl transition-all flex items-center justify-center"
-                >
-                  {num}
-                </motion.button>
-              ))}
+              {numbers.map((num, i) => {
+                const c = getOptionColor(questionIndex, i);
+                return (
+                  <motion.button
+                    key={`${questionIndex}-${i}`}
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: i * 0.05 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={() => handleTap(num)}
+                    disabled={isAnswered}
+                    className={`aspect-square rounded-2xl border-b-[5px] font-black text-base text-white transition-all duration-100 drop-shadow-lg flex items-center justify-center ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] ${
+                      isAnswered && num === target
+                        ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-110 ring-4 ring-white"
+                        : isAnswered && num !== target
+                        ? "!bg-gray-200 !text-gray-400 !border-gray-300 opacity-50"
+                        : ""
+                    }`}
+                  >
+                    {num}
+                  </motion.button>
+                );
+              })}
             </div>
           </div>
         );

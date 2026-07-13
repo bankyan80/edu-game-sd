@@ -5,6 +5,7 @@ import { audioManager } from "@/lib/audio";
 import { getGameBySlug } from "@/lib/gameData";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import { getOptionColor, btn3d } from "@/lib/gameStyles";
 
 export default function TebakHuruf() {
   const game = getGameBySlug("tebak-huruf")!;
@@ -45,24 +46,27 @@ export default function TebakHuruf() {
               <p className="text-base font-bold text-gray-800">{q.question}</p>
             </div>
             <div className="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
-              {q.options?.map((opt, i) => (
-                <motion.button
-                  key={i}
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => handleAnswer(opt)}
-                  disabled={isAnswered}
-                  className={`flex items-center justify-center p-3 rounded-xl font-bold text-base transition-all ${
-                    isAnswered && opt === q.answer
-                      ? "bg-green-500 text-white shadow-lg"
-                      : isAnswered && opt !== q.answer
-                      ? "bg-red-100 text-red-400"
-                      : "bg-purple-50 text-purple-700 hover:bg-purple-100 border-2 border-purple-200"
-                  }`}
-                >
-                  {opt}
-                </motion.button>
-              ))}
+              {q.options?.map((opt, i) => {
+                const c = getOptionColor(questionIndex, i);
+                return (
+                  <motion.button
+                    key={i}
+                    whileHover={{ scale: 1.04, y: -2 }}
+                    whileTap={{ scale: 0.96, y: 4 }}
+                    onClick={() => handleAnswer(opt)}
+                    disabled={isAnswered}
+                    className={`flex items-center justify-center p-3 rounded-2xl font-black text-lg text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                      isAnswered && opt === q.answer
+                        ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-110 ring-4 ring-white"
+                        : isAnswered && opt !== q.answer
+                        ? "!bg-gray-200 !text-gray-400 !border-gray-300 opacity-50"
+                        : ""
+                    }`}
+                  >
+                    {opt}
+                  </motion.button>
+                );
+              })}
             </div>
           </div>
         );

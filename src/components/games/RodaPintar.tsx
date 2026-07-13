@@ -7,6 +7,7 @@ import { getQuestions, shuffle } from "@/lib/questions";
 import { useRouter } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { Home, Play, RotateCcw, Trophy, Zap, Clock } from "lucide-react";
+import { getOptionColor, btn3d } from "@/lib/gameStyles";
 
 export default function RodaPintar() {
   const game = getGameBySlug("roda-pintar")!;
@@ -154,12 +155,21 @@ export default function RodaPintar() {
         <div className="bg-white rounded-2xl p-4 shadow-lg">
           <p className="font-bold text-gray-800 mb-1 text-center text-lg">{allQuestions[currentQ].question}</p>
           <div className="grid grid-cols-2 gap-3">
-            {allQuestions[currentQ].options?.map((opt, i) => (
-              <motion.button key={i} whileHover={{scale:1.03}} whileTap={{scale:0.97}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                className={`p-3 rounded-xl font-bold transition-all ${isAnswered && opt === allQuestions[currentQ].answer ? "bg-green-500 text-white" : isAnswered ? "bg-red-100 text-red-400" : "bg-amber-50 text-amber-700 hover:bg-amber-100 border-2 border-amber-200"}`}>
-                {opt}
-              </motion.button>
-            ))}
+            {allQuestions[currentQ].options?.map((opt, i) => {
+              const c = getOptionColor(currentQ, i);
+              return (
+                <motion.button key={i} whileHover={{ scale: 1.04, y: -2 }} whileTap={{ scale: 0.96, y: 4 }} onClick={() => handleAnswer(opt)} disabled={isAnswered}
+                  className={`flex items-center justify-center p-3 rounded-2xl font-black text-lg text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                    isAnswered && opt === allQuestions[currentQ].answer
+                      ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-110 ring-4 ring-white"
+                      : isAnswered && opt !== allQuestions[currentQ].answer
+                      ? "!bg-gray-200 !text-gray-400 !border-gray-300 opacity-50"
+                      : ""
+                  }`}>
+                  {opt}
+                </motion.button>
+              );
+            })}
           </div>
         </div>
       )}
