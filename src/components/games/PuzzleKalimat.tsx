@@ -65,9 +65,9 @@ export default function PuzzleKalimat() {
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-white rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-white rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <p className="text-sm font-bold text-gray-800 mb-1">{q.question}</p>
-              <div className="min-h-[40px] bg-gray-50 rounded-xl p-2 mb-4 flex flex-wrap gap-2 justify-center">
+              <div className="min-h-[50px] bg-gray-50 rounded-xl p-2 mb-4 flex flex-wrap gap-2 justify-center">
                 {selected.length === 0 ? (
                   <span className="text-gray-400 text-sm">Klik kata di bawah untuk menyusun</span>
                 ) : selected.map((w, i) => (
@@ -91,7 +91,7 @@ export default function PuzzleKalimat() {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => addWord(w)}
                   disabled={isAnswered || selected.includes(w)}
-                  className={`px-3 py-1.5 rounded-xl font-bold text-sm transition-all ${
+                  className={`px-3 py-2 rounded-xl font-bold text-sm transition-all ${
                     selected.includes(w)
                       ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                       : "bg-blue-100 text-blue-700 hover:bg-blue-200"

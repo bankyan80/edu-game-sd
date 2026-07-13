@@ -41,14 +41,14 @@ export default function QuizIPA() {
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl p-3 shadow-lg mb-2">
+            <div className="bg-gradient-to-br from-cyan-400 to-teal-500 rounded-2xl p-4 shadow-lg mb-3 shrink-0">
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-2xl">🔬</span>
                 <span className="text-white/80 text-sm font-medium">Quiz IPA</span>
               </div>
               <p className="text-base font-bold text-white">{q.question}</p>
             </div>
-            <div className="space-y-1.5">
+            <div className="flex flex-col gap-2 flex-1 min-h-0">
               {q.options?.map((opt, i) => (
                 <motion.button
                   key={i}
@@ -56,7 +56,7 @@ export default function QuizIPA() {
                   whileTap={{ scale: 0.98 }}
                   onClick={() => handleAnswer(opt)}
                   disabled={isAnswered}
-                  className={`w-full p-2.5 rounded-xl font-bold text-left transition-all flex items-center gap-3 ${
+                  className={`w-full flex-1 p-3 rounded-xl font-bold text-base text-left transition-all flex items-center gap-3 ${
                     isAnswered && opt === q.answer
                       ? "bg-green-500 text-white shadow-lg"
                       : isAnswered && opt !== q.answer

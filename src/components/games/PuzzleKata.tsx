@@ -53,15 +53,15 @@ export default function PuzzleKata() {
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-white rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-white rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <p className="text-base font-bold text-gray-800 mb-1">{q.question}</p>
               <div className="flex justify-center gap-1.5 flex-wrap mb-4">
                 {shuffled.split("").map((ch, i) => (
-                  <span key={i} className="w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg font-bold text-sm">{ch}</span>
+                  <span key={i} className="w-9 h-9 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg font-bold text-base">{ch}</span>
                 ))}
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 shrink-0">
               <input
                 type="text"
                 value={input}

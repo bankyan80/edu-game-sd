@@ -42,9 +42,9 @@ export default function SusunCerita() {
         return (
           <div className="max-w-2xl mx-auto h-full flex flex-col">
             <div className="text-center mb-1"><span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span></div>
-            <div className="bg-white rounded-2xl p-3 shadow-lg mb-2">
+            <div className="bg-white rounded-2xl p-4 shadow-lg mb-3 shrink-0">
               <p className="font-bold text-gray-800 mb-2">Susun urutan cerita yang benar:</p>
-              <div className="min-h-[50px] bg-gray-50 rounded-xl p-2 mb-2">
+              <div className="min-h-[60px] bg-gray-50 rounded-xl p-2 mb-2">
                 {selected.length === 0 ? <span className="text-gray-400 text-sm">Klik langkah di bawah</span> :
                   selected.map((idx, pos) => (
                     <motion.button key={pos} initial={{scale:0}} animate={{scale:1}} onClick={() => removeItem(pos)}
@@ -59,7 +59,7 @@ export default function SusunCerita() {
               {items.map((item, i) => (
                 <motion.button key={i} whileHover={{scale:1.05}} whileTap={{scale:0.95}} onClick={() => addItem(i)}
                   disabled={isAnswered || selected.includes(i)}
-                  className={`px-3 py-1.5 rounded-xl font-medium text-sm transition-all ${selected.includes(i) ? "bg-gray-200 text-gray-400" : "bg-amber-100 text-amber-700 hover:bg-amber-200"}`}>
+                  className={`px-3 py-2 rounded-xl font-medium text-sm transition-all ${selected.includes(i) ? "bg-gray-200 text-gray-400" : "bg-amber-100 text-amber-700 hover:bg-amber-200"}`}>
                   {item}
                 </motion.button>
               ))}

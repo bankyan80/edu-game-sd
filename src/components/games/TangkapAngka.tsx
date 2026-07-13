@@ -43,11 +43,11 @@ export default function TangkapAngka() {
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <p className="text-lg text-white/80 mb-1">Tangkap angka:</p>
               <p className="text-xl font-black text-white">{target}</p>
             </div>
-            <div className="grid grid-cols-5 gap-2">
+            <div className="grid grid-cols-5 gap-2.5 flex-1 auto-rows-fr">
               {numbers.map((num, i) => (
                 <motion.button
                   key={`${questionIndex}-${i}`}

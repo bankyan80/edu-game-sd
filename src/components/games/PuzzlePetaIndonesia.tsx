@@ -25,14 +25,14 @@ export default function PuzzlePetaIndonesia() {
         return (
           <div className="max-w-2xl mx-auto h-full flex flex-col">
             <div className="text-center mb-1"><span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span></div>
-            <div className="bg-gradient-to-br from-teal-300 to-emerald-400 rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-gradient-to-br from-teal-300 to-emerald-400 rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <span className="text-3xl block mb-1">🏝️</span>
               <p className="text-base font-bold text-white">{q.question}</p>
             </div>
-            <div className="space-y-1.5">
+            <div className="flex flex-col gap-2 flex-1 min-h-0">
               {q.options?.map((opt, i) => (
                 <motion.button key={i} whileHover={{x:4}} whileTap={{scale:0.98}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                  className={`w-full p-2.5 rounded-xl font-bold text-left transition-all flex items-center gap-3 ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-gray-700 hover:bg-teal-50 border-2 border-gray-200 hover:border-teal-300"}`}>
+                  className={`w-full flex-1 p-3 rounded-xl font-bold text-base text-left transition-all flex items-center gap-3 ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-gray-700 hover:bg-teal-50 border-2 border-gray-200 hover:border-teal-300"}`}>
                   <span className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-sm font-bold shrink-0">{String.fromCharCode(65+i)}</span>
                   <span>{opt}</span>
                 </motion.button>

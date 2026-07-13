@@ -97,8 +97,8 @@ export default function SimonMemory() {
 
   if (showTutorial) {
     return (
-      <div className="h-full flex items-center justify-center p-3">
-        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+      <div className="h-full flex items-center justify-center p-6">
+        <div className="bg-white rounded-3xl p-6 max-w-lg w-full shadow-2xl text-center">
           <div className="h-20 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mb-3">
             <span className="text-4xl">🎮</span>
           </div>
@@ -123,8 +123,8 @@ export default function SimonMemory() {
 
   if (gameOver) {
     return (
-      <div className="h-full flex items-center justify-center p-3">
-        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+      <div className="h-full flex items-center justify-center p-6">
+        <div className="bg-white rounded-3xl p-6 max-w-lg w-full shadow-2xl text-center">
           <span className="text-4xl block mb-2">💪</span>
           <h2 className="text-lg font-bold mb-1">Game Over!</h2>
           <p className="text-gray-500 mb-3">Level: {level} | Skor: {score}</p>
@@ -139,13 +139,13 @@ export default function SimonMemory() {
 
   return (
     <div className="max-w-lg mx-auto">
-      <div className="flex items-center justify-between mb-2">
+      <div className="flex items-center justify-between mb-4">
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold">Level {level}</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Zap className="w-4 h-4 text-yellow-400"/>{combo}x</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Trophy className="w-4 h-4 text-purple-500"/>{score}</span>
       </div>
       <p className="text-center text-sm text-gray-500 mb-4">{showingSequence ? "Perhatikan urutan..." : "Giliran kamu!"}</p>
-      <div className="grid grid-cols-2 gap-2 max-w-[300px] mx-auto">
+      <div className="grid grid-cols-2 gap-2 max-w-[320px] mx-auto">
         {COLORS.map((color, i) => (
           <motion.button
             key={color}

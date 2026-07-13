@@ -44,11 +44,11 @@ export default function TebakGambar() {
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <span className="text-4xl block mb-1 animate-float">{emoji}</span>
               <p className="text-base font-bold text-white">{q.question}</p>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
               {q.options?.map((opt, i) => (
                 <motion.button
                   key={i}
@@ -56,7 +56,7 @@ export default function TebakGambar() {
                   whileTap={{ scale: 0.97 }}
                   onClick={() => handleAnswer(opt)}
                   disabled={isAnswered}
-                  className={`p-2.5 rounded-xl font-bold text-sm transition-all ${
+                  className={`flex items-center justify-center p-3 rounded-xl font-bold text-base transition-all ${
                     isAnswered && opt === q.answer
                       ? "bg-green-500 text-white shadow-lg"
                       : isAnswered && opt !== q.answer

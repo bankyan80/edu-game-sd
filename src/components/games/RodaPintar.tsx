@@ -92,8 +92,8 @@ export default function RodaPintar() {
 
   if (showTutorial) {
     return (
-      <div className="h-full flex items-center justify-center p-3">
-        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+      <div className="h-full flex items-center justify-center p-6">
+        <div className="bg-white rounded-3xl p-6 max-w-lg w-full shadow-2xl text-center">
           <span className="text-4xl block mb-2">🎡</span>
           <h1 className="text-lg font-bold mb-1">Roda Pintar</h1>
           <p className="text-gray-500 mb-3">Putar roda dan jawab pertanyaan dari berbagai kategori!</p>
@@ -108,8 +108,8 @@ export default function RodaPintar() {
 
   if (gameOver || currentQ >= allQuestions.length || timeLeft <= 0) {
     return (
-      <div className="h-full flex items-center justify-center p-3">
-        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+      <div className="h-full flex items-center justify-center p-6">
+        <div className="bg-white rounded-3xl p-6 max-w-lg w-full shadow-2xl text-center">
           <span className="text-4xl block mb-2">{correctCount === allQuestions.length ? "🏆" : "⭐"}</span>
           <h2 className="text-lg font-bold mb-1">Selesai!</h2>
           <div className="grid grid-cols-2 gap-2 mb-3">
@@ -127,14 +127,14 @@ export default function RodaPintar() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="flex items-center justify-between mb-1">
+      <div className="flex items-center justify-between mb-3">
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Clock className="w-4 h-4 text-orange-500"/>{fmt(timeLeft)}</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Zap className="w-4 h-4 text-yellow-400"/>{combo}x</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Trophy className="w-4 h-4 text-purple-500"/>{score}</span>
       </div>
       <div className="flex justify-center mb-2">
         <div className="relative">
-          <div className="w-36 h-36 rounded-full border-4 border-white shadow-xl overflow-hidden" style={{transform: `rotate(${rotation}deg)`, transition: "transform 2s cubic-bezier(0.17, 0.67, 0.12, 0.99)"}}>
+          <div className="w-44 h-44 rounded-full border-4 border-white shadow-xl overflow-hidden" style={{transform: `rotate(${rotation}deg)`, transition: "transform 2s cubic-bezier(0.17, 0.67, 0.12, 0.99)"}}>
             {categories.map((cat, i) => (
               <div key={cat} className="absolute w-full h-full" style={{clipPath: `polygon(50% 50%, ${50 + 50*Math.cos((i*sectorAngle-90)*Math.PI/180)}% ${50 + 50*Math.sin((i*sectorAngle-90)*Math.PI/180)}%, ${50 + 50*Math.cos(((i+1)*sectorAngle-90)*Math.PI/180)}% ${50 + 50*Math.sin(((i+1)*sectorAngle-90)*Math.PI/180)}%)`, backgroundColor: categoryColors[i]}}>
                 <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold text-gray-800 -rotate-45">{cat}</span>
@@ -151,7 +151,7 @@ export default function RodaPintar() {
         </button>
       </div>
       {currentQ < allQuestions.length && !spinning && !isAnswered && (
-        <div className="bg-white rounded-2xl p-3 shadow-lg">
+        <div className="bg-white rounded-2xl p-4 shadow-lg">
           <p className="font-bold text-gray-800 mb-1 text-center text-lg">{allQuestions[currentQ].question}</p>
           <div className="grid grid-cols-2 gap-3">
             {allQuestions[currentQ].options?.map((opt, i) => (

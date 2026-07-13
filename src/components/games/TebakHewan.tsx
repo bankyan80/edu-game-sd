@@ -26,14 +26,14 @@ export default function TebakHewan() {
         return (
           <div className="max-w-2xl mx-auto h-full flex flex-col">
             <div className="text-center mb-1"><span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span></div>
-            <div className="bg-gradient-to-br from-lime-300 to-green-400 rounded-2xl p-3 shadow-lg mb-2 text-center">
+            <div className="bg-gradient-to-br from-lime-300 to-green-400 rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
               <span className="text-3xl block mb-1">{hewanIcons[q.answer] || "🐾"}</span>
               <p className="text-base font-bold text-white">{q.question}</p>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
               {q.options?.map((opt, i) => (
                 <motion.button key={i} whileHover={{scale:1.03}} whileTap={{scale:0.97}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                  className={`p-2.5 rounded-xl font-bold text-sm transition-all ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-green-700 hover:bg-green-50 border-2 border-green-200"}`}>
+                  className={`flex items-center justify-center p-3 rounded-xl font-bold text-base transition-all ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-green-700 hover:bg-green-50 border-2 border-green-200"}`}>
                   {hewanIcons[opt] || ""} {opt}
                 </motion.button>
               ))}

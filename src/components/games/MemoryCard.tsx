@@ -77,7 +77,7 @@ export default function MemoryCard() {
         <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">{moves} langkah</span>
         <span className="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-sm font-bold">{matched.length / 2}/{cards.length / 2} pasang</span>
       </div>
-      <div className={`grid gap-2 ${cards.length <= 8 ? "grid-cols-4" : cards.length <= 18 ? "grid-cols-4 sm:grid-cols-6" : "grid-cols-5 sm:grid-cols-6"}`}>
+      <div className={`grid gap-2 flex-1 auto-rows-fr ${cards.length <= 8 ? "grid-cols-4" : cards.length <= 18 ? "grid-cols-4 sm:grid-cols-6" : "grid-cols-5 sm:grid-cols-6"}`}>
         {cards.map((card, i) => {
           const isFlipped = flipped.includes(i) || matched.includes(i);
           const isMatched = matched.includes(i);
@@ -87,7 +87,7 @@ export default function MemoryCard() {
               whileHover={{ scale: isFlipped ? 1 : 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleFlip(i)}
-              className={`aspect-square rounded-xl text-xl font-bold transition-all duration-300 flex items-center justify-center ${
+              className={`aspect-square rounded-xl text-2xl font-bold transition-all duration-300 flex items-center justify-center ${
                 isFlipped
                   ? isMatched
                     ? "bg-green-100 border-2 border-green-400 shadow-md"
@@ -104,7 +104,7 @@ export default function MemoryCard() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-2 text-center bg-white rounded-2xl p-3 shadow-lg"
+          className="mt-3 text-center bg-white rounded-2xl p-4 shadow-lg"
         >
           <span className="text-3xl block mb-1">🎉</span>
           <h2 className="text-lg font-bold mb-1">Luar Biasa!</h2>
