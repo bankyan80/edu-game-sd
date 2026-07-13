@@ -20,7 +20,15 @@ export default function MencocokkanGambar() {
   const answerEmojis: Record<string, string> = {
     "Cahaya": "💡", "Es": "🧊", "Merah": "🔴", "Awan": "☁️",
     "Daun": "🍃", "Guru": "👩‍🏫", "Ikan": "🐟", "Melihat": "👀",
-    "Tulis": "📝", "Panas": "🌡️", "Siang": "🌞", "Belalai": "🦛",
+    "Tulis": "📝", "Panas": "🌡️", "Siang": "🌞", "Belalai": "🐘",
+    "Bulan": "🌙", "Bintang": "⭐", "Api": "🔥", "Tanah": "🌍",
+    "Udara": "💨", "Hijau": "🟢", "Biru": "🔵", "Hitam": "⚫",
+    "Petir": "⚡", "Pelangi": "🌈", "Gunting": "✂️", "Batu": "🪨",
+    "Rumah": "🏠", "Kantor": "🏢", "Toko": "🏪", "Anjing": "🐕",
+    "Meong": "🐱", "Mengeong": "🐱", "Telinga": "👂", "Hidung": "👃",
+    "Mulut": "👄", "Pena": "🖊️", "Penghapus": "🧹", "Kertas": "📄",
+    "Dingin": "❄️", "Malam": "🌙", "Sore": "🌅", "Tidur": "😴",
+    "Kecil": "🤏", "Sayap": "🦋", "Ekor": "🐾",
   };
 
   const getItemEmoji = (question: string) => {
