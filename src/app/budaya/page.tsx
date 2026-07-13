@@ -30,14 +30,15 @@ export default function BudayaPage() {
             <div className="text-[60px]">🏛️</div>
           </div>
 
-          <div className="flex flex-col items-center gap-4 relative z-10 md:flex-row md:items-start md:gap-6">
-            <div className="shrink-0 pt-8">
-              <Mascot mood="excited" size="md" message="Selamat datang di Budaya Indonesia! 🇮🇩 Ayo jelajahi kekayaan Nusantara!" />
+          <div className="flex flex-col items-center gap-3 relative z-10 md:flex-row md:items-start md:gap-6">
+            <div className="shrink-0">
+              <Mascot mood="excited" size="md" />
             </div>
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl font-bold mb-1 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
                 Budaya Indonesia 🇮🇩
               </h1>
+              <p className="text-gray-700 font-semibold text-sm mb-1">Selamat datang di Budaya Indonesia! 🇮🇩 Ayo jelajahi kekayaan Nusantara!</p>
               <p className="text-gray-500 text-sm mb-4">Jelajahi kekayaan budaya Nusantara melalui permainan interaktif!</p>
               <div className="flex flex-wrap gap-3">
                 <div className="glass rounded-2xl px-4 py-2.5 flex items-center gap-2">
