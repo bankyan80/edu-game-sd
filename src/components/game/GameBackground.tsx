@@ -128,7 +128,7 @@ export default function GameBackground({ slug, children }: { slug: string; child
   const decor = decorMap[slug] || { elements: [], position: [] };
 
   return (
-    <div className={`relative min-h-screen ${bgClass} overflow-hidden`}>
+    <div className={`relative h-dvh ${bgClass} overflow-hidden`}>
       {/* Floating decorative elements */}
       {decor.elements.map((el, i) => (
         <div

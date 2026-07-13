@@ -171,7 +171,7 @@ export default function GameShell({ game, children }: GameShellProps) {
   if (showTutorial) {
     return (
       <GameBackground slug={game.slug}>
-        <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="h-dvh flex items-center justify-center p-4 overflow-y-auto">
           <div className="flex flex-col lg:flex-row items-center gap-8 max-w-4xl w-full">
             {/* Mascot */}
             <div className="hidden lg:block">
@@ -259,7 +259,7 @@ export default function GameShell({ game, children }: GameShellProps) {
   if (countdown > 0) {
     return (
       <GameBackground slug={game.slug}>
-        <div className="min-h-screen flex items-center justify-center">
+        <div className="h-dvh flex items-center justify-center">
           <div className="text-center">
             <Mascot mood="excited" size="md" message="Hampir mulai!" />
             <motion.div
@@ -283,7 +283,7 @@ export default function GameShell({ game, children }: GameShellProps) {
     return (
       <GameBackground slug={game.slug}>
         <ConfettiExplosion active={showConfetti} />
-        <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="h-dvh flex items-center justify-center p-4 overflow-y-auto">
           <div className="flex flex-col lg:flex-row items-center gap-8 max-w-4xl w-full">
             <div className="hidden lg:block">
               <Mascot mood={perfect ? "cheering" : score > 50 ? "excited" : "encouraging"} size="lg" />
@@ -381,9 +381,9 @@ export default function GameShell({ game, children }: GameShellProps) {
 
   return (
     <GameBackground slug={game.slug}>
-      <div className="min-h-screen p-4 lg:p-6">
+      <div className="h-dvh flex flex-col p-4 lg:p-6">
         {/* Top bar */}
-        <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <div className="flex items-center justify-between mb-3 flex-wrap gap-2 shrink-0">
           <div className="flex items-center gap-2">
             <button onClick={handlePause} className="p-2.5 glass-strong rounded-2xl hover:scale-105 transition-all shadow-md">
               {paused ? <Play className="w-5 h-5 text-green-500" /> : <Pause className="w-5 h-5 text-orange-500" />}
@@ -418,7 +418,7 @@ export default function GameShell({ game, children }: GameShellProps) {
         </div>
 
         {/* Progress bar */}
-        <div className="glass-strong rounded-full h-2 mb-6 shadow-inner overflow-hidden">
+        <div className="glass-strong rounded-full h-2 mb-4 shadow-inner overflow-hidden shrink-0">
           <motion.div
             className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 h-2 rounded-full"
             initial={{ width: 0 }}
@@ -427,24 +427,26 @@ export default function GameShell({ game, children }: GameShellProps) {
           />
         </div>
 
-        {/* Game content */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={questionIndex}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            transition={{ duration: 0.2 }}
-          >
-            {children({
-              questionIndex, setQuestionIndex, score, setScore,
-              combo, setCombo, totalQuestions, setTotalQuestions,
-              correctCount, setCorrectCount, timeLeft, setTimeLeft,
-              difficulty, isAnswered, setIsAnswered,
-              showResult, setShowResult,
-            })}
-          </motion.div>
-        </AnimatePresence>
+        {/* Game content - fills remaining space */}
+        <div className="flex-1 min-h-0 overflow-y-auto">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={questionIndex}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.2 }}
+            >
+              {children({
+                questionIndex, setQuestionIndex, score, setScore,
+                combo, setCombo, totalQuestions, setTotalQuestions,
+                correctCount, setCorrectCount, timeLeft, setTimeLeft,
+                difficulty, isAnswered, setIsAnswered,
+                showResult, setShowResult,
+              })}
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
         {/* Mini mascot in corner */}
         <div className="fixed bottom-4 right-4 z-40">
