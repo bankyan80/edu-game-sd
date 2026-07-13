@@ -11,6 +11,23 @@ export default function MencocokkanGambar() {
   const game = getGameBySlug("mencocokkan-gambar")!;
   const allQuestions = useMemo(() => getQuestions("mencocokkan-gambar"), []);
 
+  const itemEmojis: Record<string, string> = {
+    "Matahari": "☀️", "Air": "💧", "Buah Apel": "🍎", "Hujan": "🌧️",
+    "Pohon": "🌳", "Sekolah": "🏫", "Kucing": "🐱", "Mata": "👁️",
+    "Pensil": "✏️", "Api": "🔥", "Pagi": "🌅", "Gajah": "🐘",
+  };
+
+  const answerEmojis: Record<string, string> = {
+    "Cahaya": "💡", "Es": "🧊", "Merah": "🔴", "Awan": "☁️",
+    "Daun": "🍃", "Guru": "👩‍🏫", "Ikan": "🐟", "Melihat": "👀",
+    "Tulis": "📝", "Panas": "🌡️", "Siang": "🌞", "Belalai": "🦛",
+  };
+
+  const getItemEmoji = (question: string) => {
+    const item = question.replace("Cocokkan pasangan yang benar: ", "").replace(" -", "").trim();
+    return itemEmojis[item] || "❓";
+  };
+
   return (
     <GameShell game={game}>
       {(props) => {
@@ -37,17 +54,26 @@ export default function MencocokkanGambar() {
           }, 1200);
         };
 
+        const itemEmoji = getItemEmoji(q.question);
+
         return (
           <div className="max-w-2xl mx-auto h-full flex flex-col">
             <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-purple-300 to-pink-400 rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
-              <p className="text-base font-bold text-white">{q.question}</p>
+            <div className="bg-gradient-to-br from-purple-300 to-pink-400 rounded-2xl p-4 shadow-lg mb-3 shrink-0">
+              <div className="flex items-center gap-4">
+                <span className="text-6xl animate-float">{itemEmoji}</span>
+                <div className="flex-1">
+                  <p className="text-sm text-white/80 mb-1">Cocokkan dengan yang sesuai:</p>
+                  <p className="text-lg font-black text-white">{q.question.replace("Cocokkan pasangan yang benar: ", "")}</p>
+                </div>
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
               {q.options?.map((opt, i) => {
                 const c = getOptionColor(questionIndex, i);
+                const optEmoji = answerEmojis[opt] || "";
                 return (
                   <motion.button
                     key={i}
@@ -55,7 +81,7 @@ export default function MencocokkanGambar() {
                     whileTap={{ scale: 0.96, y: 4 }}
                     onClick={() => handleAnswer(opt)}
                     disabled={isAnswered}
-                    className={`flex items-center justify-center p-3 rounded-2xl font-black text-lg text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                    className={`flex flex-col items-center justify-center p-3 rounded-2xl font-black text-lg text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
                       isAnswered && opt === q.answer
                         ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-110 ring-4 ring-white"
                         : isAnswered && opt !== q.answer
@@ -63,7 +89,8 @@ export default function MencocokkanGambar() {
                         : ""
                     }`}
                   >
-                    {opt}
+                    <span className="text-3xl mb-1">{optEmoji}</span>
+                    <span className="text-sm">{opt}</span>
                   </motion.button>
                 );
               })}
