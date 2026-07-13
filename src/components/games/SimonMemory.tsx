@@ -56,6 +56,8 @@ export default function SimonMemory() {
 
   const startGame = () => {
     setShowTutorial(false);
+    setStarted(false);
+    setPlayerInput([]);
     setLevel(1);
     setScore(0);
     setCombo(0);

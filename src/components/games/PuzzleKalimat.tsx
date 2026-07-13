@@ -9,23 +9,30 @@ import { motion } from "framer-motion";
 export default function PuzzleKalimat() {
   const game = getGameBySlug("puzzle-kalimat")!;
   const allQuestions = useMemo(() => getQuestions("puzzle-kalimat"), []);
+  const [selected, setSelected] = useState<string[]>([]);
+  const [prevQIndex, setPrevQIndex] = useState(-1);
 
   return (
     <GameShell game={game}>
       {(props) => {
         const { questionIndex, score, setScore, combo, setCombo, correctCount, setCorrectCount, isAnswered, setIsAnswered, setShowResult } = props;
-        const [selected, setSelected] = useState<string[]>([]);
         const q = allQuestions[questionIndex];
         if (!q) return null;
+
+        if (prevQIndex !== questionIndex) {
+          setPrevQIndex(questionIndex);
+          setSelected([]);
+        }
+
         const words = q.answer.split(" ");
-        const shuffledWords = useMemo(() => {
+        const shuffledWords = (() => {
           const arr = [...words];
           for (let i = arr.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [arr[i], arr[j]] = [arr[j], arr[i]];
           }
           return arr;
-        }, [questionIndex]);
+        })();
 
         const addWord = (word: string) => {
           if (isAnswered || selected.includes(word)) return;

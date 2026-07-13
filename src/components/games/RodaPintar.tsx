@@ -1,5 +1,5 @@
 "use client";
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { audioManager } from "@/lib/audio";
 import { getGameBySlug } from "@/lib/gameData";
@@ -7,7 +7,7 @@ import { getQuestions, shuffle } from "@/lib/questions";
 import { useRouter } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { Home, Play, RotateCcw, Trophy, Zap, Clock } from "lucide-react";
-import { getOptionColor, btn3d } from "@/lib/gameStyles";
+import { getOptionColor } from "@/lib/gameStyles";
 
 export default function RodaPintar() {
   const game = getGameBySlug("roda-pintar")!;
@@ -71,7 +71,7 @@ export default function RodaPintar() {
     }, 1200);
   };
 
-  useState(() => {
+  useEffect(() => {
     if (!showTutorial && started && !gameOver) {
       timerRef.current = setInterval(() => {
         setTimeLeft(t => {
@@ -87,7 +87,7 @@ export default function RodaPintar() {
       }, 1000);
     }
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  });
+  }, [showTutorial, started, gameOver]);
 
   const fmt = (s: number) => `${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`;
 
@@ -119,7 +119,7 @@ export default function RodaPintar() {
           </div>
           <div className="flex gap-2">
             <button onClick={() => router.back()} className="px-4 py-2 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/></button>
-            <button onClick={() => { setShowTutorial(true); setGameOver(false); setScore(0); setCombo(0); setCurrentQ(0); setTimeLeft(180); setCorrectCount(0); setRotation(0); }} className="flex-1 py-2 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
+            <button onClick={() => { setShowTutorial(true); setGameOver(false); setScore(0); setCombo(0); setCurrentQ(0); setTimeLeft(180); setCorrectCount(0); setRotation(0); setStarted(false); setSpinning(false); setIsAnswered(false); }} className="flex-1 py-2 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ export default function RodaPintar() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto h-full flex flex-col">
       <div className="flex items-center justify-between mb-3">
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Clock className="w-4 h-4 text-orange-500"/>{fmt(timeLeft)}</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Zap className="w-4 h-4 text-yellow-400"/>{combo}x</span>

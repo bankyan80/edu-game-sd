@@ -5,7 +5,7 @@ import { audioManager } from "@/lib/audio";
 import { getGameBySlug } from "@/lib/gameData";
 import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
-import { getOptionColor, btn3d } from "@/lib/gameStyles";
+import { getOptionColor } from "@/lib/gameStyles";
 
 export default function TangkapAngka() {
   const game = getGameBySlug("tangkap-angka")!;

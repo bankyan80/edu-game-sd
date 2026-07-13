@@ -34,7 +34,7 @@ export default function TebakProfesi() {
             <div className="grid grid-cols-2 gap-3 flex-1 auto-rows-fr">
               {q.options?.map((opt, i) => (
                 <motion.button key={i} whileHover={{scale:1.03}} whileTap={{scale:0.97}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                  className={`flex items-center justify-center p-3 rounded-xl font-bold text-base transition-all ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-200"}`}>
+                  className={`flex items-center justify-center p-3 rounded-xl font-black text-2xl sm:text-3xl text-white border-b-[5px] transition-all ${isAnswered && opt === q.answer ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 !border-b-[5px] scale-110 ring-4 ring-white" : isAnswered && opt !== q.answer ? "!bg-gray-200 !text-gray-400 !border-gray-300 !border-b-[5px] opacity-50" : "bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-200 border-b-[5px]"}`}>
                   {profIcons[opt] || ""} {opt}
                 </motion.button>
               ))}

@@ -9,14 +9,21 @@ import { motion } from "framer-motion";
 export default function SusunCerita() {
   const game = getGameBySlug("susun-cerita")!;
   const allQuestions = useMemo(() => getQuestions("susun-cerita"), []);
+  const [selected, setSelected] = useState<number[]>([]);
+  const [prevQIndex, setPrevQIndex] = useState(-1);
 
   return (
     <GameShell game={game}>
       {(props) => {
         const { questionIndex, score, setScore, combo, setCombo, correctCount, setCorrectCount, isAnswered, setIsAnswered, setShowResult } = props;
-        const [selected, setSelected] = useState<number[]>([]);
         const q = allQuestions[questionIndex];
         if (!q) return null;
+
+        if (prevQIndex !== questionIndex) {
+          setPrevQIndex(questionIndex);
+          setSelected([]);
+        }
+
         const items = q.question.replace("Susun urutan: ", "").split(/\d+\./).filter(Boolean).map(s => s.trim());
         const answerNums = q.answer.split(",").map(s => parseInt(s.trim()));
 
