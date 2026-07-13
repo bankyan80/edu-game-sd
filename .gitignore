@@ -36,6 +36,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+# turso/local db
+*.db
+*.db-wal
+*.db-shm
+auth
+auth-wal
+db
+db-wal
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
