@@ -22,7 +22,13 @@ export default function Header({ onToggleSidebar }: { onToggleSidebar?: () => vo
   const [muted, setMuted] = useState(false);
 
   const filtered = search
-    ? games.filter(
+    ? [...games, 
+        { id: 26, slug: "tebak-pakaian-adat", name: "Tebak Pakaian Adat", icon: "👘", category: "Budaya" as const, description: "Tebak nama pakaian adat dari deskripsi", difficulty: "Sedang" as const, gradient: "from-amber-300 to-orange-400", color: "#FFB74D", kelas: ["4","5","6"], duration: "5 min", mapel: "IPS" as const },
+        { id: 27, slug: "cocokkan-pakaian", name: "Cocokkan Pakaian", icon: "🎯", category: "Budaya" as const, description: "Cocokkan pakaian adat dengan provinsi", difficulty: "Sedang" as const, gradient: "from-rose-300 to-pink-400", color: "#F48FB1", kelas: ["4","5","6"], duration: "5 min", mapel: "IPS" as const },
+        { id: 28, slug: "puzzle-pakaian-adat", name: "Puzzle Pakaian Adat", icon: "🧩", category: "Budaya" as const, description: "Susun huruf menjadi nama pakaian adat", difficulty: "Sedang" as const, gradient: "from-amber-300 to-orange-400", color: "#FFD54F", kelas: ["4","5","6"], duration: "5 min", mapel: "IPS" as const },
+        { id: 29, slug: "siapa-aku", name: "Siapa Aku", icon: "🤔", category: "Budaya" as const, description: "Tebak pakaian adat dari petunjuk", difficulty: "Sedang" as const, gradient: "from-teal-300 to-cyan-400", color: "#80CBC4", kelas: ["4","5","6"], duration: "5 min", mapel: "IPS" as const },
+        { id: 30, slug: "roda-budaya", name: "Roda Budaya", icon: "🎡", category: "Budaya" as const, description: "Putar roda budaya dan jawab pertanyaan", difficulty: "Sedang" as const, gradient: "from-purple-300 to-violet-400", color: "#CE93D8", kelas: ["1","2","3","4","5","6"], duration: "5 min", mapel: "IPS" as const },
+      ].filter(
         (g) =>
           g.name.toLowerCase().includes(search.toLowerCase()) ||
           g.description.toLowerCase().includes(search.toLowerCase())

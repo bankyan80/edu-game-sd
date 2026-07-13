@@ -26,6 +26,11 @@ const bgMap: Record<string, string> = {
   "operasi-hitung-berantai": "bg-game-neon",
   "simon-memory-edukasi": "bg-game-digital",
   "roda-pintar": "bg-game-show",
+  "tebak-pakaian-adat": "bg-budaya-batik",
+  "cocokkan-pakaian": "bg-budaya-nusantara",
+  "puzzle-pakaian-adat": "bg-budaya-museum",
+  "siapa-aku": "bg-budaya-candi",
+  "roda-budaya": "bg-budaya-rumah-adat",
 };
 
 const decorMap: Record<string, { elements: string[]; position: string[] }> = {
@@ -119,6 +124,26 @@ const decorMap: Record<string, { elements: string[]; position: string[] }> = {
   },
   "roda-pintar": {
     elements: ["🌟", "🎤", "🎪", "🎊"],
+    position: ["top-4 left-4", "top-10 right-8", "bottom-10 left-8", "bottom-4 right-4"],
+  },
+  "tebak-pakaian-adat": {
+    elements: ["👘", "👑", "🎭", "🪡"],
+    position: ["top-4 left-4", "top-10 right-8", "bottom-10 left-8", "bottom-4 right-4"],
+  },
+  "cocokkan-pakaian": {
+    elements: ["🇮🇩", "🗺️", "🎯", "🏝️"],
+    position: ["top-6 left-6", "top-10 right-10", "bottom-8 left-8", "bottom-6 right-6"],
+  },
+  "puzzle-pakaian-adat": {
+    elements: ["🧩", "👘", "✨", "🎨"],
+    position: ["top-4 left-4", "top-8 right-8", "bottom-12 left-12", "bottom-4 right-4"],
+  },
+  "siapa-aku": {
+    elements: ["🤔", "💡", "🔍", "❓"],
+    position: ["top-6 left-6", "top-10 right-10", "bottom-8 left-8", "bottom-6 right-6"],
+  },
+  "roda-budaya": {
+    elements: ["🎡", "🎵", "💃", "🏛️"],
     position: ["top-4 left-4", "top-10 right-8", "bottom-10 left-8", "bottom-4 right-4"],
   },
 };

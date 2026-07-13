@@ -6,12 +6,13 @@ import { audioManager } from "@/lib/audio";
 import { useAuth } from "@/lib/auth-context";
 import {
   LayoutDashboard, Gamepad2, Heart, Clock, Trophy, Medal,
-  User, Settings, HelpCircle, LogOut, ChevronLeft, ChevronRight, Sparkles
+  User, Settings, HelpCircle, LogOut, ChevronLeft, ChevronRight, Sparkles, Globe
 } from "lucide-react";
 
 const navItems = [
   { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { label: "Semua Game", href: "/dashboard", icon: Gamepad2 },
+  { label: "Budaya Indonesia", href: "/budaya", icon: Globe },
   { label: "Favorit", href: "/favorites", icon: Heart },
   { label: "Riwayat", href: "/history", icon: Clock },
   { label: "Badge", href: "/badges", icon: Trophy },

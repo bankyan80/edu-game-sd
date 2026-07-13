@@ -26,6 +26,11 @@ const iconMap: Record<string, { emoji: string; bg: string; animation: string; gl
   "operasi-hitung-berantai": { emoji: "⚡", bg: "from-violet-400 to-indigo-500", animation: "animate-icon-wiggle", glow: "glow-purple" },
   "simon-memory-edukasi": { emoji: "🎮", bg: "from-fuchsia-400 to-pink-500", animation: "animate-icon-pulse", glow: "glow-pink" },
   "roda-pintar": { emoji: "🎡", bg: "from-yellow-400 to-amber-500", animation: "animate-icon-wiggle", glow: "glow-orange" },
+  "tebak-pakaian-adat": { emoji: "👘", bg: "from-amber-400 to-orange-500", animation: "animate-icon-float", glow: "glow-orange" },
+  "cocokkan-pakaian": { emoji: "🎯", bg: "from-rose-400 to-pink-500", animation: "animate-icon-wiggle", glow: "glow-pink" },
+  "puzzle-pakaian-adat": { emoji: "🧩", bg: "from-amber-400 to-yellow-500", animation: "animate-icon-pulse", glow: "glow-orange" },
+  "siapa-aku": { emoji: "🤔", bg: "from-teal-400 to-cyan-500", animation: "animate-icon-float", glow: "glow-blue" },
+  "roda-budaya": { emoji: "🎡", bg: "from-purple-400 to-violet-500", animation: "animate-icon-wiggle", glow: "glow-purple" },
 };
 
 export default function Game3DIcon({ slug, size = "md" }: { slug: string; size?: "sm" | "md" | "lg" | "xl" }) {

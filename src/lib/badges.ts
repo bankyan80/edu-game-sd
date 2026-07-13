@@ -60,4 +60,11 @@ export const allBadges: BadgeDef[] = [
   { id: "b50", name: "Grand Master", description: "Capai level 100", icon: "🏆", category: "Umum", requirement: "level_100" },
   { id: "b51", name: "First Steps", description: "Selesaikan game pertama", icon: "👣", category: "Umum", requirement: "first_game" },
   { id: "b52", name: "Combo King", description: "Dapat combo 5x", icon: "🔥", category: "Combo", requirement: "combo_5" },
+  { id: "b53", name: "Ahli Budaya Indonesia", description: "Selesaikan 10 game Budaya Indonesia", icon: "🇮🇩", category: "Budaya", requirement: "budaya_10" },
+  { id: "b54", name: "Master Pakaian Adat", description: "Selesaikan semua game pakaian adat", icon: "👘", category: "Budaya", requirement: "all_pakaian" },
+  { id: "b55", name: "Master Lagu Daerah", description: "Selesaikan 5 game lagu daerah", icon: "🎵", category: "Budaya", requirement: "lagu_5" },
+  { id: "b56", name: "Master Rumah Adat", description: "Selesaikan 5 game rumah adat", icon: "🏠", category: "Budaya", requirement: "rumah_5" },
+  { id: "b57", name: "Master Tari Tradisional", description: "Selesaikan 5 game tari tradisional", icon: "💃", category: "Budaya", requirement: "tari_5" },
+  { id: "b58", name: "Master Alat Musik", description: "Selesaikan 5 game alat musik", icon: "🪕", category: "Budaya", requirement: "musik_5" },
+  { id: "b59", name: "Master Nusantara", description: "Selesaikan 25 game Budaya Indonesia", icon: "🏆", category: "Budaya", requirement: "budaya_25" },
 ];

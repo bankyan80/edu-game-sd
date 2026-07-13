@@ -1570,4 +1570,154 @@ export const questionBanks: QuestionBank = {
     { id: "qe-x-05", question: "Which word is an antonym of 'happy'?", options: ["Joyful", "Glad", "Sad", "Cheerful"], answer: "Sad", difficulty: "Master", category: "Contextual Vocabulary" },
   ],
 
+  "tebak-pakaian-adat": [
+    // MUDAH (5)
+    { id: "tpa-m1", question: "Pakaian adat dari Aceh yang sering dikenakan oleh para bangsawan adalah...", options: ["Ulee Balang", "Ulos", "Bundo Kanduang", "Teluk Belanga"], answer: "Ulee Balang", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "tpa-m2", question: "Pakaian adat dari Bali yang merupakan pakaian adat tertinggi dan digunakan pada upacara keagamaan adalah...", options: ["Payas Agung", "Lambung", "Ti'i Langga", "Cele"], answer: "Payas Agung", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "tpa-m3", question: "Pakaian adat dari Sumatera Barat yang menjadi simpan kebanggaan perempuan Minangkabau adalah...", options: ["Bundo Kanduang", "Ulee Balang", "Aesan Gede", "Kebaya Betawi"], answer: "Bundo Kanduang", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "tpa-m4", question: "Pakaian adat dari Sumatera Utara yang berbentuk kain tenun dengan berbagai motif adalah...", options: ["Ulos", "Surjan", "Cele", "Koteka"], answer: "Ulos", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "tpa-m5", question: "Pakaian adat dari Sulawesi Selatan yang terkenal dengan warna-warnanya yang cerah adalah...", options: ["Baju Bodo", "Teluk Belanga", "Mantenan", "King Baba"], answer: "Baju Bodo", difficulty: "Mudah", category: "Pakaian Adat" },
+
+    // SEDANG (5)
+    { id: "tpa-s1", question: "Pakaian adat dari Riau yang merupakan pakaian khas masyarakat Melayu adalah...", options: ["Teluk Belanga", "Ulee Balang", "Baju Kurung", "Aesan Gede"], answer: "Teluk Belanga", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "tpa-s2", question: "Pakaian adat dari Yogyakarta yang dikenakan oleh para bangsawan keraton dan memiliki kain jarik adalah...", options: ["Surjan", "Koteka", "Cele", "Sangkarut"], answer: "Surjan", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "tpa-s3", question: "Pakaian adat dari Nusa Tenggara Timur yang terbuat dari kain tenun ikat adalah...", options: ["Lambung", "Baju Bodo", "Ti'i Langga", "Biliu"], answer: "Lambung", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "tpa-s4", question: "Pakaian adat dari Maluku yang memiliki potongan simple dan elegan adalah...", options: ["Biliu", "Ulee Balang", "Koteka", "Kustin"], answer: "Biliu", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "tpa-s5", question: "Pakaian adat dari Nusa Tenggara Timur (NTT) yang sering dikenakan oleh masyarakat Manggarai adalah...", options: ["Ti'i Langga", "Surjan", "Cele", "Mantenan"], answer: "Ti'i Langga", difficulty: "Sedang", category: "Pakaian Adat" },
+
+    // SULIT (5)
+    { id: "tpa-i1", question: "Pakaian adat dari Sumatera Selatan yang memiliki motif emas dan digunakan pada acara pernikahan adalah...", options: ["Aesan Gede", "Ulos", "Baju Bodo", "Rejang"], answer: "Aesan Gede", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "tpa-i2", question: "Pakaian adat dari DKI Jakarta yang merupakan kebaya khas Betawi adalah...", options: ["Kebaya Betawi", "Baju Kurung", "Lambung", "Sangkarut"], answer: "Kebaya Betawi", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "tpa-i3", question: "Pakaian adat dari Kalimantan Tengah yang merupakan pakaian khas suku Dayak dan terbuat dari serat tanaman adalah...", options: ["Sangkarut", "Koteka", "Ulee Balang", "Kustin"], answer: "Sangkarut", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "tpa-i4", question: "Pakaian adat dari Sulawesi Utara yang merupakan kebaya modern khas Manado adalah...", options: ["Kustin", "Biliu", "Cele", "Mantenan"], answer: "Kustin", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "tpa-i5", question: "Pakaian adat dari Nusa Tenggara Barat (NTB) yang dikenakan oleh suku Sasak pada acara adat adalah...", options: ["Mantenan", "Payas Agung", "Teluk Belanga", "Bundo Kanduang"], answer: "Mantenan", difficulty: "Sulit", category: "Pakaian Adat" },
+
+    // MASTER (5)
+    { id: "tpa-x1", question: "Pakaian adat dari Papua yang berupa penutup tubuh dari kulit kayu dan serat pohon adalah...", options: ["Koteka", "Sangkarut", "King Baba", "Cele"], answer: "Koteka", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "tpa-x2", question: "Pakaian adat dari Sulawesi Selatan (Makassar) yang merupakan pakaian formal pria dengan baju teluk belanga adalah...", options: ["King Baba", "Ulee Balang", "Surjan", "Baju Kurung"], answer: "King Baba", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "tpa-x3", question: "Pakaian adat dari Nusa Tenggara Timur (Sumba) yang merupakan kain tenun khas Sumba dengan motif ikat adalah...", options: ["Cele", "Lambung", "Kustin", "Biliu"], answer: "Cele", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "tpa-x4", question: "Pakaian adat dari Sulawesi Selatan yang merupakan pakaian pengantin perempuan Bugis dan memiliki warna kuning emas adalah...", options: ["Baju Bodo Pengantin", "Aesan Gede", "Payas Agung", "Bundo Kanduang"], answer: "Baju Bodo Pengantin", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "tpa-x5", question: "Pakaian adat dari Sumatera Barat yang merupakan pakaian adat perempuan Minangkabau dengan hiasan perak adalah...", options: ["Bundo Kanduang Perak", "Ulee Balang", "Baju Kurung", "Teluk Belanga"], answer: "Bundo Kanduang Perak", difficulty: "Master", category: "Pakaian Adat" },
+  ],
+
+  "cocokkan-pakaian": [
+    // MUDAH (5)
+    { id: "cpa-m1", question: "Pakaian adat 'Ulos' berasal dari provinsi mana?", options: ["Sumatera Utara", "Sumatera Barat", "Riau", "Jambi"], answer: "Sumatera Utara", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "cpa-m2", question: "Pakaian adat 'Payas Agung' berasal dari provinsi mana?", options: ["Bali", "NTT", "NTB", "Jawa Timur"], answer: "Bali", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "cpa-m3", question: "Pakaian adat 'Baju Bodo' berasal dari provinsi mana?", options: ["Sulawesi Selatan", "Sulawesi Utara", "Maluku", "Papua"], answer: "Sulawesi Selatan", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "cpa-m4", question: "Pakaian adat 'Ulee Balang' berasal dari provinsi mana?", options: ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau"], answer: "Aceh", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "cpa-m5", question: "Pakaian adat 'Koteka' berasal dari provinsi mana?", options: ["Papua", "Kalimantan", "NTT", "Sulawesi"], answer: "Papua", difficulty: "Mudah", category: "Pakaian Adat" },
+
+    // SEDANG (5)
+    { id: "cpa-s1", question: "Pakaian adat 'Teluk Belanga' berasal dari provinsi mana?", options: ["Riau", "Jambi", "Sumatera Selatan", "Bengkulu"], answer: "Riau", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "cpa-s2", question: "Pakaian adat 'Surjan' berasal dari provinsi mana?", options: ["Yogyakarta", "Jawa Barat", "Jawa Timur", "Jawa Tengah"], answer: "Yogyakarta", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "cpa-s3", question: "Pakaian adat 'Baju Kurung' berasal dari provinsi mana?", options: ["Kepulauan Riau", "Sumatera Barat", "Jambi", "Riau"], answer: "Kepulauan Riau", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "cpa-s4", question: "Pakaian adat 'Aesan Gede' berasal dari provinsi mana?", options: ["Sumatera Selatan", "Jambi", "Bengkulu", "Lampung"], answer: "Sumatera Selatan", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "cpa-s5", question: "Pakaian adat 'Kebaya Betawi' berasal dari provinsi mana?", options: ["DKI Jakarta", "Banten", "Jawa Barat", "Jawa Tengah"], answer: "DKI Jakarta", difficulty: "Sedang", category: "Pakaian Adat" },
+
+    // SULIT (5)
+    { id: "cpa-i1", question: "Pakaian adat 'Bundo Kanduang' berasal dari provinsi mana?", options: ["Sumatera Barat", "Riau", "Jambi", "Sumatera Utara"], answer: "Sumatera Barat", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "cpa-i2", question: "Pakaian adat 'Lambung' berasal dari provinsi mana?", options: ["NTT", "NTB", "Bali", "Sulawesi Selatan"], answer: "NTT", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "cpa-i3", question: "Pakaian adat 'Ti'i Langga' berasal dari provinsi mana?", options: ["NTB", "NTT", "Bali", "Sulawesi Timur"], answer: "NTB", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "cpa-i4", question: "Pakaian adat 'Biliu' berasal dari provinsi mana?", options: ["Maluku", "Maluku Utara", "Papua Barat", "Sulawesi Utara"], answer: "Maluku", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "cpa-i5", question: "Pakaian adat 'Sangkarut' berasal dari provinsi mana?", options: ["Kalimantan Tengah", "Kalimantan Barat", "Kalimantan Selatan", "Kalimantan Timur"], answer: "Kalimantan Tengah", difficulty: "Sulit", category: "Pakaian Adat" },
+
+    // MASTER (5)
+    { id: "cpa-x1", question: "Pakaian adat 'Cele' berasal dari provinsi mana?", options: ["NTT", "NTB", "Maluku", "Papua"], answer: "NTT", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "cpa-x2", question: "Pakaian adat 'King Baba' berasal dari provinsi mana?", options: ["Sulawesi Selatan", "Sulawesi Utara", "Sulawesi Tenggara", "Sulawesi Tengah"], answer: "Sulawesi Selatan", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "cpa-x3", question: "Pakaian adat 'Kustin' berasal dari provinsi mana?", options: ["Sulawesi Utara", "Maluku Utara", "Maluku", "Papua Barat"], answer: "Sulawesi Utara", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "cpa-x4", question: "Pakaian adat 'Mantenan' berasal dari provinsi mana?", options: ["NTB", "NTT", "Bali", "Sulawesi Selatan"], answer: "NTB", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "cpa-x5", question: "Pakaian adat 'Rejang' berasal dari provinsi mana?", options: ["Bengkulu", "Sumatera Selatan", "Lampung", "Jambi"], answer: "Bengkulu", difficulty: "Master", category: "Pakaian Adat" },
+  ],
+
+  "puzzle-pakaian-adat": [
+    // MUDAH (5)
+    { id: "ppa-m1", question: "Susun huruf: 'L-U-O-S' adalah nama pakaian adat...", options: ["Ulos", "Lambung", "Cele", "Biliu"], answer: "Ulos", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "ppa-m2", question: "Susun huruf: 'K-O-T-E-K-A' adalah nama pakaian adat...", options: ["Koteka", "Kustin", "King Baba", "Cele"], answer: "Koteka", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "ppa-m3", question: "Susun huruf: 'B-O-D-O-B-U' adalah nama pakaian adat...", options: ["Baju Bodo", "Bundo Kanduang", "Biliu", "Baju Kurung"], answer: "Baju Bodo", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "ppa-m4", question: "Susun huruf: 'U-L-E-E-B-A-L-A-N-G' adalah nama pakaian adat...", options: ["Ulee Balang", "Ulos", "Lambung", "Cele"], answer: "Ulee Balang", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "ppa-m5", question: "Susun huruf: 'S-U-R-J-A-N' adalah nama pakaian adat...", options: ["Surjan", "Sangkarut", "Surabaya", "Sunda"], answer: "Surjan", difficulty: "Mudah", category: "Pakaian Adat" },
+
+    // SEDANG (5)
+    { id: "ppa-s1", question: "Susun huruf: 'P-A-Y-A-S-A-G-U-N-G' adalah nama pakaian adat...", options: ["Payas Agung", "Pakaian Agung", "Payas Besar", "Payas Kuning"], answer: "Payas Agung", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "ppa-s2", question: "Susun huruf: 'L-A-M-B-U-N-G' adalah nama pakaian adat...", options: ["Lambung", "Lampung", "Lamban", "Lampu"], answer: "Lambung", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "ppa-s3", question: "Susun huruf: 'B-I-L-I-U' adalah nama pakaian adat...", options: ["Biliu", "Baju Bodo", "Bundo Kanduang", "Biliu"], answer: "Biliu", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "ppa-s4", question: "Susun huruf: 'C-E-L-E' adalah nama pakaian adat...", options: ["Cele", "Cile", "Cilele", "Celele"], answer: "Cele", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "ppa-s5", question: "Susun huruf: 'K-U-S-T-I-N' adalah nama pakaian adat...", options: ["Kustin", "Kustian", "Kustin Baru", "Kustina"], answer: "Kustin", difficulty: "Sedang", category: "Pakaian Adat" },
+
+    // SULIT (5)
+    { id: "ppa-i1", question: "Susun huruf: 'A-E-S-A-N-G-E-D-E' adalah nama pakaian adat...", options: ["Aesan Gede", "Aesan Tua", "Adat Gede", "Aesan Baru"], answer: "Aesan Gede", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "ppa-i2", question: "Susun huruf: 'T-E-L-U-K-B-E-L-A-N-G-A' adalah nama pakaian adat...", options: ["Teluk Belanga", "Teluk Cina", "Teluk Dalam", "Teluk Nipah"], answer: "Teluk Belanga", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "ppa-i3", question: "Susun huruf: 'M-A-N-T-E-N-A-N' adalah nama pakaian adat...", options: ["Mantenan", "Mantenun", "Mantenang", "Mantenah"], answer: "Mantenan", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "ppa-i4", question: "Susun huruf: 'S-A-N-G-K-A-R-U-T' adalah nama pakaian adat...", options: ["Sangkarut", "Sangkarat", "Sangkurut", "Sangkarit"], answer: "Sangkarut", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "ppa-i5", question: "Susun huruf: 'T-I-I-L-A-N-G-G-A' adalah nama pakaian adat...", options: ["Ti'i Langga", "Ti'i Langit", "Ti'i Langkah", "Ti'i Langa"], answer: "Ti'i Langga", difficulty: "Sulit", category: "Pakaian Adat" },
+
+    // MASTER (5)
+    { id: "ppa-x1", question: "Susun huruf: 'B-U-N-D-O-K-A-N-D-U-A-N-G' adalah nama pakaian adat...", options: ["Bundo Kanduang", "Bundo Kandang", "Bundo Katuang", "Bundo Ganduang"], answer: "Bundo Kanduang", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "ppa-x2", question: "Susun huruf: 'K-I-N-G-B-A-B-A' adalah nama pakaian adat...", options: ["King Baba", "King Bata", "King Bapa", "King Bala"], answer: "King Baba", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "ppa-x3", question: "Susun huruf: 'K-E-B-A-Y-A-B-E-T-A-W-I' adalah nama pakaian adat...", options: ["Kebaya Betawi", "Kebaya Betul", "Kebaya Batik", "Kebaya Bali"], answer: "Kebaya Betawi", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "ppa-x4", question: "Susun huruf: 'B-A-J-U-K-U-R-U-N-G' adalah nama pakaian adat...", options: ["Baju Kurung", "Baju Karung", "Baju Kurup", "Baju Kuning"], answer: "Baju Kurung", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "ppa-x5", question: "Susun huruf: 'L-A-K-U-T-E-P-U' adalah nama pakaian adat...", options: ["Laku Tepu", "Laku Tepuk", "Laku Tumpu", "Laku Tunggu"], answer: "Laku Tepu", difficulty: "Master", category: "Pakaian Adat" },
+  ],
+
+  "siapa-aku": [
+    // MUDAH (5)
+    { id: "sa-m1", question: "Aku berasal dari Sumatera Utara. Aku berbentuk kain tenun dengan berbagai motif. Aku sering diberikan sebagai tanda kasih. Siapakah aku?", options: ["Ulos", "Baju Bodo", "Payas Agung", "Surjan"], answer: "Ulos", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "sa-m2", question: "Aku berasal dari Aceh. Aku sering dikenakan oleh para bangsawan. Aku memiliki warna yang mencolok dan hiasan yang indah. Siapakah aku?", options: ["Ulee Balang", "Teluk Belanga", "Aesan Gede", "Baju Kurung"], answer: "Ulee Balang", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "sa-m3", question: "Aku berasal dari Bali. Aku merupakan pakaian adat tertinggi. Aku digunakan pada upacara keagamaan. Siapakah aku?", options: ["Payas Agung", "Lambung", "Ti'i Langga", "Biliu"], answer: "Payas Agung", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "sa-m4", question: "Aku berasal dari Sulawesi Selatan. Aku berwarna cerah. Aku merupakan pakaian khas perempuan Bugis-Makassar. Siapakah aku?", options: ["Baju Bodo", "King Baba", "Koteka", "Cele"], answer: "Baju Bodo", difficulty: "Mudah", category: "Pakaian Adat" },
+    { id: "sa-m5", question: "Aku berasal dari Papua. Aku terbuat dari kulit kayu. Aku digunakan oleh suku pedalaman. Siapakah aku?", options: ["Koteka", "Sangkarut", "Kustin", "Biliu"], answer: "Koteka", difficulty: "Mudah", category: "Pakaian Adat" },
+
+    // SEDANG (5)
+    { id: "sa-s1", question: "Aku berasal dari Sumatera Selatan. Aku memiliki motif emas yang megah. Aku digunakan pada acara pernikahan. Siapakah aku?", options: ["Aesan Gede", "Ulos", "Baju Bodo", "Rejang"], answer: "Aesan Gede", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "sa-s2", question: "Aku berasal dari Yogyakarta. Aku dikenakan oleh para bangsawan keraton. Aku memiliki kain jarik dan blangkon. Siapakah aku?", options: ["Surjan", "Baju Kurung", "Kebaya Betawi", "Lambung"], answer: "Surjan", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "sa-s3", question: "Aku berasal dari Riau. Aku merupakan pakaian khas masyarakat Melayu. Aku sering dikenakan pada acara resmi. Siapakah aku?", options: ["Teluk Belanga", "Ulee Balang", "Baju Kurung", "Aesan Gede"], answer: "Teluk Belanga", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "sa-s4", question: "Aku berasal dari DKI Jakarta. Aku merupakan kebaya khas Betawi. Aku sering dikenakan pada acara budaya. Siapakah aku?", options: ["Kebaya Betawi", "Baju Kurung", "Baju Bodo", "Surjan"], answer: "Kebaya Betawi", difficulty: "Sedang", category: "Pakaian Adat" },
+    { id: "sa-s5", question: "Aku berasal dari NTT. Aku terbuat dari kain tenun ikat. Aku sering dikenakan pada acara adat. Siapakah aku?", options: ["Lambung", "Cele", "Ti'i Langga", "Biliu"], answer: "Lambung", difficulty: "Sedang", category: "Pakaian Adat" },
+
+    // SULIT (5)
+    { id: "sa-i1", question: "Aku berasal dari Sumatera Barat. Aku merupakan simpan kebanggaan perempuan Minangkabau. Aku memiliki hiasan perak yang indah. Siapakah aku?", options: ["Bundo Kanduang", "Ulee Balang", "Baju Kurung", "Aesan Gede"], answer: "Bundo Kanduang", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "sa-i2", question: "Aku berasal dari Kalimantan Tengah. Aku terbuat dari serat tanaman. Aku merupakan pakaian khas suku Dayak. Siapakah aku?", options: ["Sangkarut", "Koteka", "King Baba", "Mantenan"], answer: "Sangkarut", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "sa-i3", question: "Aku berasal dari NTB. Aku merupakan pakaian adat suku Sasak. Aku dikenakan pada acara pernikahan adat. Siapakah aku?", options: ["Mantenan", "Payas Agung", "Ti'i Langga", "Cele"], answer: "Mantenan", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "sa-i4", question: "Aku berasal dari Maluku. Aku memiliki potongan simple dan elegan. Aku sering dikenakan oleh perempuan Maluku. Siapakah aku?", options: ["Biliu", "Cele", "Kustin", "Lambung"], answer: "Biliu", difficulty: "Sulit", category: "Pakaian Adat" },
+    { id: "sa-i5", question: "Aku berasal dari Sulawesi Utara. Aku merupakan kebaya modern khas Manado. Aku sering dikenakan pada acara formal. Siapakah aku?", options: ["Kustin", "Biliu", "King Baba", "Cele"], answer: "Kustin", difficulty: "Sulit", category: "Pakaian Adat" },
+
+    // MASTER (5)
+    { id: "sa-x1", question: "Aku berasal dari NTT (Sumba). Aku merupakan kain tenun khas Sumba dengan motif ikat. Aku memiliki nilai budaya yang tinggi. Siapakah aku?", options: ["Cele", "Lambung", "Kustin", "Ti'i Langga"], answer: "Cele", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "sa-x2", question: "Aku berasal dari Sulawesi Selatan. Aku merupakan pakaian formal pria Bugis-Makassar. Aku memiliki potongan teluk belanga yang khas. Siapakah aku?", options: ["King Baba", "Teluk Belanga", "Ulee Balang", "Surjan"], answer: "King Baba", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "sa-x3", question: "Aku berasal dari Bengkulu. Aku merupakan pakaian adat dengan motif bunga yang indah. Aku sering dikenakan pada acara budaya. Siapakah aku?", options: ["Rejang", "Aesan Gede", "Bundo Kanduang", "Lambung"], answer: "Rejang", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "sa-x4", question: "Aku berasal dari Kepulauan Riau. Aku merupakan pakaian adat dengan gaya Melayu yang elegan. Aku sering dikenakan pada acara pernikahan. Siapakah aku?", options: ["Baju Kurung", "Teluk Belanga", "Ulee Balang", "Baju Bodo"], answer: "Baju Kurung", difficulty: "Master", category: "Pakaian Adat" },
+    { id: "sa-x5", question: "Aku berasal dari NTB. Aku merupakan pakaian adat dengan hiasan benang emas. Aku dikenakan pada upacara adat suku Sasak. Siapakah aku?", options: ["Laku Tepu", "Mantenan", "Cele", "Sangkarut"], answer: "Laku Tepu", difficulty: "Master", category: "Pakaian Adat" },
+  ],
+
+  "roda-budaya": [
+    // MUDAH (5)
+    { id: "rb-m1", question: "Rumah adat Joglo berasal dari...", options: ["Jawa Tengah", "Jawa Barat", "Bali", "Sumatera"], answer: "Jawa Tengah", difficulty: "Mudah", category: "Rumah Adat" },
+    { id: "rb-m2", question: "Tari Kecak berasal dari...", options: ["Bali", "Jawa Barat", "Sumatera", "Kalimantan"], answer: "Bali", difficulty: "Mudah", category: "Tari Tradisional" },
+    { id: "rb-m3", question: "Gamelan adalah alat musik tradisional dari...", options: ["Jawa dan Bali", "Sumatera", "Papua", "Kalimantan"], answer: "Jawa dan Bali", difficulty: "Mudah", category: "Alat Musik" },
+    { id: "rb-m4", question: "Rendang adalah makanan khas...", options: ["Padang/Sumatera Barat", "Jawa Tengah", "Bali", "Sulawesi"], answer: "Padang/Sumatera Barat", difficulty: "Mudah", category: "Makanan Khas" },
+    { id: "rb-m5", question: "Pakaian adat Ulos berasal dari...", options: ["Sumatera Utara", "Sumatera Barat", "Riau", "Jambi"], answer: "Sumatera Utara", difficulty: "Mudah", category: "Pakaian Adat" },
+
+    // SEDANG (5)
+    { id: "rb-s1", question: "Rumah adat Rumah Gadang berasal dari...", options: ["Sumatera Barat", "Jawa Tengah", "Bali", "NTT"], answer: "Sumatera Barat", difficulty: "Sedang", category: "Rumah Adat" },
+    { id: "rb-s2", question: "Tari Saman berasal dari...", options: ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau"], answer: "Aceh", difficulty: "Sedang", category: "Tari Tradisional" },
+    { id: "rb-s3", question: "Angklung adalah alat musik tradisional dari...", options: ["Jawa Barat", "Jawa Tengah", "Bali", "Sumatera"], answer: "Jawa Barat", difficulty: "Sedang", category: "Alat Musik" },
+    { id: "rb-s4", question: "Gudeg adalah makanan khas...", options: ["Yogyakarta", "Surabaya", "Semarang", "Bandung"], answer: "Yogyakarta", difficulty: "Sedang", category: "Makanan Khas" },
+    { id: "rb-s5", question: "Pakaian adat Baju Bodo berasal dari...", options: ["Sulawesi Selatan", "Sulawesi Utara", "Maluku", "Papua"], answer: "Sulawesi Selatan", difficulty: "Sedang", category: "Pakaian Adat" },
+
+    // SULIT (5)
+    { id: "rb-i1", question: "Rumah adat Tongkonan berasal dari...", options: ["Sulawesi Selatan", "Sulawesi Utara", "Sulawesi Tenggara", "Maluku"], answer: "Sulawesi Selatan", difficulty: "Sulit", category: "Rumah Adat" },
+    { id: "rb-i2", question: "Tari Piring berasal dari...", options: ["Sumatera Barat", "Sumatera Utara", "Riau", "Jambi"], answer: "Sumatera Barat", difficulty: "Sulit", category: "Tari Tradisional" },
+    { id: "rb-i3", question: "Sasando adalah alat musik tradisional dari...", options: ["NTT", "NTB", "Maluku", "Papua"], answer: "NTT", difficulty: "Sulit", category: "Alat Musik" },
+    { id: "rb-i4", question: "Papeda adalah makanan khas...", options: ["Papua/Maluku", "Sumatera", "Jawa", "Bali"], answer: "Papua/Maluku", difficulty: "Sulit", category: "Makanan Khas" },
+    { id: "rb-i5", question: "Pakaian adat Koteka berasal dari...", options: ["Papua", "Kalimantan", "NTT", "Sulawesi"], answer: "Papua", difficulty: "Sulit", category: "Pakaian Adat" },
+
+    // MASTER (5)
+    { id: "rb-x1", question: "Rumah adat Balai Bata berasal dari...", options: ["Riau", "Jambi", "Sumatera Selatan", "Bengkulu"], answer: "Riau", difficulty: "Master", category: "Rumah Adat" },
+    { id: "rb-x2", question: "Tari Legong berasal dari...", options: ["Bali", "Jawa Tengah", "NTB", "NTT"], answer: "Bali", difficulty: "Master", category: "Tari Tradisional" },
+    { id: "rb-x3", question: "Kolintang adalah alat musik tradisional dari...", options: ["Sulawesi Utara", "Sulawesi Selatan", "Maluku", "NTT"], answer: "Sulawesi Utara", difficulty: "Master", category: "Alat Musik" },
+    { id: "rb-x4", question: "Coto Makassar adalah makanan khas...", options: ["Sulawesi Selatan", "Sulawesi Utara", "Maluku", "NTT"], answer: "Sulawesi Selatan", difficulty: "Master", category: "Makanan Khas" },
+    { id: "rb-x5", question: "Pakaian adat Baju Kurung berasal dari...", options: ["Kepulauan Riau", "Riau", "Jambi", "Sumatera Barat"], answer: "Kepulauan Riau", difficulty: "Master", category: "Pakaian Adat" },
+  ],
+
 };
