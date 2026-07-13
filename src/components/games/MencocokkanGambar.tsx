@@ -97,8 +97,7 @@ export default function MencocokkanGambar() {
                         : ""
                     }`}
                   >
-                    <span className="text-3xl mb-1">{optEmoji}</span>
-                    <span className="text-sm">{opt}</span>
+                    <span className="text-5xl">{optEmoji}</span>
                   </motion.button>
                 );
               })}
