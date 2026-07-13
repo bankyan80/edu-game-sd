@@ -206,6 +206,7 @@ export default function PakaianAdatPage() {
               transition={{ delay: i * 0.04 }}
               whileHover={{ scale: 1.03, y: -4 }}
               className="group glass-strong rounded-3xl p-5 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden cursor-pointer border border-white/40"
+              onClick={() => setSelectedItem(item)}
             >
               {/* Glow on hover */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-gradient-to-br from-purple-400/10 via-pink-400/10 to-transparent rounded-3xl" />
