@@ -381,54 +381,54 @@ export default function GameShell({ game, children }: GameShellProps) {
 
   return (
     <GameBackground slug={game.slug}>
-      <div className="h-dvh flex flex-col p-4 lg:p-6">
+      <div className="h-dvh flex flex-col p-2 lg:p-3 overflow-hidden">
         {/* Top bar */}
-        <div className="flex items-center justify-between mb-3 flex-wrap gap-2 shrink-0">
-          <div className="flex items-center gap-2">
-            <button onClick={handlePause} className="p-2.5 glass-strong rounded-2xl hover:scale-105 transition-all shadow-md">
-              {paused ? <Play className="w-5 h-5 text-green-500" /> : <Pause className="w-5 h-5 text-orange-500" />}
+        <div className="flex items-center justify-between mb-1.5 shrink-0">
+          <div className="flex items-center gap-1">
+            <button onClick={handlePause} className="p-1.5 glass-strong rounded-xl hover:scale-105 transition-all shadow-md">
+              {paused ? <Play className="w-4 h-4 text-green-500" /> : <Pause className="w-4 h-4 text-orange-500" />}
             </button>
-            <button onClick={handleRestart} className="p-2.5 glass-strong rounded-2xl hover:scale-105 transition-all shadow-md">
-              <RotateCcw className="w-5 h-5 text-blue-500" />
+            <button onClick={handleRestart} className="p-1.5 glass-strong rounded-xl hover:scale-105 transition-all shadow-md">
+              <RotateCcw className="w-4 h-4 text-blue-500" />
             </button>
-            <button onClick={() => router.back()} className="p-2.5 glass-strong rounded-2xl hover:scale-105 transition-all shadow-md">
-              <Home className="w-5 h-5 text-gray-500" />
+            <button onClick={() => router.back()} className="p-1.5 glass-strong rounded-xl hover:scale-105 transition-all shadow-md">
+              <Home className="w-4 h-4 text-gray-500" />
             </button>
           </div>
-          <div className="flex items-center gap-2">
-            <div className={`flex items-center gap-1.5 px-4 py-2 glass-strong rounded-2xl font-bold text-sm shadow-md ${timeLeft <= 30 ? "text-red-500 animate-pulse" : "text-gray-700"}`}>
-              <Clock className="w-4 h-4" />
+          <div className="flex items-center gap-1">
+            <div className={`flex items-center gap-1 px-2.5 py-1 glass-strong rounded-xl font-bold text-xs shadow-md ${timeLeft <= 30 ? "text-red-500 animate-pulse" : "text-gray-700"}`}>
+              <Clock className="w-3 h-3" />
               {formatTime(timeLeft)}
             </div>
-            <div className="flex items-center gap-1.5 px-4 py-2 glass-strong rounded-2xl font-bold text-sm shadow-md">
-              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            <div className="flex items-center gap-1 px-2.5 py-1 glass-strong rounded-xl font-bold text-xs shadow-md">
+              <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
               <span className="text-yellow-600">{score}</span>
             </div>
-            <div className="flex items-center gap-1.5 px-4 py-2 glass-strong rounded-2xl font-bold text-sm shadow-md">
-              <Zap className="w-4 h-4 text-orange-400" />
+            <div className="flex items-center gap-1 px-2.5 py-1 glass-strong rounded-xl font-bold text-xs shadow-md">
+              <Zap className="w-3 h-3 text-orange-400" />
               <span className="text-orange-600">{combo}x</span>
             </div>
             <button
               onClick={() => { setMuted(!muted); audioManager.toggleMute(); }}
-              className="p-2.5 glass-strong rounded-2xl hover:scale-105 transition-all shadow-md"
+              className="p-1.5 glass-strong rounded-xl hover:scale-105 transition-all shadow-md"
             >
-              {muted ? <VolumeX className="w-5 h-5 text-gray-400" /> : <Volume2 className="w-5 h-5 text-gray-500" />}
+              {muted ? <VolumeX className="w-4 h-4 text-gray-400" /> : <Volume2 className="w-4 h-4 text-gray-500" />}
             </button>
           </div>
         </div>
 
         {/* Progress bar */}
-        <div className="glass-strong rounded-full h-2 mb-4 shadow-inner overflow-hidden shrink-0">
+        <div className="glass-strong rounded-full h-1.5 mb-2 shadow-inner overflow-hidden shrink-0">
           <motion.div
-            className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 h-2 rounded-full"
+            className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 h-1.5 rounded-full"
             initial={{ width: 0 }}
             animate={{ width: `${((questionIndex + 1) / totalQuestions) * 100}%` }}
             transition={{ duration: 0.3 }}
           />
         </div>
 
-        {/* Game content - fills remaining space */}
-        <div className="flex-1 min-h-0 overflow-y-auto">
+        {/* Game content - fills remaining space, no scroll */}
+        <div className="flex-1 min-h-0 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={questionIndex}
@@ -436,6 +436,7 @@ export default function GameShell({ game, children }: GameShellProps) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.2 }}
+              className="h-full"
             >
               {children({
                 questionIndex, setQuestionIndex, score, setScore,
@@ -449,7 +450,7 @@ export default function GameShell({ game, children }: GameShellProps) {
         </div>
 
         {/* Mini mascot in corner */}
-        <div className="fixed bottom-4 right-4 z-40">
+        <div className="fixed bottom-2 right-2 z-40">
           <Mascot mood={mascotMood || "happy"} size="sm" message={mascotMsg} />
         </div>
 

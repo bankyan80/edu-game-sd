@@ -92,14 +92,14 @@ export default function RodaPintar() {
 
   if (showTutorial) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center p-4">
-        <div className="bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center">
-          <span className="text-6xl block mb-4">🎡</span>
-          <h1 className="text-2xl font-bold mb-2">Roda Pintar</h1>
-          <p className="text-gray-500 mb-6">Putar roda dan jawab pertanyaan dari berbagai kategori!</p>
-          <div className="flex gap-3">
-            <button onClick={() => router.back()} className="px-6 py-3 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/>Kembali</button>
-            <button onClick={() => { setShowTutorial(false); }} className="flex-1 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg"><Play className="w-5 h-5"/>Mulai</button>
+      <div className="h-full flex items-center justify-center p-3">
+        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+          <span className="text-4xl block mb-2">🎡</span>
+          <h1 className="text-lg font-bold mb-1">Roda Pintar</h1>
+          <p className="text-gray-500 mb-3">Putar roda dan jawab pertanyaan dari berbagai kategori!</p>
+          <div className="flex gap-2">
+            <button onClick={() => router.back()} className="px-4 py-2 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/>Kembali</button>
+            <button onClick={() => { setShowTutorial(false); }} className="flex-1 py-2 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg"><Play className="w-5 h-5"/>Mulai</button>
           </div>
         </div>
       </div>
@@ -108,17 +108,17 @@ export default function RodaPintar() {
 
   if (gameOver || currentQ >= allQuestions.length || timeLeft <= 0) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center p-4">
-        <div className="bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center">
-          <span className="text-7xl block mb-4">{correctCount === allQuestions.length ? "🏆" : "⭐"}</span>
-          <h2 className="text-2xl font-bold mb-2">Selesai!</h2>
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <div className="bg-purple-50 rounded-xl p-3"><p className="text-xs text-purple-600">Skor</p><p className="text-2xl font-bold text-purple-700">{score}</p></div>
-            <div className="bg-green-50 rounded-xl p-3"><p className="text-xs text-green-600">Benar</p><p className="text-2xl font-bold text-green-700">{correctCount}/{allQuestions.length}</p></div>
+      <div className="h-full flex items-center justify-center p-3">
+        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+          <span className="text-4xl block mb-2">{correctCount === allQuestions.length ? "🏆" : "⭐"}</span>
+          <h2 className="text-lg font-bold mb-1">Selesai!</h2>
+          <div className="grid grid-cols-2 gap-2 mb-3">
+            <div className="bg-purple-50 rounded-xl p-2"><p className="text-xs text-purple-600">Skor</p><p className="text-lg font-bold text-purple-700">{score}</p></div>
+            <div className="bg-green-50 rounded-xl p-2"><p className="text-xs text-green-600">Benar</p><p className="text-lg font-bold text-green-700">{correctCount}/{allQuestions.length}</p></div>
           </div>
-          <div className="flex gap-3">
-            <button onClick={() => router.back()} className="px-6 py-3 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/></button>
-            <button onClick={() => { setShowTutorial(true); setGameOver(false); setScore(0); setCombo(0); setCurrentQ(0); setTimeLeft(180); setCorrectCount(0); setRotation(0); }} className="flex-1 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
+          <div className="flex gap-2">
+            <button onClick={() => router.back()} className="px-4 py-2 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/></button>
+            <button onClick={() => { setShowTutorial(true); setGameOver(false); setScore(0); setCombo(0); setCurrentQ(0); setTimeLeft(180); setCorrectCount(0); setRotation(0); }} className="flex-1 py-2 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
           </div>
         </div>
       </div>
@@ -127,14 +127,14 @@ export default function RodaPintar() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-1">
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Clock className="w-4 h-4 text-orange-500"/>{fmt(timeLeft)}</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Zap className="w-4 h-4 text-yellow-400"/>{combo}x</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Trophy className="w-4 h-4 text-purple-500"/>{score}</span>
       </div>
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-2">
         <div className="relative">
-          <div className="w-48 h-48 rounded-full border-4 border-white shadow-xl overflow-hidden" style={{transform: `rotate(${rotation}deg)`, transition: "transform 2s cubic-bezier(0.17, 0.67, 0.12, 0.99)"}}>
+          <div className="w-36 h-36 rounded-full border-4 border-white shadow-xl overflow-hidden" style={{transform: `rotate(${rotation}deg)`, transition: "transform 2s cubic-bezier(0.17, 0.67, 0.12, 0.99)"}}>
             {categories.map((cat, i) => (
               <div key={cat} className="absolute w-full h-full" style={{clipPath: `polygon(50% 50%, ${50 + 50*Math.cos((i*sectorAngle-90)*Math.PI/180)}% ${50 + 50*Math.sin((i*sectorAngle-90)*Math.PI/180)}%, ${50 + 50*Math.cos(((i+1)*sectorAngle-90)*Math.PI/180)}% ${50 + 50*Math.sin(((i+1)*sectorAngle-90)*Math.PI/180)}%)`, backgroundColor: categoryColors[i]}}>
                 <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold text-gray-800 -rotate-45">{cat}</span>
@@ -146,13 +146,13 @@ export default function RodaPintar() {
       </div>
       <div className="text-center mb-4">
         <button onClick={spinWheel} disabled={spinning || isAnswered}
-          className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold disabled:opacity-50 hover:from-yellow-500 hover:to-amber-600 transition shadow-lg">
+          className="px-6 py-2 bg-gradient-to-r from-yellow-400 to-amber-500 text-white rounded-xl font-bold disabled:opacity-50 hover:from-yellow-500 hover:to-amber-600 transition shadow-lg">
           {spinning ? "Berputar..." : "Putar Roda! 🎡"}
         </button>
       </div>
       {currentQ < allQuestions.length && !spinning && !isAnswered && (
-        <div className="bg-white rounded-2xl p-6 shadow-lg">
-          <p className="font-bold text-gray-800 mb-4 text-center text-lg">{allQuestions[currentQ].question}</p>
+        <div className="bg-white rounded-2xl p-3 shadow-lg">
+          <p className="font-bold text-gray-800 mb-1 text-center text-lg">{allQuestions[currentQ].question}</p>
           <div className="grid grid-cols-2 gap-3">
             {allQuestions[currentQ].options?.map((opt, i) => (
               <motion.button key={i} whileHover={{scale:1.03}} whileTap={{scale:0.97}} onClick={() => handleAnswer(opt)} disabled={isAnswered}

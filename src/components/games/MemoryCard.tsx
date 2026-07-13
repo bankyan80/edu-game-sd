@@ -71,11 +71,11 @@ export default function MemoryCard() {
   }, [flipped, matched, cards, level]);
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="flex items-center justify-between mb-4">
-        <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">Level {level}</span>
-        <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">{moves} langkah</span>
-        <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">{matched.length / 2}/{cards.length / 2} pasang</span>
+    <div className="max-w-2xl mx-auto h-full flex flex-col">
+      <div className="flex items-center justify-between mb-1">
+        <span className="px-2 py-0.5 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">Level {level}</span>
+        <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">{moves} langkah</span>
+        <span className="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-sm font-bold">{matched.length / 2}/{cards.length / 2} pasang</span>
       </div>
       <div className={`grid gap-2 ${cards.length <= 8 ? "grid-cols-4" : cards.length <= 18 ? "grid-cols-4 sm:grid-cols-6" : "grid-cols-5 sm:grid-cols-6"}`}>
         {cards.map((card, i) => {
@@ -87,7 +87,7 @@ export default function MemoryCard() {
               whileHover={{ scale: isFlipped ? 1 : 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleFlip(i)}
-              className={`aspect-square rounded-xl text-3xl font-bold transition-all duration-300 flex items-center justify-center ${
+              className={`aspect-square rounded-xl text-xl font-bold transition-all duration-300 flex items-center justify-center ${
                 isFlipped
                   ? isMatched
                     ? "bg-green-100 border-2 border-green-400 shadow-md"
@@ -104,10 +104,10 @@ export default function MemoryCard() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mt-6 text-center bg-white rounded-2xl p-6 shadow-lg"
+          className="mt-2 text-center bg-white rounded-2xl p-3 shadow-lg"
         >
-          <span className="text-5xl block mb-3">🎉</span>
-          <h2 className="text-2xl font-bold mb-2">Luar Biasa!</h2>
+          <span className="text-3xl block mb-1">🎉</span>
+          <h2 className="text-lg font-bold mb-1">Luar Biasa!</h2>
           <p className="text-gray-500">Selesai dalam {moves} langkah - Level {level}</p>
         </motion.div>
       )}

@@ -97,16 +97,16 @@ export default function SimonMemory() {
 
   if (showTutorial) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center p-4">
-        <div className="bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center">
-          <div className="h-32 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mb-6">
-            <span className="text-6xl">🎮</span>
+      <div className="h-full flex items-center justify-center p-3">
+        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+          <div className="h-20 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mb-3">
+            <span className="text-4xl">🎮</span>
           </div>
-          <h1 className="text-2xl font-bold mb-2">Simon Memory Edukasi</h1>
-          <p className="text-gray-500 mb-6">Ingat dan ulangi urutan warna! Semakin tinggi level, semakin panjang urutannya.</p>
-          <div className="flex gap-3">
-            <button onClick={() => router.back()} className="px-6 py-3 bg-gray-100 rounded-xl font-bold text-gray-600 hover:bg-gray-200 transition flex items-center gap-2"><Home className="w-5 h-5"/>Kembali</button>
-            <button onClick={startGame} className="flex-1 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-bold hover:from-red-600 hover:to-red-700 transition flex items-center justify-center gap-2 shadow-lg"><Play className="w-5 h-5"/>Mulai</button>
+          <h1 className="text-lg font-bold mb-1">Simon Memory Edukasi</h1>
+          <p className="text-gray-500 mb-3">Ingat dan ulangi urutan warna! Semakin tinggi level, semakin panjang urutannya.</p>
+          <div className="flex gap-2">
+            <button onClick={() => router.back()} className="px-4 py-2 bg-gray-100 rounded-xl font-bold text-gray-600 hover:bg-gray-200 transition flex items-center gap-2"><Home className="w-5 h-5"/>Kembali</button>
+            <button onClick={startGame} className="flex-1 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-bold hover:from-red-600 hover:to-red-700 transition flex items-center justify-center gap-2 shadow-lg"><Play className="w-5 h-5"/>Mulai</button>
           </div>
         </div>
       </div>
@@ -115,22 +115,22 @@ export default function SimonMemory() {
 
   if (countdown > 0 && started === false) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center">
-        <motion.div key={countdown} initial={{scale:0}} animate={{scale:1}} className="text-9xl font-black bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">{countdown}</motion.div>
+      <div className="h-full flex items-center justify-center">
+        <motion.div key={countdown} initial={{scale:0}} animate={{scale:1}} className="text-7xl font-black bg-gradient-to-r from-red-500 to-red-600 bg-clip-text text-transparent">{countdown}</motion.div>
       </div>
     );
   }
 
   if (gameOver) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center p-4">
-        <div className="bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl text-center">
-          <span className="text-7xl block mb-4">💪</span>
-          <h2 className="text-2xl font-bold mb-2">Game Over!</h2>
-          <p className="text-gray-500 mb-6">Level: {level} | Skor: {score}</p>
-          <div className="flex gap-3">
-            <button onClick={() => router.back()} className="px-6 py-3 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/></button>
-            <button onClick={startGame} className="flex-1 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
+      <div className="h-full flex items-center justify-center p-3">
+        <div className="bg-white rounded-3xl p-3 max-w-lg w-full shadow-2xl text-center">
+          <span className="text-4xl block mb-2">💪</span>
+          <h2 className="text-lg font-bold mb-1">Game Over!</h2>
+          <p className="text-gray-500 mb-3">Level: {level} | Skor: {score}</p>
+          <div className="flex gap-2">
+            <button onClick={() => router.back()} className="px-4 py-2 bg-gray-100 rounded-xl font-bold flex items-center gap-2"><Home className="w-5 h-5"/></button>
+            <button onClick={startGame} className="flex-1 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-xl font-bold flex items-center justify-center gap-2"><RotateCcw className="w-5 h-5"/>Main Lagi</button>
           </div>
         </div>
       </div>
@@ -139,13 +139,13 @@ export default function SimonMemory() {
 
   return (
     <div className="max-w-lg mx-auto">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-2">
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold">Level {level}</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Zap className="w-4 h-4 text-yellow-400"/>{combo}x</span>
         <span className="px-3 py-1.5 bg-white rounded-xl shadow text-sm font-bold flex items-center gap-1"><Trophy className="w-4 h-4 text-purple-500"/>{score}</span>
       </div>
       <p className="text-center text-sm text-gray-500 mb-4">{showingSequence ? "Perhatikan urutan..." : "Giliran kamu!"}</p>
-      <div className="grid grid-cols-2 gap-3 max-w-[300px] mx-auto">
+      <div className="grid grid-cols-2 gap-2 max-w-[300px] mx-auto">
         {COLORS.map((color, i) => (
           <motion.button
             key={color}

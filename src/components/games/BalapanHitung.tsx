@@ -39,11 +39,11 @@ export default function BalapanHitung() {
         };
 
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl p-3 mb-4 shadow">
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="bg-white rounded-xl p-2 mb-1 shadow">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🏎️</span>
-                <div className="flex-1 h-4 bg-gray-200 rounded-full overflow-hidden">
+                <div className="flex-1 h-2.5 bg-gray-200 rounded-full overflow-hidden">
                   <motion.div
                     className="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full"
                     animate={{ width: `${progress}%` }}
@@ -53,13 +53,13 @@ export default function BalapanHitung() {
                 <span className="text-sm font-bold text-blue-600">{progress}%</span>
               </div>
             </div>
-            <div className="text-center mb-4">
+            <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-sky-400 to-blue-500 rounded-2xl p-8 shadow-lg mb-6 text-center">
-              <p className="text-3xl font-black text-white">{q.question}</p>
+            <div className="bg-gradient-to-br from-sky-400 to-blue-500 rounded-2xl p-3 shadow-lg mb-2 text-center">
+              <p className="text-lg font-black text-white">{q.question}</p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2">
               {q.options?.map((opt, i) => (
                 <motion.button
                   key={i}
@@ -67,7 +67,7 @@ export default function BalapanHitung() {
                   whileTap={{ scale: 0.97 }}
                   onClick={() => handleAnswer(opt)}
                   disabled={isAnswered}
-                  className={`p-4 rounded-xl font-bold text-xl transition-all ${
+                  className={`p-2.5 rounded-xl font-bold text-sm transition-all ${
                     isAnswered && opt === q.answer
                       ? "bg-green-500 text-white shadow-lg"
                       : isAnswered && opt !== q.answer

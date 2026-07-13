@@ -25,16 +25,16 @@ export default function TebakProfesi() {
         };
         const profIcons: Record<string, string> = {"Dokter":"👨‍⚕️","Guru":"👩‍🏫","Polisi":"👮","Petani":"👨‍🌾","Koki":"👨‍🍳"};
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-4"><span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span></div>
-            <div className="bg-gradient-to-br from-teal-300 to-cyan-400 rounded-2xl p-6 shadow-lg mb-6 text-center">
-              <span className="text-5xl block mb-3">{profIcons[q.answer] || "🧑"}</span>
-              <p className="text-xl font-bold text-white">{q.question}</p>
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="text-center mb-1"><span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span></div>
+            <div className="bg-gradient-to-br from-teal-300 to-cyan-400 rounded-2xl p-3 shadow-lg mb-2 text-center">
+              <span className="text-3xl block mb-1">{profIcons[q.answer] || "🧑"}</span>
+              <p className="text-base font-bold text-white">{q.question}</p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2">
               {q.options?.map((opt, i) => (
                 <motion.button key={i} whileHover={{scale:1.03}} whileTap={{scale:0.97}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                  className={`p-4 rounded-xl font-bold text-lg transition-all ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-200"}`}>
+                  className={`p-2.5 rounded-xl font-bold text-sm transition-all ${isAnswered && opt === q.answer ? "bg-green-500 text-white shadow-lg" : isAnswered && opt !== q.answer ? "bg-red-100 text-red-400" : "bg-white text-teal-700 hover:bg-teal-50 border-2 border-teal-200"}`}>
                   {profIcons[opt] || ""} {opt}
                 </motion.button>
               ))}

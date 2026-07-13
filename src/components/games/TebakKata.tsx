@@ -37,14 +37,14 @@ export default function TebakKata() {
         };
 
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-4">
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl p-8 shadow-lg mb-6 text-center text-white">
-              <p className="text-2xl font-bold">{q.question}</p>
+            <div className="bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl p-3 shadow-lg mb-2 text-center text-white">
+              <p className="text-base font-bold">{q.question}</p>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2">
               {q.options?.map((opt, i) => (
                 <motion.button
                   key={i}
@@ -52,7 +52,7 @@ export default function TebakKata() {
                   whileTap={{ scale: 0.97 }}
                   onClick={() => handleAnswer(opt)}
                   disabled={isAnswered}
-                  className={`p-4 rounded-xl font-bold text-lg transition-all ${
+                  className={`p-2.5 rounded-xl font-bold text-sm transition-all ${
                     isAnswered && opt === q.answer
                       ? "bg-green-500 text-white shadow-lg"
                       : isAnswered && opt !== q.answer

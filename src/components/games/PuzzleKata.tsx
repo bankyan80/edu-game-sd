@@ -49,15 +49,15 @@ export default function PuzzleKata() {
         };
 
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-4">
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg mb-4 text-center">
-              <p className="text-xl font-bold text-gray-800 mb-3">{q.question}</p>
+            <div className="bg-white rounded-2xl p-3 shadow-lg mb-2 text-center">
+              <p className="text-base font-bold text-gray-800 mb-1">{q.question}</p>
               <div className="flex justify-center gap-1.5 flex-wrap mb-4">
                 {shuffled.split("").map((ch, i) => (
-                  <span key={i} className="w-10 h-10 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg font-bold text-lg">{ch}</span>
+                  <span key={i} className="w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg font-bold text-sm">{ch}</span>
                 ))}
               </div>
             </div>
@@ -69,12 +69,12 @@ export default function PuzzleKata() {
                 onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
                 placeholder="Ketik jawaban..."
                 disabled={isAnswered}
-                className="flex-1 px-4 py-3 border-2 rounded-xl text-lg font-bold text-center uppercase focus:outline-none focus:border-purple-400 disabled:bg-gray-100"
+                className="flex-1 px-4 py-2 border-2 rounded-xl text-sm font-bold text-center uppercase focus:outline-none focus:border-purple-400 disabled:bg-gray-100"
               />
               <button
                 onClick={handleSubmit}
                 disabled={isAnswered || !input.trim()}
-                className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-xl font-bold disabled:opacity-50 hover:from-blue-600 hover:to-indigo-600 transition"
+                className="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-xl font-bold disabled:opacity-50 hover:from-blue-600 hover:to-indigo-600 transition"
               >
                 Cek
               </button>

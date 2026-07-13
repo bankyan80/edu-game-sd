@@ -61,13 +61,13 @@ export default function PuzzleKalimat() {
         };
 
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-4">
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg mb-4 text-center">
-              <p className="text-lg font-bold text-gray-800 mb-4">{q.question}</p>
-              <div className="min-h-[60px] bg-gray-50 rounded-xl p-3 mb-4 flex flex-wrap gap-2 justify-center">
+            <div className="bg-white rounded-2xl p-3 shadow-lg mb-2 text-center">
+              <p className="text-sm font-bold text-gray-800 mb-1">{q.question}</p>
+              <div className="min-h-[40px] bg-gray-50 rounded-xl p-2 mb-4 flex flex-wrap gap-2 justify-center">
                 {selected.length === 0 ? (
                   <span className="text-gray-400 text-sm">Klik kata di bawah untuk menyusun</span>
                 ) : selected.map((w, i) => (
@@ -76,14 +76,14 @@ export default function PuzzleKalimat() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     onClick={() => removeWord(i)}
-                    className="px-3 py-2 bg-purple-500 text-white rounded-lg font-bold text-sm"
+                    className="px-2 py-1 bg-purple-500 text-white rounded-lg font-bold text-sm"
                   >
                     {w} ×
                   </motion.button>
                 ))}
               </div>
             </div>
-            <div className="flex flex-wrap gap-2 justify-center mb-4">
+            <div className="flex flex-wrap gap-2 justify-center mb-2">
               {shuffledWords.map((w, i) => (
                 <motion.button
                   key={`${i}-${w}`}
@@ -91,7 +91,7 @@ export default function PuzzleKalimat() {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => addWord(w)}
                   disabled={isAnswered || selected.includes(w)}
-                  className={`px-4 py-2 rounded-xl font-bold text-sm transition-all ${
+                  className={`px-3 py-1.5 rounded-xl font-bold text-sm transition-all ${
                     selected.includes(w)
                       ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                       : "bg-blue-100 text-blue-700 hover:bg-blue-200"
@@ -104,7 +104,7 @@ export default function PuzzleKalimat() {
             <button
               onClick={handleSubmit}
               disabled={isAnswered || selected.length !== words.length}
-              className="w-full py-3 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-xl font-bold disabled:opacity-50 transition"
+              className="w-full py-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-xl font-bold disabled:opacity-50 transition"
             >
               Jawab
             </button>

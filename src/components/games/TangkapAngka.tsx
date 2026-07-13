@@ -39,15 +39,15 @@ export default function TangkapAngka() {
         };
 
         return (
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-4">
+          <div className="max-w-2xl mx-auto h-full flex flex-col">
+            <div className="text-center mb-1">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-6 shadow-lg mb-6 text-center">
+            <div className="bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-3 shadow-lg mb-2 text-center">
               <p className="text-lg text-white/80 mb-1">Tangkap angka:</p>
-              <p className="text-4xl font-black text-white">{target}</p>
+              <p className="text-xl font-black text-white">{target}</p>
             </div>
-            <div className="grid grid-cols-5 gap-3">
+            <div className="grid grid-cols-5 gap-2">
               {numbers.map((num, i) => (
                 <motion.button
                   key={`${questionIndex}-${i}`}
@@ -58,7 +58,7 @@ export default function TangkapAngka() {
                   whileTap={{ scale: 0.9 }}
                   onClick={() => handleTap(num)}
                   disabled={isAnswered}
-                  className="aspect-square rounded-2xl bg-white shadow-lg border-2 border-green-200 font-black text-2xl text-green-600 hover:bg-green-50 hover:shadow-xl transition-all flex items-center justify-center"
+                  className="aspect-square rounded-2xl bg-white shadow-lg border-2 border-green-200 font-black text-base text-green-600 hover:bg-green-50 hover:shadow-xl transition-all flex items-center justify-center"
                 >
                   {num}
                 </motion.button>
