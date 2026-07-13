@@ -56,18 +56,27 @@ export default function PuzzleKata() {
 
         return (
           <div className="max-w-2xl mx-auto h-full flex flex-col">
-            <div className="text-center mb-1">
+            <div className="text-center mb-1 shrink-0">
               <span className="text-sm text-gray-500">Soal {questionIndex + 1}/{allQuestions.length}</span>
             </div>
-            <div className="bg-white rounded-2xl p-4 shadow-lg mb-3 text-center shrink-0">
-              <p className="text-base font-bold text-gray-800 mb-1">{q.question}</p>
-              <div className="flex justify-center gap-1.5 flex-wrap mb-4">
+            <div className="bg-white rounded-2xl p-5 shadow-lg mb-3 text-center shrink-0">
+              <p className="text-lg font-bold text-gray-800 mb-3">{q.question}</p>
+              <div className="flex justify-center gap-2 flex-wrap">
                 {shuffled.split("").map((ch, i) => (
-                  <span key={i} className="w-9 h-9 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg font-bold text-base">{ch}</span>
+                  <motion.span
+                    key={i}
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ delay: i * 0.05, type: "spring" }}
+                    className="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-400 to-indigo-500 text-white rounded-2xl font-black text-2xl shadow-lg border-b-4 border-blue-600"
+                  >
+                    {ch}
+                  </motion.span>
                 ))}
               </div>
             </div>
-            <div className="flex gap-2 shrink-0">
+            <div className="flex-1 min-h-0" />
+            <div className="flex gap-3 shrink-0 mb-2">
               <input
                 type="text"
                 value={input}
@@ -75,20 +84,22 @@ export default function PuzzleKata() {
                 onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
                 placeholder="Ketik jawaban..."
                 disabled={isAnswered}
-                className="flex-1 px-4 py-2 border-2 rounded-xl text-sm font-bold text-center uppercase focus:outline-none focus:border-purple-400 disabled:bg-gray-100"
+                className="flex-1 px-5 py-3 border-3 rounded-2xl text-xl font-bold text-center uppercase focus:outline-none focus:border-purple-400 disabled:bg-gray-100 border-2"
               />
               <button
                 onClick={handleSubmit}
                 disabled={isAnswered || !input.trim()}
-                className="px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-xl font-bold disabled:opacity-50 hover:from-blue-600 hover:to-indigo-600 transition"
+                className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-2xl font-black text-lg disabled:opacity-50 hover:from-blue-600 hover:to-indigo-600 transition border-b-4 border-blue-600 active:border-b-2 active:translate-y-1"
               >
                 Cek
               </button>
             </div>
             {isAnswered && (
-              <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-3 text-center font-bold text-lg">
-                Jawaban: <span className="text-purple-600">{q.answer}</span>
-              </motion.p>
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-2 shrink-0">
+                <span className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-xl font-black text-lg">
+                  Jawaban: {q.answer}
+                </span>
+              </motion.div>
             )}
           </div>
         );
