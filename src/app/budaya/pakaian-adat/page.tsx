@@ -229,9 +229,23 @@ export default function PakaianAdatPage() {
 
               {/* Content */}
               <div className="relative z-10 text-center">
-                <div className="text-6xl mb-3 animate-float">
-                  {item.emoji}
-                </div>
+                {item.gambar ? (
+                  <div className="w-full h-40 mb-3 rounded-2xl overflow-hidden bg-gray-100">
+                    <img
+                      src={item.gambar}
+                      alt={item.nama}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-6xl">' + item.emoji + '</div>';
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div className="text-6xl mb-3 animate-float">{item.emoji}</div>
+                )}
                 <h3 className="font-bold text-lg text-gray-800 mb-1 leading-tight">
                   {item.nama}
                 </h3>
@@ -315,9 +329,24 @@ export default function PakaianAdatPage() {
 
               {/* Header */}
               <div className="text-center mb-6">
-                <div className="text-8xl mb-3 animate-float">
-                  {selectedItem.emoji}
-                </div>
+                {selectedItem.gambar ? (
+                  <div className="w-full max-w-sm mx-auto h-64 mb-4 rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
+                    <img
+                      src={selectedItem.gambar}
+                      alt={selectedItem.nama}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-8xl">' + selectedItem.emoji + '</div>';
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <div className="text-8xl mb-3 animate-float">
+                    {selectedItem.emoji}
+                  </div>
+                )}
                 <h2 className="text-2xl font-bold text-gray-800 mb-1">
                   {selectedItem.nama}
                 </h2>

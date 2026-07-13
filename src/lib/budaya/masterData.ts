@@ -42,6 +42,7 @@ export interface MasterPakaianAdat {
   digunakanPada: string;
   faktaMenarik: string;
   emoji: string;
+  gambar: string;
   verifikasi: boolean;
   sumber: string;
 }

@@ -13,6 +13,7 @@ export interface PakaianAdat {
   digunakanPada: string;
   faktaMenarik: string;
   emoji: string;
+  gambar: string;
   verifikasi: boolean;
   sumber: string;
 }
