@@ -3,20 +3,17 @@ import AppShell from "@/components/layout/AppShell";
 import { FloatingClouds } from "@/components/game/FloatingEffects";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Play } from "lucide-react";
 import masterData from "@/lib/budaya/masterData";
-
-const subTopics = masterData.laguDaerah.map((item) => ({
-  name: item.nama,
-  detail: `${item.provinsi} - ${item.bahasaDaerah}`,
-  emoji: "🎼",
-  verifikasi: item.verifikasi,
-}));
-
-const verifiedCount = masterData.laguDaerah.filter((item) => item.verifikasi).length;
-const unverifiedCount = masterData.laguDaerah.filter((item) => !item.verifikasi).length;
+import { useState } from "react";
+import YouTubeModal from "@/components/YouTubeModal";
 
 export default function LaguDaerahPage() {
+  const [selectedSong, setSelectedSong] = useState<{ id: string; nama: string } | null>(null);
+
+  const verifiedCount = masterData.laguDaerah.filter((item) => item.verifikasi).length;
+  const unverifiedCount = masterData.laguDaerah.filter((item) => !item.verifikasi).length;
+
   return (
     <AppShell>
       <FloatingClouds intensity="low" />
@@ -34,25 +31,30 @@ export default function LaguDaerahPage() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {subTopics.map((topic, i) => (
-            <motion.div key={topic.name} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
-              <div className="glass-strong rounded-3xl p-5 shadow-xl hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                <span className="text-4xl block mb-2">{topic.emoji}</span>
-                <h3 className="font-bold text-gray-800 mb-1">{topic.name}</h3>
-                <p className="text-sm text-gray-500 mb-3">{topic.detail}</p>
-                {topic.verifikasi ? (
-                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">✓ Terverifikasi</span>
-                ) : (
-                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-xs font-semibold">⚠ Perlu Verifikasi</span>
-                )}
-                <Link href="#" className="mt-2 inline-flex items-center gap-1 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl text-xs font-bold shadow-md hover:shadow-lg transition-all">
-                  Jelajahi →
-                </Link>
+          {masterData.laguDaerah.map((item, i) => (
+            <motion.div key={item.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
+              <div
+                className="glass-strong rounded-3xl p-5 shadow-xl hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                onClick={() => setSelectedSong({ id: item.youtubeId, nama: item.nama })}
+              >
+                <span className="text-4xl block mb-2">🎼</span>
+                <h3 className="font-bold text-gray-800 mb-1">{item.nama}</h3>
+                <p className="text-sm text-gray-500 mb-1">{item.provinsi} — {item.bahasaDaerah}</p>
+                <p className="text-xs text-gray-400 mb-3 line-clamp-2">{item.keterangan}</p>
+                <div className="flex items-center justify-between">
+                  {item.verifikasi ? (
+                    <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">✓ Terverifikasi</span>
+                  ) : (
+                    <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-xs font-semibold">⚠ Perlu Verifikasi</span>
+                  )}
+                  <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-xs font-semibold group-hover:bg-purple-200 transition-colors">
+                    <Play className="w-3 h-3" /> Dengarkan
+                  </span>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
-        {/* Verification Status */}
         <div className="mt-6 glass-strong rounded-2xl p-4">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-sm font-semibold text-gray-700">📋 Status Data</span>
@@ -72,6 +74,14 @@ export default function LaguDaerahPage() {
           )}
         </div>
       </motion.div>
+      {selectedSong && (
+        <YouTubeModal
+          isOpen={!!selectedSong}
+          onClose={() => setSelectedSong(null)}
+          videoId={selectedSong.id}
+          title={selectedSong.nama}
+        />
+      )}
     </AppShell>
   );
 }

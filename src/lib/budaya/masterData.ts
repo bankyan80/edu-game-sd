@@ -56,6 +56,7 @@ export interface MasterLaguNasional {
   nilaiKarakter: string;
   verifikasi: boolean;
   sumber: string;
+  youtubeId: string;
 }
 
 export interface MasterLaguDaerah {
@@ -68,6 +69,7 @@ export interface MasterLaguDaerah {
   fungsiLagu: string;
   verifikasi: boolean;
   sumber: string;
+  youtubeId: string;
 }
 
 export interface MasterRumahAdat {
