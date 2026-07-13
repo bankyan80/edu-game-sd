@@ -36,7 +36,7 @@ export default function QuizBahasaInggris() {
                 const c = getOptionColor(questionIndex, i);
                 return (
                   <motion.button key={i} whileHover={{x:4, scale:1.02}} whileTap={{scale:0.97, y:2}} onClick={() => handleAnswer(opt)} disabled={isAnswered}
-                    className={`w-full flex-1 p-3 rounded-2xl font-black text-lg text-left text-white border-b-[5px] flex items-center gap-3 ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                    className={`w-full flex-1 p-3 rounded-2xl font-black text-xl sm:text-2xl text-left text-white border-b-[5px] flex items-center gap-3 ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
                       isAnswered && opt === q.answer ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-105 ring-4 ring-white"
                       : isAnswered && opt !== q.answer ? "!bg-gray-200 !text-gray-400 !border-gray-300 opacity-50"
                       : ""

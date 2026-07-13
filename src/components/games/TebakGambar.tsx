@@ -59,7 +59,7 @@ export default function TebakGambar() {
                     whileTap={{ scale: 0.96, y: 4 }}
                     onClick={() => handleAnswer(opt)}
                     disabled={isAnswered}
-                    className={`flex items-center justify-center p-3 rounded-2xl font-black text-lg text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
+                    className={`flex items-center justify-center p-3 rounded-2xl font-black text-2xl sm:text-3xl text-white border-b-[5px] ${c.from} ${c.to} ${c.border} ${c.hover} active:translate-y-1 active:border-b-[2px] transition-all duration-100 drop-shadow-lg ${
                       isAnswered && opt === q.answer
                         ? "!bg-gradient-to-br !from-green-400 !to-emerald-500 !border-green-600 scale-110 ring-4 ring-white"
                         : isAnswered && opt !== q.answer
