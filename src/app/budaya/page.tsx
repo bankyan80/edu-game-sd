@@ -30,11 +30,11 @@ export default function BudayaPage() {
             <div className="text-[60px]">🏛️</div>
           </div>
 
-          <div className="flex items-center gap-6 relative z-10">
-            <div className="hidden md:block">
+          <div className="flex flex-col items-center gap-4 relative z-10 md:flex-row md:items-start md:gap-6">
+            <div className="shrink-0 pt-8">
               <Mascot mood="excited" size="md" message="Selamat datang di Budaya Indonesia! 🇮🇩 Ayo jelajahi kekayaan Nusantara!" />
             </div>
-            <div className="flex-1">
+            <div className="flex-1 text-center md:text-left">
               <h1 className="text-2xl font-bold mb-1 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
                 Budaya Indonesia 🇮🇩
               </h1>
