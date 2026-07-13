@@ -1,0 +1,41 @@
+import type { Game } from "@/types";
+
+export const games: Game[] = [
+  { id: 1, slug: "tebak-huruf", name: "Tebak Huruf", category: "Bahasa", kelas: ["1","2","3"], description: "Tebak huruf alphabet yang benar", duration: "3 min", difficulty: "Mudah", icon: "🔤", color: "#FF6B6B", gradient: "from-red-400 to-pink-500", mapel: "Bahasa Indonesia" },
+  { id: 2, slug: "tebak-kata", name: "Tebak Kata", category: "Bahasa", kelas: ["2","3","4"], description: "Tebak kata berdasarkan petunjuk", duration: "5 min", difficulty: "Mudah", icon: "📝", color: "#4ECDC4", gradient: "from-teal-400 to-cyan-500", mapel: "Bahasa Indonesia" },
+  { id: 3, slug: "puzzle-kata", name: "Puzzle Kata", category: "Bahasa", kelas: ["3","4","5"], description: "Susun huruf menjadi kata", duration: "5 min", difficulty: "Sedang", icon: "🧩", color: "#45B7D1", gradient: "from-blue-400 to-indigo-500", mapel: "Bahasa Indonesia" },
+  { id: 4, slug: "puzzle-kalimat", name: "Puzzle Kalimat", category: "Bahasa", kelas: ["4","5","6"], description: "Susun kata menjadi kalimat yang benar", duration: "5 min", difficulty: "Sedang", icon: "📄", color: "#96CEB4", gradient: "from-emerald-400 to-green-500", mapel: "Bahasa Indonesia" },
+  { id: 5, slug: "tebak-gambar", name: "Tebak Gambar", category: "Umum", kelas: ["1","2","3"], description: "Tebak nama benda dari deskripsi", duration: "3 min", difficulty: "Mudah", icon: "🖼️", color: "#FFEAA7", gradient: "from-yellow-300 to-orange-400", mapel: "Umum" },
+  { id: 6, slug: "mencocokkan-gambar", name: "Mencocokkan Gambar", category: "Logika", kelas: ["1","2","3"], description: "Cocokkan pasangan yang sesuai", duration: "3 min", difficulty: "Mudah", icon: "🎯", color: "#DDA0DD", gradient: "from-purple-300 to-pink-400", mapel: "Umum" },
+  { id: 7, slug: "matematika-cepat", name: "Matematika Cepat", category: "Matematika", kelas: ["1","2","3"], description: "Jawab soal matematika secepat mungkin", duration: "3 min", difficulty: "Mudah", icon: "🔢", color: "#FF8A65", gradient: "from-orange-400 to-red-500", mapel: "Matematika" },
+  { id: 8, slug: "balapan-hitung", name: "Balapan Hitung", category: "Matematika", kelas: ["2","3","4"], description: "Balapan sambil menjawab soal hitung", duration: "5 min", difficulty: "Sedang", icon: "🏎️", color: "#4FC3F7", gradient: "from-sky-400 to-blue-500", mapel: "Matematika" },
+  { id: 9, slug: "tangkap-angka", name: "Tangkap Angka", category: "Matematika", kelas: ["1","2"], description: "Tangkap angka yang benar dari layar", duration: "3 min", difficulty: "Mudah", icon: "🐟", color: "#81C784", gradient: "from-green-400 to-emerald-500", mapel: "Matematika" },
+  { id: 10, slug: "memory-card", name: "Memory Card", category: "Logika", kelas: ["2","3","4"], description: "Cocokkan pasangan kartu yang sama", duration: "5 min", difficulty: "Sedang", icon: "🃏", color: "#CE93D8", gradient: "from-violet-400 to-purple-500", mapel: "Umum" },
+  { id: 11, slug: "maze-edukasi", name: "Maze Edukasi", category: "Logika", kelas: ["3","4","5"], description: "Selesaikan maze sambil menjawab pertanyaan", duration: "5 min", difficulty: "Sedang", icon: "🏰", color: "#F48FB1", gradient: "from-pink-400 to-rose-500", mapel: "Umum" },
+  { id: 12, slug: "quiz-ipa", name: "Quiz IPA", category: "Pengetahuan", kelas: ["4","5","6"], description: "Quiz Ilmu Pengetahuan Alam", duration: "5 min", difficulty: "Sedang", icon: "🔬", color: "#80DEEA", gradient: "from-cyan-400 to-teal-500", mapel: "IPA" },
+  { id: 13, slug: "quiz-ips", name: "Quiz IPS", category: "Pengetahuan", kelas: ["4","5","6"], description: "Quiz Ilmu Pengetahuan Sosial", duration: "5 min", difficulty: "Sedang", icon: "🌍", color: "#A5D6A7", gradient: "from-green-400 to-lime-500", mapel: "IPS" },
+  { id: 14, slug: "quiz-bahasa-indonesia", name: "Quiz Bahasa Indonesia", category: "Bahasa", kelas: ["3","4","5","6"], description: "Quiz tata bahasa Indonesia", duration: "5 min", difficulty: "Sedang", icon: "📖", color: "#EF9A9A", gradient: "from-red-300 to-red-500", mapel: "Bahasa Indonesia" },
+  { id: 15, slug: "quiz-bahasa-inggris", name: "Quiz Bahasa Inggris", category: "Bahasa", kelas: ["4","5","6"], description: "Quiz kosakata Bahasa Inggris", duration: "5 min", difficulty: "Sedang", icon: "🌐", color: "#90CAF9", gradient: "from-blue-300 to-blue-500", mapel: "Bahasa Inggris" },
+  { id: 16, slug: "susun-cerita", name: "Susun Cerita", category: "Bahasa", kelas: ["3","4","5"], description: "Susun paragraf menjadi cerita yang runtut", duration: "5 min", difficulty: "Sedang", icon: "📚", color: "#FFCC80", gradient: "from-amber-300 to-orange-400", mapel: "Bahasa Indonesia" },
+  { id: 17, slug: "cari-kata", name: "Cari Kata", category: "Bahasa", kelas: ["4","5","6"], description: "Temukan kata tersembunyi dalam kotak huruf", duration: "5 min", difficulty: "Sedang", icon: "🔍", color: "#B39DDB", gradient: "from-indigo-300 to-violet-400", mapel: "Bahasa Indonesia" },
+  { id: 18, slug: "tebak-profesi", name: "Tebak Profesi", category: "Pengetahuan", kelas: ["1","2","3"], description: "Tebak profesi berdasarkan deskripsi", duration: "3 min", difficulty: "Mudah", icon: "👨‍⚕️", color: "#80CBC4", gradient: "from-teal-300 to-cyan-400", mapel: "IPS" },
+  { id: 19, slug: "tebak-hewan", name: "Tebak Hewan", category: "Pengetahuan", kelas: ["1","2"], description: "Tebak nama hewan dari deskripsi", duration: "3 min", difficulty: "Mudah", icon: "🐾", color: "#C5E1A5", gradient: "from-lime-300 to-green-400", mapel: "IPA" },
+  { id: 20, slug: "tebak-pahlawan", name: "Tebak Pahlawan", category: "Pengetahuan", kelas: ["4","5","6"], description: "Tebak nama pahlawan Indonesia", duration: "5 min", difficulty: "Sedang", icon: "🦸", color: "#FFAB91", gradient: "from-orange-300 to-red-400", mapel: "IPS" },
+  { id: 21, slug: "tebak-provinsi", name: "Tebak Provinsi", category: "Pengetahuan", kelas: ["4","5","6"], description: "Tebak nama provinsi di Indonesia", duration: "5 min", difficulty: "Sulit", icon: "🗺️", color: "#F48FB1", gradient: "from-pink-300 to-rose-400", mapel: "IPS" },
+  { id: 22, slug: "puzzle-peta-indonesia", name: "Puzzle Peta Indonesia", category: "Logika", kelas: ["4","5","6"], description: "Susun potongan peta Indonesia", duration: "5 min", difficulty: "Sulit", icon: "🏝️", color: "#80CBC4", gradient: "from-teal-300 to-emerald-400", mapel: "IPS" },
+  { id: 23, slug: "operasi-hitung-berantai", name: "Operasi Hitung Berantai", category: "Matematika", kelas: ["4","5","6"], description: "Selesaikan rantai operasi hitung campuran", duration: "5 min", difficulty: "Sulit", icon: "🔗", color: "#B39DDB", gradient: "from-indigo-300 to-purple-400", mapel: "Matematika" },
+  { id: 24, slug: "simon-memory-edukasi", name: "Simon Memory Edukasi", category: "Logika", kelas: ["3","4","5"], description: "Ingat dan ulangi urutan warna", duration: "5 min", difficulty: "Sedang", icon: "🎮", color: "#EF5350", gradient: "from-red-400 to-red-600", mapel: "Umum" },
+  { id: 25, slug: "roda-pintar", name: "Roda Pintar", category: "Umum", kelas: ["1","2","3","4","5","6"], description: "Putar roda acak dan jawab pertanyaan", duration: "5 min", difficulty: "Sedang", icon: "🎡", color: "#FFD54F", gradient: "from-yellow-300 to-amber-400", mapel: "Umum" },
+];
+
+export function getGameBySlug(slug: string) { return games.find(g => g.slug === slug); }
+
+export function getGamesByFilter(f: { kelas?: string; mapel?: string; category?: string; search?: string }): Game[] {
+  return games.filter(g => {
+    if (f.kelas && !g.kelas.includes(f.kelas)) return false;
+    if (f.mapel && g.mapel !== f.mapel) return false;
+    if (f.category && g.category !== f.category) return false;
+    if (f.search && !g.name.toLowerCase().includes(f.search.toLowerCase()) && !g.description.toLowerCase().includes(f.search.toLowerCase())) return false;
+    return true;
+  });
+}

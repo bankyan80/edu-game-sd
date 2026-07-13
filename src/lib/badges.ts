@@ -1,0 +1,63 @@
+export interface BadgeDef {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  category: string;
+  requirement: string;
+}
+
+export const allBadges: BadgeDef[] = [
+  { id: "b1", name: "Juara Matematika", description: "Selesaikan 10 game matematika", icon: "🧮", category: "Matematika", requirement: "main_10_matematika" },
+  { id: "b2", name: "Juara IPA", description: "Selesaikan 10 game IPA", icon: "🔬", category: "IPA", requirement: "main_10_ipa" },
+  { id: "b3", name: "Juara IPS", description: "Selesaikan 10 game IPS", icon: "🌍", category: "IPS", requirement: "main_10_ips" },
+  { id: "b4", name: "Juara Bahasa Indonesia", description: "Selesaikan 10 game Bahasa Indonesia", icon: "📖", category: "Bahasa", requirement: "main_10_bi" },
+  { id: "b5", name: "Juara Bahasa Inggris", description: "Selesaikan 5 game Bahasa Inggris", icon: "🌐", category: "Bahasa", requirement: "main_5_bing" },
+  { id: "b6", name: "Master Puzzle", description: "Selesaikan semua puzzle", icon: "🧩", category: "Puzzle", requirement: "all_puzzle" },
+  { id: "b7", name: "Master Memory", description: "Skor sempurna di Memory Card", icon: "🧠", category: "Memory", requirement: "perfect_memory" },
+  { id: "b8", name: "Rajin Bermain", description: "Main 50 game", icon: "⭐", category: "Umum", requirement: "play_50" },
+  { id: "b9", name: "Cepat Menjawab", description: "Jawab 3 soal dalam 5 detik", icon: "⚡", category: "Speed", requirement: "fast_answer" },
+  { id: "b10", name: "Perfect Score", description: "Dapat nilai sempurna", icon: "💯", category: "Skor", requirement: "perfect_score" },
+  { id: "b11", name: "Explorer", description: "Main semua jenis game", icon: "🗺️", category: "Umum", requirement: "play_all_types" },
+  { id: "b12", name: "Champion", description: "Menang di leaderboard mingguan", icon: "🏆", category: "Leaderboard", requirement: "weekly_champion" },
+  { id: "b13", name: "Combo Master", description: "Dapat combo 10x", icon: "🔥", category: "Combo", requirement: "combo_10" },
+  { id: "b14", name: "Puzzle Master", description: "Selesaikan Puzzle Kata di level 5", icon: "✨", category: "Puzzle", requirement: "puzzle_kata_5" },
+  { id: "b15", name: "Math Wizard", description: "Skor 1000 di Matematika Cepat", icon: "🧙", category: "Matematika", requirement: "math_1000" },
+  { id: "b16", name: "Word Smith", description: "Selesaikan 20 game kata", icon: "✍️", category: "Bahasa", requirement: "word_games_20" },
+  { id: "b17", name: "Night Owl", description: "Bermain setelah jam 8 malam", icon: "🦉", category: "Umum", requirement: "play_night" },
+  { id: "b18", name: "Early Bird", description: "Bermain sebelum jam 7 pagi", icon: "🐦", category: "Umum", requirement: "play_morning" },
+  { id: "b19", name: "Maze Runner", description: "Selesaikan 5 maze", icon: "🏃", category: "Logika", requirement: "maze_5" },
+  { id: "b20", name: "Quiz King", description: "Menang di 3 quiz berbeda", icon: "👑", category: "Quiz", requirement: "quiz_3_wins" },
+  { id: "b21", name: "Geography Expert", description: "Selesaikan Tebak Provinsi sempurna", icon: "🗺️", category: "IPS", requirement: "perfect_geography" },
+  { id: "b22", name: "History Buff", description: "Selesaikan 10 Tebak Pahlawan", icon: "📚", category: "IPS", requirement: "pahlawan_10" },
+  { id: "b23", name: "Animal Lover", description: "Selesaikan 10 Tebak Hewan", icon: "🐾", category: "IPA", requirement: "hewan_10" },
+  { id: "b24", name: "Simon Says", description: "Level 10 di Simon Memory", icon: "🎯", category: "Logika", requirement: "simon_10" },
+  { id: "b25", name: "Chain Reaction", description: "Selesaikan Operasi Berantai level 5", icon: "🔗", category: "Matematika", requirement: "chain_5" },
+  { id: "b26", name: "Loyal Player", description: "Bermain 7 hari berturut-turut", icon: "💎", category: "Umum", requirement: "streak_7" },
+  { id: "b27", name: "High Scorer", description: "Kumpulkan 5000 poin", icon: "🌟", category: "Skor", requirement: "points_5000" },
+  { id: "b28", name: "Level Up!", description: "Capai level 10", icon: "📈", category: "Umum", requirement: "level_10" },
+  { id: "b29", name: "Social Butterfly", description: "Main di leaderboard bersama 10 orang", icon: "🦋", category: "Umum", requirement: "leaderboard_10" },
+  { id: "b30", name: "Speed Demon", description: "Selesaikan game dalam 30 detik", icon: "💨", category: "Speed", requirement: "game_30s" },
+  { id: "b31", name: "Knowledge Seeker", description: "Main 100 game", icon: "🎓", category: "Umum", requirement: "play_100" },
+  { id: "b32", name: "Streak Master", description: "Benar 10x berturut-turut", icon: "🔥", category: "Combo", requirement: "streak_10" },
+  { id: "b33", name: "Brain Power", description: "Skor tertinggi di Memory Card", icon: "🧠", category: "Memory", requirement: "memory_high" },
+  { id: "b34", name: "Indonesia Pride", description: "Selesaikan semua game pengetahuan", icon: "🇮🇩", category: "Pengetahuan", requirement: "all_pengetahuan" },
+  { id: "b35", name: "Number Cruncher", description: "Selesaikan 30 game matematika", icon: "🔢", category: "Matematika", requirement: "math_30" },
+  { id: "b36", name: "Bookworm", description: "Selesaikan 30 game bahasa", icon: "🐛", category: "Bahasa", requirement: "lang_30" },
+  { id: "b37", name: "Logic Master", description: "Selesaikan 30 game logika", icon: "💡", category: "Logika", requirement: "logic_30" },
+  { id: "b38", name: "Conqueror", description: "Main semua 25 game", icon: "🏅", category: "Umum", requirement: "all_games" },
+  { id: "b39", name: "Dedicated", description: "Bermain 30 hari", icon: "📅", category: "Umum", requirement: "days_30" },
+  { id: "b40", name: "Perfectionist", description: "10 perfect score", icon: "✨", category: "Skor", requirement: "perfect_10" },
+  { id: "b41", name: "Globe Trotter", description: "Selesaikan Puzzle Peta Indonesia", icon: "🌍", category: "IPS", requirement: "map_puzzle" },
+  { id: "b42", name: "Quick Thinker", description: "Jawab benar dalam 3 detik", icon: "⚡", category: "Speed", requirement: "answer_3s" },
+  { id: "b43", name: "Rising Star", description: "Capai level 5", icon: "⭐", category: "Umum", requirement: "level_5" },
+  { id: "b44", name: "Elite", description: "Capai level 25", icon: "💎", category: "Umum", requirement: "level_25" },
+  { id: "b45", name: "Legend", description: "Capai level 50", icon: "👑", category: "Umum", requirement: "level_50" },
+  { id: "b46", name: "Wheel Fortune", description: "Main Roda Pintar 10 kali", icon: "🎡", category: "Umum", requirement: "roda_10" },
+  { id: "b47", name: "Hidden Treasure", description: "Selesaikan 10 Cari Kata", icon: "🗝️", category: "Bahasa", requirement: "cari_kata_10" },
+  { id: "b48", name: "Story Teller", description: "Selesaikan 10 Susun Cerita", icon: "📖", category: "Bahasa", requirement: "cerita_10" },
+  { id: "b49", name: "Matching Pro", description: "Selesaikan Mencocokkan Gambar sempurna", icon: "🎯", category: "Logika", requirement: "match_perfect" },
+  { id: "b50", name: "Grand Master", description: "Capai level 100", icon: "🏆", category: "Umum", requirement: "level_100" },
+  { id: "b51", name: "First Steps", description: "Selesaikan game pertama", icon: "👣", category: "Umum", requirement: "first_game" },
+  { id: "b52", name: "Combo King", description: "Dapat combo 5x", icon: "🔥", category: "Combo", requirement: "combo_5" },
+];
