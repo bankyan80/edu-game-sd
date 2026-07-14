@@ -101,11 +101,16 @@ export interface MasterAlatMusik {
   id: string;
   nama: string;
   daerah: string;
+  provinsi: string;
+  pulau: string;
   caraMemainkan: string;
   jenis: string;
   fungsi: string;
+  komponen: string;
+  emoji: string;
   verifikasi: boolean;
   sumber: string;
+  gambar: string;
 }
 
 export interface MasterSenjata {
