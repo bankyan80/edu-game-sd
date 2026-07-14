@@ -48,18 +48,6 @@
     "sumber": "Wikimedia Commons"
   },
   {
-    "id": "belah-bubung",
-    "nama": "Rumah Belah Bubung",
-    "provinsi": "Kepulauan Riau",
-    "arsitektur": "Rumah panggung dengan atap terbelah dua memanjang",
-    "fungsi": "Rumah tinggal masyarakat Melayu Kepulauan Riau",
-    "keunikan": "Atap berbentuk pelana terbelah; anak tangga ganjil mencerminkan nilai kepercayaan Melayu",
-    "bahan": "Kayu, daun nipah atau sirap, dan rotan",
-    "gambar": "",
-    "verifikasi": true,
-    "sumber": "Wikimedia Commons"
-  },
-  {
     "id": "kajang-lako",
     "nama": "Rumah Kajang Lako",
     "provinsi": "Jambi",
@@ -96,18 +84,6 @@
     "sumber": "Wikimedia Commons"
   },
   {
-    "id": "rumah-rakit",
-    "nama": "Rumah Rakit",
-    "provinsi": "Kepulauan Bangka Belitung",
-    "arsitektur": "Rumah Melayu bubung panjang di atas rakit bambu yang mengapung",
-    "fungsi": "Rumah tinggal masyarakat pesisir di tepi sungai dan laut",
-    "keunikan": "Dibangun di atas rakit sehingga dapat mengapung; gabungan arsitektur Melayu dan Tionghoa",
-    "bahan": "Rangka kayu, bambu, atap dari anyaman daun ulit",
-    "gambar": "",
-    "verifikasi": true,
-    "sumber": "Kemdikbud"
-  },
-  {
     "id": "nuwou-sesat",
     "nama": "Nuwou Sesat",
     "provinsi": "Lampung",
@@ -140,18 +116,6 @@
     "keunikan": "Gabungan arsitektur Melayu, Tionghoa, dan Eropa yang multicultural",
     "bahan": "Kayu, batu bata, dan genteng tanah liat",
     "gambar": "/assets/rumah-adat/rumah-kebaya.jpg",
-    "verifikasi": true,
-    "sumber": "Kemdikbud"
-  },
-  {
-    "id": "jolopong",
-    "nama": "Rumah Jolopong",
-    "provinsi": "Jawa Barat",
-    "arsitektur": "Rumah panggung sederhana dengan atap pelana memanjang dua sisi",
-    "fungsi": "Rumah tinggal masyarakat Sunda sehari-hari",
-    "keunikan": "Bentuk atap paling tua dan dasar dari semua rumah adat Sunda; arti terkulai lurus",
-    "bahan": "Kayu, bambu (bilik), ijuk, dan daun kelapa",
-    "gambar": "",
     "verifikasi": true,
     "sumber": "Kemdikbud"
   },
@@ -216,18 +180,6 @@
     "sumber": "Kemdikbud"
   },
   {
-    "id": "rumah-musalaki",
-    "nama": "Rumah Musalaki",
-    "provinsi": "Nusa Tenggara Timur",
-    "arsitektur": "Rumah panggung dengan atap jerami menjulang tinggi ke langit",
-    "fungsi": "Rumah tinggal khusus kepala suku dan pemimpin adat Ende Lio",
-    "keunikan": "Pondasi di atas batu lonjong besar; atap dari jerami bertumpu pada rangka kayu",
-    "bahan": "Kayu, jerami, dan batu besar sebagai pondasi",
-    "gambar": "",
-    "verifikasi": true,
-    "sumber": "Wikimedia Commons"
-  },
-  {
     "id": "rumah-panjang",
     "nama": "Rumah Panjang (Radakng)",
     "provinsi": "Kalimantan Barat",
@@ -238,18 +190,6 @@
     "gambar": "/assets/rumah-adat/rumah-panjang.jpg",
     "verifikasi": true,
     "sumber": "Kemdikbud"
-  },
-  {
-    "id": "rumah-betang",
-    "nama": "Rumah Betang",
-    "provinsi": "Kalimantan Tengah",
-    "arsitektur": "Rumah panggung panjang di atas tiang kayu ulin",
-    "fungsi": "Rumah tinggal komunal suku Dayak dengan puluhan bilik",
-    "keunikan": "Panjang hingga 180 meter; 33 bilik dengan 35 tangga berbeda ketinggian",
-    "bahan": "Kayu ulin, atap seng atau rumbia",
-    "gambar": "/assets/rumah-adat/rumah-betang.jpg",
-    "verifikasi": true,
-    "sumber": "Wikimedia Commons"
   },
   {
     "id": "bubungan-tinggi",
@@ -264,18 +204,6 @@
     "sumber": "Kemdikbud"
   },
   {
-    "id": "rumah-lamin",
-    "nama": "Rumah Lamin",
-    "provinsi": "Kalimantan Timur",
-    "arsitektur": "Rumah panggung panjang dengan ukiran Dayak warna kuning-hitam",
-    "fungsi": "Rumah tinggal komunal suku Dayak Benuaq hingga 100 orang",
-    "keunikan": "Ukiran makhluk hidup di dinding sebagai penangkal ilmu hitam; panjang 300 meter",
-    "bahan": "Kayu, dengan ukiran bermotif tumbuhan, hewan, dan wajah manusia",
-    "gambar": "/assets/rumah-adat/rumah-lamin.jpg",
-    "verifikasi": true,
-    "sumber": "Wikimedia Commons"
-  },
-  {
     "id": "rumah-baloy",
     "nama": "Rumah Baloy",
     "provinsi": "Kalimantan Utara",
@@ -286,18 +214,6 @@
     "gambar": "/assets/rumah-adat/rumah-baloy.jpg",
     "verifikasi": true,
     "sumber": "Wikimedia Commons"
-  },
-  {
-    "id": "walewangko",
-    "nama": "Rumah Walewangko",
-    "provinsi": "Sulawesi Utara",
-    "arsitektur": "Rumah panggung simetris dengan dua tangga berlawanan arah",
-    "fungsi": "Rumah tinggal ketua adat dan pusat kegiatan suku Minahasa",
-    "keunikan": "Dua tangga berlawanan untuk mengusir roh jahat; desain mirip rumah modern",
-    "bahan": "Kayu dengan atap daun rumbia (kini seng atau genting)",
-    "gambar": "",
-    "verifikasi": true,
-    "sumber": "Kemdikbud"
   },
   {
     "id": "dulohupa",
@@ -332,30 +248,6 @@
     "keunikan": "Tiga susun: tapang (loteng), roang boyang (ruang penghuni), naong boyang (kolong)",
     "bahan": "Kayu dengan tiang tidak ditancapkan ke tanah melainkan ditumpangkan di batu",
     "gambar": "/assets/rumah-adat/rumah-boyang.jpg",
-    "verifikasi": true,
-    "sumber": "Kemdikbud"
-  },
-  {
-    "id": "tongkonan",
-    "nama": "Rumah Tongkonan",
-    "provinsi": "Sulawesi Selatan",
-    "arsitektur": "Atap memanjang seperti perahu dengan ukiran warna-warni khas Toraja",
-    "fungsi": "Rumah adat Toraja yang menjadi pusat kehidupan sosial dan adat",
-    "keunikan": "Atap berbentuk perahu terbalik dengan ukiran khas yang melambangkan status sosial",
-    "bahan": "Kayu, ijuk, dan anyaman bambu dengan ukiran tangan",
-    "gambar": "/assets/rumah-adat/tongkonan.jpg",
-    "verifikasi": true,
-    "sumber": "Wikimedia Commons"
-  },
-  {
-    "id": "banua-tada",
-    "nama": "Rumah Banua Tada (Buton)",
-    "provinsi": "Sulawesi Tenggara",
-    "arsitektur": "Rumah panggung bertingkat hingga 4 lantai tanpa paku satupun",
-    "fungsi": "Rumah tinggal Sultan dan keluarga kerajaan Buton",
-    "keunikan": "Konstruksi tanpa paku; Kamali (istana) memiliki 4 tingkatan lantai",
-    "bahan": "Papan kayu jati, bambu, dan rotan dengan teknik pasak",
-    "gambar": "",
     "verifikasi": true,
     "sumber": "Kemdikbud"
   },
@@ -416,18 +308,6 @@
     "keunikan": "Hanya boleh dimasuki laki-laki; setiap marga punya pintu dan tungku sendiri",
     "bahan": "Kayu, kulit kayu untuk lantai, daun sagu untuk dinding dan atap",
     "gambar": "/assets/rumah-adat/rumah-jew.jpg",
-    "verifikasi": true,
-    "sumber": "Kemdikbud"
-  },
-  {
-    "id": "karapao",
-    "nama": "Rumah Karapao",
-    "provinsi": "Papua Tengah",
-    "arsitektur": "Rumah panggung bulat/oval dengan atap tinggi menjulur hampir ke tanah",
-    "fungsi": "Rumah kegiatan adat dan upacara pendewasaan Suku Kamoro",
-    "keunikan": "Bentuk menyerupai perahu terbalik; pintu rendah sehingga harus menunduk saat masuk",
-    "bahan": "Kayu, alang-alang kering, dan rotan sebagai pengikat",
-    "gambar": "",
     "verifikasi": true,
     "sumber": "Kemdikbud"
   },
