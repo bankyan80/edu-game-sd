@@ -169,23 +169,7 @@
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
     "gambar": "/assets/pakaian-adat/kepulauan-riau-teluk-belanga.jpg"
   },
-  {
-    "id": "dki-jakarta-pangsi-kebaya-betawi",
-    "nama": "Pangsi / Kebaya Betawi",
-    "provinsi": "DKI Jakarta",
-    "pulau": "Jawa",
-    "keterangan": "Pakaian adat Betawi yang terdiri dari pakaian pria (pangsi) dan perempuan (kebaya encim).",
-    "makna": "Melambangkan keberagaman budaya Jakarta yang merupakan percampuran budaya Melayu, Arab, Tionghoa, Eropa, dan budaya pribumi.",
-    "ciriKhas": "Pria mengenakan baju pangsi hitam dengan celana komprang dan ikat pinggang, perempuan mengenakan kebaya encim berwarna-warni dengan kain batik.",
-    "bahan": "Kain katun, beludru, kain batik, dan benang sulam.",
-    "aksesori": "Peci (kopiah), sarung tangan, kipas, selop, kain batik sarung, dan perhiasan perak.",
-    "digunakanPada": "Pernikahan Betawi, festival budaya, perayaan tahun baru Betawi, dan acara kesenian.",
-    "faktaMenarik": "Kebaya encim terinspirasi dari kebaya Tionghoa-Peranakan dan menjadi identitas perempuan Betawi yang multikultural.",
-    "emoji": "🎭",
-    "verifikasi": true,
-    "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "/assets/pakaian-adat/dki-jakarta-pangsi-kebaya-betawi.jpg"
-  },
+
   {
     "id": "jawa-barat-pangsi-sunda",
     "nama": "Pangsi Sunda",
