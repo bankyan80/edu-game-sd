@@ -80,6 +80,8 @@ export interface MasterRumahAdat {
   arsitektur: string;
   fungsi: string;
   keunikan: string;
+  bahan: string;
+  gambar: string;
   verifikasi: boolean;
   sumber: string;
 }
