@@ -5,6 +5,7 @@ import { pakaianAdatData, type PakaianAdat } from "@/lib/budaya/pakaianAdat";
 import { FloatingClouds } from "@/components/game/FloatingEffects";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import AssetImage from "@/components/ui/AssetImage";
 import {
   Search,
   Filter,
@@ -230,23 +231,17 @@ export default function PakaianAdatPage() {
 
               {/* Content */}
               <div className="relative z-10 text-center">
-                {item.gambar ? (
-                  <div className="w-full h-40 mb-3 rounded-2xl overflow-hidden bg-gray-100">
-                    <img
-                      src={item.gambar}
-                      alt={item.nama}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        target.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-6xl">' + item.emoji + '</div>';
-                      }}
-                    />
-                  </div>
-                ) : (
-                  <div className="text-6xl mb-3 animate-float">{item.emoji}</div>
-                )}
+                <div className="w-full h-40 mb-3 rounded-2xl overflow-hidden bg-gray-100">
+                  <AssetImage
+                    src={item.gambar}
+                    alt={item.nama}
+                    category="pakaian-adat"
+                    className="w-full h-full object-cover"
+                    fallbackEmoji={item.emoji}
+                    fallbackLabel="Gambar perlu ditambahkan"
+                    data-sumber={item.sumber}
+                  />
+                </div>
                 <h3 className="font-bold text-lg text-gray-800 mb-1 leading-tight">
                   {item.nama}
                 </h3>
@@ -330,24 +325,17 @@ export default function PakaianAdatPage() {
 
               {/* Header */}
               <div className="text-center mb-6">
-                {selectedItem.gambar ? (
-                  <div className="w-full max-w-sm mx-auto h-64 mb-4 rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
-                    <img
-                      src={selectedItem.gambar}
-                      alt={selectedItem.nama}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        target.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-8xl">' + selectedItem.emoji + '</div>';
-                      }}
-                    />
-                  </div>
-                ) : (
-                  <div className="text-8xl mb-3 animate-float">
-                    {selectedItem.emoji}
-                  </div>
-                )}
+                <div className="w-full max-w-sm mx-auto h-64 mb-4 rounded-2xl overflow-hidden bg-gray-100 shadow-lg">
+                  <AssetImage
+                    src={selectedItem.gambar}
+                    alt={selectedItem.nama}
+                    category="pakaian-adat"
+                    className="w-full h-full object-cover"
+                    fallbackEmoji={selectedItem.emoji}
+                    fallbackLabel="Gambar perlu ditambahkan"
+                    data-sumber={selectedItem.sumber}
+                  />
+                </div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-1">
                   {selectedItem.nama}
                 </h2>

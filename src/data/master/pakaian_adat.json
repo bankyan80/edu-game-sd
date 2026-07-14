@@ -14,7 +14,7 @@
     "emoji": "👑",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pakaian_Adat_Aceh_Wanita.jpg"
+    "gambar": "/assets/pakaian-adat/aceh-ulee-balang.jpg"
   },
   {
     "id": "sumatera-utara-ulos",
@@ -31,7 +31,7 @@
     "emoji": "🧣",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Halak_Batak.jpg"
+    "gambar": "/assets/pakaian-adat/sumatera-utara-ulos.jpg"
   },
   {
     "id": "sumatera-barat-bundo-kanduang",
@@ -48,7 +48,7 @@
     "emoji": "👘",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bundo_Kanduang_di_Rumah_Gadang.jpg"
+    "gambar": "/assets/pakaian-adat/sumatera-barat-bundo-kanduang.jpg"
   },
   {
     "id": "riau-teluk-belanga",
@@ -65,7 +65,7 @@
     "emoji": "👔",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/2/20/Baju_Adat_Melayu_Pontianak.jpg"
+    "gambar": "/assets/pakaian-adat/riau-teluk-belanga.jpg"
   },
   {
     "id": "jambi-baju-kurung",
@@ -82,7 +82,7 @@
     "emoji": "🎎",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Tari_Tarek_Pukat.jpg"
+    "gambar": "/assets/pakaian-adat/jambi-baju-kurung.jpg"
   },
   {
     "id": "sumatera-selatan-aesan-gede",
@@ -99,7 +99,7 @@
     "emoji": "👗",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/7/79/Aesan_Gede_untuk_Perempuan.jpg"
+    "gambar": "/assets/pakaian-adat/sumatera-selatan-aesan-gede.jpg"
   },
   {
     "id": "bengkulu-rejang",
@@ -116,7 +116,7 @@
     "emoji": "💃",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Tari_Bidadari_Teminang_Anak_dance_from_Rejang_Lebong%2C_Bengkulu%2C_Indonesia.jpg"
+    "gambar": "/assets/pakaian-adat/bengkulu-rejang.jpg"
   },
   {
     "id": "lampung-tulang-bawang",
@@ -133,7 +133,7 @@
     "emoji": "🐘",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pakaian_Adat_Marga_Teluk_Peminggir.jpg"
+    "gambar": "/assets/pakaian-adat/lampung-tulang-bawang.jpg"
   },
   {
     "id": "bangka-belitung-paksian",
@@ -150,7 +150,7 @@
     "emoji": "💍",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/2/20/Baju_Adat_Melayu_Pontianak.jpg"
+    "gambar": "/assets/pakaian-adat/bangka-belitung-paksian.jpg"
   },
   {
     "id": "kepulauan-riau-teluk-belanga",
@@ -167,7 +167,7 @@
     "emoji": "🎎",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/2/20/Baju_Adat_Melayu_Pontianak.jpg"
+    "gambar": "/assets/pakaian-adat/kepulauan-riau-teluk-belanga.jpg"
   },
   {
     "id": "dki-jakarta-pangsi-kebaya-betawi",
@@ -184,7 +184,7 @@
     "emoji": "🎭",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kebaya_None_Betawi_20240622_121321.jpg"
+    "gambar": "/assets/pakaian-adat/dki-jakarta-pangsi-kebaya-betawi.jpg"
   },
   {
     "id": "jawa-barat-pangsi-sunda",
@@ -201,7 +201,7 @@
     "emoji": "🥋",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/3/31/Traditional_Indonesian_clothing_%28West_Java%29.jpg"
+    "gambar": "/assets/pakaian-adat/jawa-barat-pangsi-sunda.jpg"
   },
   {
     "id": "jawa-tengah-jawi-jangkep-dan-kebaya",
@@ -218,7 +218,7 @@
     "emoji": "🏛️",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Kretek_dance_-_Kudus_Javanese_-_Central_Java_-_Indonesia_-_Traditional_Kudus_Javanese_dance.jpg"
+    "gambar": "/assets/pakaian-adat/jawa-tengah-jawi-jangkep-dan-kebaya.jpg"
   },
   {
     "id": "di-yogyakarta-surjan",
@@ -235,7 +235,7 @@
     "emoji": "🕌",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gunungan_and_stright_clothes.jpg"
+    "gambar": "/assets/pakaian-adat/di-yogyakarta-surjan.jpg"
   },
   {
     "id": "jawa-timur-mantenan",
@@ -252,7 +252,7 @@
     "emoji": "💒",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pakaian_Adat_Jawa_Timur_-_Suku_Madura.jpg"
+    "gambar": "/assets/pakaian-adat/jawa-timur-mantenan.jpg"
   },
   {
     "id": "banten-pangsi-banten",
@@ -269,7 +269,7 @@
     "emoji": "⚔️",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Selection_of_Kang_Nong_Banten_2017.jpg"
+    "gambar": "/assets/pakaian-adat/banten-pangsi-banten.jpg"
   },
   {
     "id": "bali-payas-agung",
@@ -286,7 +286,7 @@
     "emoji": "🌺",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Galeri_Budaya_Nusantara_-_Pakaian_Adat_Bali.jpg"
+    "gambar": "/assets/pakaian-adat/bali-payas-agung.jpg"
   },
   {
     "id": "nusa-tenggara-barat-lambung",
@@ -303,7 +303,7 @@
     "emoji": "🏵️",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Lombok_Wedding_Party_1998.jpg"
+    "gambar": "/assets/pakaian-adat/nusa-tenggara-barat-lambung.jpg"
   },
   {
     "id": "nusa-tenggara-timur-tii-langga",
@@ -320,7 +320,7 @@
     "emoji": "🎩",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Anak_muda_dari_kasta_kerajaan%2C_Acara_Penguburan%2C_Sumba_Timur%2C_NTT%2C_Indonesia.jpg"
+    "gambar": "/assets/pakaian-adat/nusa-tenggara-timur-tii-langga.jpg"
   },
   {
     "id": "kalimantan-barat-king-baba",
@@ -337,7 +337,7 @@
     "emoji": "🪶",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pakaian_Adat_Dayak_Ikn.jpg"
+    "gambar": "/assets/pakaian-adat/kalimantan-barat-king-baba.jpg"
   },
   {
     "id": "kalimantan-tengah-sangkarut",
@@ -354,7 +354,7 @@
     "emoji": "🌼",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Baju_Sangkarut_khas_Dayak.jpg"
+    "gambar": "/assets/pakaian-adat/kalimantan-tengah-sangkarut.jpg"
   },
   {
     "id": "kalimantan-selatan-bagajah-gamuling-baular-lulut",
@@ -371,7 +371,7 @@
     "emoji": "🦁",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/1/12/Pakaian_adat_pengantin_suku_Banjar_dari_Kalimantan_Selatan.jpg"
+    "gambar": "/assets/pakaian-adat/kalimantan-selatan-bagajah-gamuling-baular-lulut.jpg"
   },
   {
     "id": "kalimantan-timur-kustin",
@@ -388,7 +388,7 @@
     "emoji": "🦋",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Kustim.jpg"
+    "gambar": "/assets/pakaian-adat/kalimantan-timur-kustin.jpg"
   },
   {
     "id": "kalimantan-utara-taa-dan-sapei-sapaq",
@@ -405,7 +405,7 @@
     "emoji": "🌿",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Children_in_traditional_costumes%2C_East_Kalimantan%2C_Indonesia.jpg"
+    "gambar": "/assets/pakaian-adat/kalimantan-utara-taa-dan-sapei-sapaq.jpg"
   },
   {
     "id": "sulawesi-utara-laku-tepu",
@@ -422,7 +422,7 @@
     "emoji": "🌺",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/d/da/Baju_Bodo.jpg"
+    "gambar": "/assets/pakaian-adat/sulawesi-utara-laku-tepu.jpg"
   },
   {
     "id": "gorontalo-biliu",
@@ -439,7 +439,7 @@
     "emoji": "👑",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Biliu_Baju_Adat_Gorontalo.jpg/800px-Biliu_Baju_Adat_Gorontalo.jpg"
+    "gambar": "/assets/pakaian-adat/gorontalo-biliu.jpg"
   },
   {
     "id": "sulawesi-tengah-nggembe",
@@ -456,7 +456,7 @@
     "emoji": "🎭",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Beine_baju_adat.jpg"
+    "gambar": "/assets/pakaian-adat/sulawesi-tengah-nggembe.jpg"
   },
   {
     "id": "sulawesi-barat-pattuqduq-towaine",
@@ -473,7 +473,7 @@
     "emoji": "⛵",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/0/09/Mandar_Traditional_Costume.jpg"
+    "gambar": "/assets/pakaian-adat/sulawesi-barat-pattuqduq-towaine.jpg"
   },
   {
     "id": "sulawesi-selatan-baju-bodo",
@@ -490,7 +490,7 @@
     "emoji": "👗",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/d/da/Baju_Bodo.jpg"
+    "gambar": "/assets/pakaian-adat/sulawesi-selatan-baju-bodo.jpg"
   },
   {
     "id": "sulawesi-tenggara-babu-nggawi",
@@ -507,7 +507,7 @@
     "emoji": "👸",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Pakaian_adat_suku_Tolaki_png.jpg"
+    "gambar": "/assets/pakaian-adat/sulawesi-tenggara-babu-nggawi.jpg"
   },
   {
     "id": "maluku-cele",
@@ -524,7 +524,7 @@
     "emoji": "🌴",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pakaian_Adat_Pengantin_Ambon.jpg/800px-Pakaian_Adat_Pengantin_Ambon.jpg"
+    "gambar": "/assets/pakaian-adat/maluku-cele.jpg"
   },
   {
     "id": "maluku-utara-manteren-lamo",
@@ -541,7 +541,7 @@
     "emoji": "🏛️",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Beta_Maluku.jpg/800px-Beta_Maluku.jpg"
+    "gambar": "/assets/pakaian-adat/maluku-utara-manteren-lamo.jpg"
   },
   {
     "id": "papua-koteka-ewer",
@@ -558,7 +558,7 @@
     "emoji": "🎃",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Koteka_Papua.jpg"
+    "gambar": "/assets/pakaian-adat/papua-koteka-ewer.jpg"
   },
   {
     "id": "papua-barat-ewer",
@@ -575,7 +575,7 @@
     "emoji": "🦜",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Koteka_Papua.jpg"
+    "gambar": "/assets/pakaian-adat/papua-barat-ewer.jpg"
   },
   {
     "id": "papua-selatan-pakaian-adat-papua-selatan",
@@ -592,7 +592,7 @@
     "emoji": "🌿",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Yali_man_Baliem_Valley_Papua.jpg"
+    "gambar": "/assets/pakaian-adat/papua-selatan-pakaian-adat-papua-selatan.jpg"
   },
   {
     "id": "papua-tengah-pakaian-adat-papua-tengah",
@@ -609,7 +609,7 @@
     "emoji": "🐚",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Koteka.jpg"
+    "gambar": "/assets/pakaian-adat/papua-tengah-pakaian-adat-papua-tengah.jpg"
   },
   {
     "id": "papua-pegunungan-pakaian-adat-papua-pegunungan",
@@ -626,7 +626,7 @@
     "emoji": "⛰️",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Festival_Lembah_Baliem_02_(cropped).jpg"
+    "gambar": "/assets/pakaian-adat/papua-pegunungan-pakaian-adat-papua-pegunungan.jpg"
   },
   {
     "id": "papua-barat-daya-pakaian-adat-papua-barat-daya",
@@ -643,6 +643,6 @@
     "emoji": "🌅",
     "verifikasi": true,
     "sumber": "Kemdikbud - Warisan Budaya Indonesia",
-    "gambar": "https://upload.wikimedia.org/wikipedia/commons/4/44/Dani_Mann_Baliem-Tal.jpg"
+    "gambar": "/assets/pakaian-adat/papua-barat-daya-pakaian-adat-papua-barat-daya.jpg"
   }
 ]
